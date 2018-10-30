@@ -1,4 +1,6 @@
 
+/* The navigation bar */
+
 html{scroll-behavior:smooth}
 
 .barbar{
@@ -6,9 +8,15 @@ html{scroll-behavior:smooth}
 }
 
 .logogo{
-  margin-left: 136px;
+  /* margin-left: 136px;
   margin-top: 6px;
+  width: 212px; */
+  
+  margin-left: 8.85vw;
+  margin-top: .4vw;
   width: 212px;
+  height:115.85px;
+
   -webkit-transition: 0.4s;
   -moz-transition:  0.4s;
   -o-transition: 0.4s;
@@ -90,4 +98,86 @@ a:hover {
    width:75%;
 }
 
+/* The skills section icons */
 
+#icon-container{
+  
+}
+
+.tech-icon{
+  margin:1vw;
+}
+
+#html-icon{
+  width:12vw;
+}
+
+#css-icon{
+  width:11vw;
+}
+
+#js-icon{
+  width: 11.5vw;
+}
+
+#git-icon{
+  width: 10.2vw;
+}
+
+#react-icon{
+  width:11vw;
+}
+
+#mui-icon{
+  width:11vw;
+}
+
+#npm-icon{
+  width:12vw;
+}
+
+#wordpress-icon{
+  width:12vw;
+}
+
+#footer{
+  /* width:auto; */
+  height:auto;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  }
+
+  .fix{
+    max-width: 100%;
+    margin:0!important;
+    padding:0!important;
+    border:0!important;
+  }
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  /* position: absolute; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.icon {
+  position: absolute;
+  width:5%;
+  top: 235%;
+  left: 44%;
+}
+
+#red-pin{
+  width:150%;
+}
+
+/* When you move the mouse over the icon, change color */
+.icon:hover {
+  color: #eee;
+}
