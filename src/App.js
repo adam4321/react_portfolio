@@ -82,7 +82,13 @@ const styles = theme => ({
 });
 
 
-const cards = [1,2,3,4];
+
+const cards = [
+{key:1,image:"https://i.imgur.com/7MfMVOs.png",title:"Random Quote Machine",project:"Random Quote Machine",about:"Displays a new quote when you press the button and is just generally very very cool."},
+{key:2,image:"https://i.imgur.com/OMTqyYd.png",title:"React Drum Machine",project:"React Drum Machine",about:"Plays sounds when you press the key or click the button and is just generally very cool."},
+{key:3,image:"https://i.imgur.com/EXLZRSi.png",title:"React Drum Machine",project:"React Calculator App",about:"Plays sounds when you press the key or click the button and is just generally very cool."},
+{key:4,image:"https://i.imgur.com/EXLZRSi.png",title:"React Drum Machine",project:"React Pomodoro Timer",about:"Plays sounds when you press the key or click the button and is just generally very cool."}
+];  
 
 
 function Album(props) {
@@ -160,9 +166,7 @@ function Album(props) {
   </div>
 
 
-        <div className={classNames(classes.layout, classes.cardGrid)}>
-
-{/* End hero unit */}
+  <div className={classNames(classes.layout, classes.cardGrid)}>
 
 {/* Full stack Project Card */}
 
@@ -175,8 +179,8 @@ function Album(props) {
       <a href='https://www.youtube.com/watch?v=RlXdsyctD50'>
         <CardMedia
              className={classes.cardMedia}
-             image="https://i.imgur.com/OMTqyYd.png" // eslint-disable-line max-len
-             title="Image title"
+             image={"https://i.imgur.com/EXLZRSi.png"} 
+             title="Full Stack App"
            />
            </a>
              <CardContent className={classes.cardContent}>
@@ -192,25 +196,25 @@ function Album(props) {
        </Grid>
       </div>
 
-      {/* Smaller Project Cards */}
+ {/* Smaller Project Cards */}
 
       <div className='smaller-apps' >
 
           <Grid container spacing={40} >
             {cards.map(card => (
-              <Grid item key={card} sm={6} md={3} lg={3}> 
+              <Grid item key={card.key} sm={6} md={3} lg={3}> 
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image={"https://i.imgur.com/OMTqyYd.png"} // eslint-disable-line max-len
-                    title="React Drum Machine"
+                    image={card.image} 
+                    title={card.title}
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      1 React Drum Machine
+                      {card.project}
                     </Typography>
                     <Typography>
-                    Plays sounds when you press the key or click the button and is just generally very cool.
+                    {card.about}
                     </Typography>
                   </CardContent>
                 </Card>
