@@ -1,39 +1,37 @@
 
+
 /* The navigation bar */
 
-html{scroll-behavior:smooth}
 
-.barbar{
-  width:100%;
+html {scroll-behavior:smooth}
+
+body{
+
 }
 
-.logogo{
-  /* margin-left: 136px;
-  margin-top: 6px;
-  width: 212px; */
+.barbar {
+  width:100%;
   
+}
+.logogo {
   margin-left: 8.85vw;
   margin-top: .4vw;
   width: 212px;
   height:115.85px;
-
   -webkit-transition: 0.4s;
   -moz-transition:  0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
-  
 }
-
-.logogo:hover{
+.logogo:hover {
     background-color:#000;
     opacity:0.7;
     -webkit-transition: 0.4s;
     -moz-transition:  0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
-   }
-
-.underline{
+}
+.underline {
   color: #fff;
     text-decoration: none;
     float: right;
@@ -41,13 +39,11 @@ html{scroll-behavior:smooth}
     font-size: 16.3px;
     letter-spacing: .9px;
 }
-
 .underline:link {
   text-decoration: none;
   color:#fff;
   position: relative;
 }
-
 .underline:before {
   content: "";
   position: absolute;
@@ -56,25 +52,22 @@ html{scroll-behavior:smooth}
   right: 100%;
   bottom: -6px;
   background: #fff;
-  height: 2.5px;
+  height: 2.4px;
   transition-property: left right;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
 }
-
 .underline:hover:before,
 .underline:focus:before,
 .underline:active:before {
   right: 0;
 }
-
-a{
+a {
   -webkit-transition: 0.4s;
   -moz-transition:  0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
 }
-
 a:hover {
   color: rgba(154, 182, 196, 0.582);
   /* background-color:#000; */
@@ -85,99 +78,271 @@ a:hover {
   transition: 0.4s;
 }
 
-#about{
+#about {
   margin-left:4.8vw;
 }
-
-#blog{
+#blog {
   margin-right:10vw;
   margin-left:6vw;
 }
 
-#scroll-links{
-   width:75%;
+@media only screen and (min-width: 960px) {
+  #scroll-links {
+       width: 75%;
+    }
 }
+@media only screen and (max-width: 960px) {
+
+   #scroll-links {
+   display:none;
+  }
+}
+
 
 /* The skills section icons */
 
-#icon-container{
+
+#icon-container {
+  margin-top:-2.5vw;
   
 }
 
-.tech-icon{
-  margin:1vw;
+.tech-icon {
+  margin:1.9vw;
 }
 
-#html-icon{
+#html-icon {
+  width:12.5vw;
+}
+#css-icon {
   width:12vw;
 }
-
-#css-icon{
-  width:11vw;
-}
-
-#js-icon{
+#js-icon {
   width: 11.5vw;
+  margin-left:3vw;
 }
-
-#git-icon{
+#git-icon {
   width: 10.2vw;
+  margin-left:3vw;
 }
-
-#react-icon{
+#react-icon {
+  width:12vw;
+}
+#mui-icon {
+  width:15vw;
+  margin-left: 1vw;
+}
+#npm-icon {
   width:11vw;
 }
-
-#mui-icon{
-  width:11vw;
-}
-
-#npm-icon{
+#wordpress-icon {
   width:12vw;
 }
 
-#wordpress-icon{
-  width:12vw;
+
+/* Projects section */
+
+.full-stack {
+  /* width:100%; */
+  /* margin:auto; */
+  /* display:flex; */
+  /* justify-content:center; */
 }
 
-#footer{
-  /* width:auto; */
-  height:auto;
-  margin:0!important;
-  padding:0!important;
-  border:0!important;
+.smaller-apps {
+  /* width:80%; */
+  /* margin-left:auto;
+  margin-right:auto;
+  margin-bottom:3vw; */
+  /* display:inline-block; */
+}
+
+/* About me box */
+
+@media only screen and (max-width: 600px) {
+  #about-text {
+  position: absolute;
+  top:-5%;
+  left:15%;
+  width:70%;
+  margin-top:3vw;
   }
+}
+@media only screen and (min-width: 600px) {
+  #about-text {
+  position: absolute;
+  top:3%;
+  left:33%;
+  width:30%;
+  }
+}
 
-  .fix{
-    max-width: 100%;
+  /* The contact box */
+
+@media only screen and (max-width: 600px) {
+  .contact {
+  position: absolute;
+  top:35%;
+  left:10%;
+  width:70%;
+ }
+}
+@media only screen and (min-width: 600px) {
+  .contact {
+  position: absolute;
+  top:-1%;
+  left:4%;
+  width:23%;
+ }
+}
+
+#name {
+  float:left;
+  color:  rgb(92, 92, 92);
+}
+#first-in {
+  float:left;
+  margin-right:1vw;
+  border-radius:2px;
+  border:1px solid rgb(172, 172, 172);
+  width:35%;
+}
+#first {
+  float:left;
+  color: rgb(172, 172, 172);
+  font-size:13px;
+}
+#last-in {
+  float:left;
+  width:35%;
+  border-radius:2px;
+  border:1px solid rgb(172, 172, 172);
+}
+#last {
+  margin-left:-20%;
+  color: rgb(172, 172, 172);
+  font-size:13px;
+}
+#email {
+  float:left;
+  color:  rgb(92, 92, 92);
+  }
+#email-in {
+  width:76%;
+  float:left;
+  border:1px solid rgb(172, 172, 172);
+  border-radius:2px;
+}
+#comments {
+  float:left;
+  color:  rgb(92, 92, 92);
+}
+#comments-in {
+  float:left;
+  max-width:100%;
+  min-width:100%;
+  height:8vw;
+  border:1px solid rgb(172, 172, 172);
+  resize:vertical;  
+  border-radius:2px;
+}
+#submit {
+  float:left;
+  background-color: rgb(92, 92, 92);
+  border-radius: 5px;
+  color:white;
+  font-size:13px;
+  padding:11px 23px;
+  margin-top:12px;
+}
+#submit:hover {
+  background-color:rgb(14, 13, 13);
+}
+
+/* The image and pin */
+
+  #footer {
+    height:auto;
     margin:0!important;
     padding:0!important;
     border:0!important;
   }
 
-/* The overlay effect (full height and width) - lays on top of the container and over the image */
-.overlay {
-  /* position: absolute; */
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-}
-/* The icon inside the overlay is positioned in the middle vertically and horizontally */
-.icon {
-  position: absolute;
-  width:5%;
-  top: 235%;
-  left: 44%;
+  @media only screen and (max-width: 600px) {
+    .skyline-img {
+    max-width: 100%;
+    margin:0!important;
+    padding:0!important;
+    border:0!important;
+    position: absolute;
+    top:450px;
+    left:-0%;
+    }
+  }
+@media only screen and (min-width: 600px) {
+  .skyline-img {
+  max-width: 100%;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  }
 }
 
-#red-pin{
-  width:150%;
+/* The bottom container */
+
+@media only screen and (max-width: 600px) {
+  .bottom-container {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 600px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top:15%;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    
+    }
+  }
+  @media only screen and (min-width: 600px) {
+    .bottom-container {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      margin: 0 auto;
+      margin-top:15%;
+      text-align: center;
+      position: relative;
+      display: inline-block;
+      }
+    }
+
+/* The red pin icon inside the overlay is positioned in the middle */
+
+@media only screen and (max-width: 600px) {
+  #red-pin {
+  width:10%;
+  left:44%;
+  position: absolute;
+  top: 88%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #red-pin {
+  width:9%;
+  left:44%;
+  position: absolute;
+  top: 55%;
+  }
 }
 
 /* When you move the mouse over the icon, change color */
+
 .icon:hover {
   color: #eee;
 }

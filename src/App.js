@@ -6,16 +6,16 @@ import './App.css';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import AppBar from '@material-ui/core/AppBar';
-import Button from '@material-ui/core/Button';
+// import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
+// import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import TextField from '@material-ui/core/TextField';
+// import TextField from '@material-ui/core/TextField';
 import { withStyles } from '@material-ui/core/styles';
 import logo from './Adam_logo.png';
 import skyline from './skyline.png';
@@ -27,10 +27,7 @@ import git from './git.png';
 import react from './react-1.png';
 import mui from './mui.png';
 import npm from './npm.png';
-import wordpress from './WordPress.png';
-
-
-
+import wordpress from './wordpress.jpg';
 
 
 
@@ -85,7 +82,7 @@ const styles = theme => ({
 });
 
 
-const cards = [1, 2, 3, 4];
+const cards = [1,2,3,4];
 
 
 function Album(props) {
@@ -96,176 +93,191 @@ function Album(props) {
     <React.Fragment>
       <CssBaseline />
 
-    {/* The top Nav Bar */}
+  {/* The top Nav Bar */}
 
-      <AppBar position="static"   className={classes.appBar}>
-        <Toolbar className={'barbar'}>
+    <AppBar position="static"   className={classes.appBar}>
+      <Toolbar className={'barbar'}>
         <a className='darken' href='https://adamjwright.com'>
           <img src={logo} alt='logo'  className={'logogo'}/>
           </a>
-        <div id='scroll-links'>
-
-      <a variant="h6" href='https://adamjwright.com/blog' id='blog' className="underline"  noWrap>
+         <div id='scroll-links'>
+            <a variant="h6" href='https://adamjwright.com/blog' id='blog' className="underline"  noWrap>
             Blog
           </a>
-         
-          <a variant="h6" href='#footer' id='about' className="underline" noWrap>
+            <a variant="h6" href='#footer' id='about' className="underline" noWrap>
             About
           </a>
-          <a variant="h6" href='#projects' id='projects' className="underline" noWrap>
+            <a variant="h6" href='#stack' id='projects' className="underline" noWrap>
             Projects
           </a>
-          </div>
-        </Toolbar>
-      </AppBar>
+         </div>
+      </Toolbar>
+     </AppBar>
 
-    {/* The first section */}
+  {/* The skills section */}
 
       <main>
-        {/* Hero unit */}
+  {/* Hero unit */}
+
         <div className={classes.heroUnit}>
-          <div className={classes.heroContent}>
+       <div className={classes.heroContent}>
+      <div className={classes.heroButtons}>
+              <Grid container  justify="center">
+                <Grid item xs={9} sm={9} md={9} lg={12}>
 
-            <Typography component="h3" variant="h3" align="left" color="textPrimary" gutterBottom>
-              Skills
-            </Typography>
+ {/* Grid of tech icons */}
 
-    {/* Grid of tech icons */}
        <div id='icon-container'>
-            <img className='tech-icon' id='html-icon' src={html}/>
-            <img className='tech-icon' id='css-icon' src={css}/>
-            <img className='tech-icon' id='js-icon' src={js} />
-            <img className='tech-icon' id='git-icon' src={git} />
-            <img className='tech-icon' id='react-icon' src={react} />
-            <img className='tech-icon' id='mui-icon' src={mui} />
-            <img className='tech-icon' id='npm-icon' src={npm} />
-            <img className='tech-icon' id='wordpress-icon' src={wordpress} />
+          <a href='https://en.wikipedia.org/wiki/HTML'>
+            <img className='tech-icon' id='html-icon' alt='html' src={html}/>
+          </a>
+          <a href='https://en.wikipedia.org/wiki/Cascading_Style_Sheets'>
+            <img className='tech-icon' id='css-icon' alt='css' src={css}/>
+          </a>
+          <a href='https://en.wikipedia.org/wiki/JavaScript'>
+            <img className='tech-icon' id='js-icon' alt='js' src={js} />
+          </a>
+          <a href='https://en.wikipedia.org/wiki/Git'>
+            <img className='tech-icon' id='git-icon' alt='git' src={git} />
+          </a>
+          <a href='https://en.wikipedia.org/wiki/React_(JavaScript_library)'>
+            <img className='tech-icon' id='react-icon' alt='react' src={react} />
+          </a>
+          <a href='https://material-ui.com/getting-started/installation/'>
+            <img className='tech-icon' id='mui-icon' alt='mui' src={mui} />
+          </a>
+          <a href='https://en.wikipedia.org/wiki/Npm_(software)'>
+            <img className='tech-icon' id='npm-icon' alt='npm' src={npm} />
+          </a>
+          <a href='https://en.wikipedia.org/wiki/WordPress'>
+            <img className='tech-icon' id='wordpress-icon' alt='wordpress' src={wordpress} />
+          </a>
        </div>
+      </Grid>
+    </Grid>
+    </div>
+   </div>
+  </div>
 
-            {/* <Typography variant="h6" align="center" color="textSecondary" paragraph>
-              This will be a grid of icons that will represent the technologies that I have worked with.
-            </Typography> */}
-            <div className={classes.heroButtons}>
-              <Grid container spacing={16} justify="center">
-                <Grid item>
-                  {/* <Button variant="contained" color="primary">
-                    Main call to action
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <Button variant="outlined" color="primary">
-                    Secondary action
-                  </Button> */}
-                </Grid>
-              </Grid>
-            </div>
-          </div>
-        </div>
+
         <div className={classNames(classes.layout, classes.cardGrid)}>
 
-    {/* End hero unit */}
-    
-    {/* <Card className=''>
-    <CardMedia
-                    className={classes.cardMedia}
-                    image="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_164edaf95ee%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_164edaf95ee%22%3E%3Crect%20width%3D%22288%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.32500076293945%22%20y%3D%22118.8%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" // eslint-disable-line max-len
-                    title="Image title"
-                  />
-    <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Project
-                    </Typography>
-                    <Typography>
-                      This will be a description of each of these portfolio projects.
-                    </Typography>
-                  </CardContent>
-<Card /> */}
+{/* End hero unit */}
 
-          <Grid container spacing={40}>
-          
+{/* Full stack Project Card */}
+
+    <div className='full-stack' id='stack'>
+
+    <Grid container spacing={40} justify="center">
+     <Grid item sm={6} md={6} lg={6}>
+    
+      <Card className={classes.card}>
+      <a href='https://www.youtube.com/watch?v=RlXdsyctD50'>
+        <CardMedia
+             className={classes.cardMedia}
+             image="https://i.imgur.com/OMTqyYd.png" // eslint-disable-line max-len
+             title="Image title"
+           />
+           </a>
+             <CardContent className={classes.cardContent}>
+               <Typography gutterBottom variant="h5" component="h2">
+                      Full Stack App
+                 </Typography>
+               <Typography>
+                      This will be a description of a full stack app that is my most involved project by far.
+            </Typography>
+          </CardContent>
+         </Card>
+        </Grid>
+       </Grid>
+      </div>
+
+      {/* Smaller Project Cards */}
+
+      <div className='smaller-apps' >
+
+          <Grid container spacing={40} >
             {cards.map(card => (
-              <Grid item key={card} sm={6} md={4} lg={3}>
+              <Grid item key={card} sm={6} md={3} lg={3}> 
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_164edaf95ee%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_164edaf95ee%22%3E%3Crect%20width%3D%22288%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.32500076293945%22%20y%3D%22118.8%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" // eslint-disable-line max-len
-                    title="Image title"
+                    image={"https://i.imgur.com/OMTqyYd.png"} // eslint-disable-line max-len
+                    title="React Drum Machine"
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Project
+                      1 React Drum Machine
                     </Typography>
                     <Typography>
-                      This will be a description of each of these portfolio projects.
+                    Plays sounds when you press the key or click the button and is just generally very cool.
                     </Typography>
                   </CardContent>
-                  {/* <CardActions>
-                    <Button size="small" color="primary">
-                      View
-                    </Button>
-                    <Button size="small" color="primary">
-                      Edit
-                    </Button>
-                  </CardActions> */}
                 </Card>
               </Grid>
-            ))}
+             ))}  
           </Grid>
+          </div>
+
         </div>
       </main>
 
-    {/* Footer */}
+  {/* Footer */}
 
       <footer id='footer' className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          About Me
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          I am a Seattle based developer who is looking to better at programming every day.
-
-    {/* Contact Form */}
-  
-      <div className='contact'>
         
-   <form id="contactform" action="https://formspree.io/adam@adamjwright.com" method="POST">
-      <label for="name">Name</label>
-         <br />
-    <input type="text" name="first" />
-    <input type="text" name="last" />
-         <br />
-      <label for="name">First</label>
-      <label for="name">Last</label>
-         <br />
-      <label for="email">Email</label>
-         <br />
-    <input type="email" name="_replyto"  />
-         <br />
-       <label for="comments">Comment or Message</label>
-         <br />
-    <textarea name="message" ></textarea>
-         <br />
-    <input type="submit" value="Submit" />
-    <input type="hidden" name="_next" value="https://adamjwright.com" />
-   </form>
-       </div>
-
-   {/* The bottom of the page */}
+  {/* The bottom of the page */}
       
-         <div  className='container'>
-          <img src={skyline} alt='seatle skyline' className='fix'/>
-          <div className='overlay'>
-          <a href='https://www.google.com/maps/@47.660009,-122.3425584,15z' className='icon'>
-          <img src={pin} alt='red location icon' id='red-pin'/>
-          </a>
-            </div>
-          </div>
-        </Typography>
-       
-        
-        
-      </footer>
+         <div  className='bottom-container'>
 
-      {/* End footer */}
+  {/* About me section */}
+
+      <div id='about-text'>
+        <Typography variant="h6" align="center" id='me'gutterBottom>
+          About Me
+          </Typography>
+        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
+          I am a Seattle based developer who is completing a computer science degree and looking to better at programming every day.
+          </Typography>
+      </div>
+
+  {/* Contact Form */}
+ 
+    <div className='contact'>
+        <form id="contactform" action="https://formspree.io/adam@adamjwright.com" method="POST">
+         <label for="name" id='name' >Name</label>
+              <br />
+         <input type="text" name="first" id='first-in'/>
+         <input type="text" name="last" id='last-in'/>
+              <br />
+           <label for="name" id='first' >First</label>
+           <label for="name" id='last' >Last</label>
+              <br />
+           <label for="email" id='email' >Email</label>
+              <br />
+         <input type="email" name="_replyto" id='email-in' />
+              <br />
+           <label for="comments" id='comments'>Comment or Message</label>
+              <br />
+         <textarea name="message" id='comments-in'></textarea>
+              <br />
+         <input type="submit" value="SUBMIT" id='submit' />
+         <input type="hidden" name="_next" value="https://adamjwright.com" />
+        </form>
+    </div>
+
+  {/* The skyline and location Pin */}
+
+        <img src={skyline} alt='seatle skyline' className='skyline-img'/>
+          <div className='overlay'>
+          <a href='https://www.google.com/maps/place/1215+N+45th+St,+Seattle,+WA+98103/@47.6570521,-122.3612009,13.25z/data=!4m5!3m4!1s0x5490145167fe978d:0x64d3c93762b6dee3!8m2!3d47.6612275!4d-122.3430452' className='icon'>
+        <img src={pin} alt='red location icon' id='red-pin'/>
+          </a>
+        </div>
+      </div>   
+     </footer>
+
+  {/* End footer */}
       
     </React.Fragment>
   );
