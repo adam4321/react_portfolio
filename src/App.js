@@ -6,9 +6,7 @@ import './App.css';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import AppBar from '@material-ui/core/AppBar';
-// import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
-// import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -17,6 +15,15 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 // import TextField from '@material-ui/core/TextField';
 import { withStyles } from '@material-ui/core/styles';
+
+import Drawer from '@material-ui/core/Drawer';
+import Button from '@material-ui/core/Button';
+import List from '@material-ui/core/List';
+import Divider from '@material-ui/core/Divider';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+
 import logo from './Adam_logo.png';
 import skyline from './skyline.png';
 import pin from './maps-pin.png';
@@ -28,6 +35,8 @@ import react from './react-1.png';
 import mui from './mui.png';
 import npm from './npm.png';
 import wordpress from './wordpress.jpg';
+import menu from './menu.png';
+import icon from './x-icon.png'
 
 
 
@@ -78,16 +87,21 @@ const styles = theme => ({
   footer: {
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing.unit * 6,
+  },list: {
+    width: 300,
+  },
+  fullList: {
+    width: 'auto',
   },
 });
 
 
 
 const cards = [
-{key:1,image:"https://i.imgur.com/7MfMVOs.png",title:"Random Quote Machine",project:"Random Quote Machine",about:"Displays a new quote when you press the button and is just generally very very cool."},
-{key:2,image:"https://i.imgur.com/OMTqyYd.png",title:"React Drum Machine",project:"React Drum Machine",about:"Plays sounds when you press the key or click the button and is just generally very cool."},
-{key:3,image:"https://i.imgur.com/EXLZRSi.png",title:"React Drum Machine",project:"React Calculator App",about:"Plays sounds when you press the key or click the button and is just generally very cool."},
-{key:4,image:"https://i.imgur.com/EXLZRSi.png",title:"React Drum Machine",project:"React Pomodoro Timer",about:"Plays sounds when you press the key or click the button and is just generally very cool."}
+{key:1,image:"https://i.imgur.com/7MfMVOs.png",title:"Random Quote Machine",project:"Random Quote Machine",link:"https://adamjwright.com/quote_machine",about:"Displays a new quote when you press the button and is just generally very very cool."},
+{key:2,image:"https://i.imgur.com/OMTqyYd.png",title:"React Drum Machine",project:"React Drum Machine",link:"https://adamjwright.com/drum_machine",about:"Plays sounds when you press the key or click the button and is just generally very cool."},
+{key:3,image:"https://i.imgur.com/EXLZRSi.png",title:"React Drum Machine",project:"React Calculator App",link:"https://i.imgur.com/EXLZRSi.png",about:"Plays sounds when you press the key or click the button and is just generally very cool."},
+{key:4,image:"https://i.imgur.com/EXLZRSi.png",title:"React Drum Machine",project:"React Pomodoro Timer",link:"https://i.imgur.com/EXLZRSi.png",about:"Plays sounds when you press the key or click the button and is just generally very cool."}
 ];  
 
 
@@ -105,29 +119,36 @@ function Album(props) {
       <Toolbar className={'barbar'}>
         <a className='darken' href='https://adamjwright.com'>
           <img src={logo} alt='logo'  className={'logogo'}/>
-          </a>
-         <div id='scroll-links'>
+        </a>
+           <div id='scroll-links'>
             <a variant="h6" href='https://adamjwright.com/blog' id='blog' className="underline"  noWrap>
-            Blog
-          </a>
+              Blog
+            </a>
             <a variant="h6" href='#footer' id='about' className="underline" noWrap>
-            About
-          </a>
+              About
+            </a>
             <a variant="h6" href='#stack' id='projects' className="underline" noWrap>
-            Projects
-          </a>
-         </div>
+             Projects
+            </a>
+              
+              {/* Responsive menu component */}
+
+            </div>
+              <div id='menu-container'>
+                <a>
+                   <TemporaryDrawer />
+                </a>    
+            </div>
+
       </Toolbar>
      </AppBar>
 
   {/* The skills section */}
 
       <main>
-  {/* Hero unit */}
-
         <div className={classes.heroUnit}>
-       <div className={classes.heroContent}>
-      <div className={classes.heroButtons}>
+         <div className={classes.heroContent}>
+          <div className={classes.heroButtons}>
               <Grid container  justify="center">
                 <Grid item xs={9} sm={9} md={9} lg={12}>
 
@@ -176,7 +197,7 @@ function Album(props) {
      <Grid item sm={6} md={6} lg={6}>
     
       <Card className={classes.card}>
-      <a href='https://www.youtube.com/watch?v=RlXdsyctD50'>
+      <a href='https://i.imgur.com/EXLZRSi.png'>
         <CardMedia
              className={classes.cardMedia}
              image={"https://i.imgur.com/EXLZRSi.png"} 
@@ -204,11 +225,13 @@ function Album(props) {
             {cards.map(card => (
               <Grid item key={card.key} sm={6} md={3} lg={3}> 
                 <Card className={classes.card}>
+                <a href={card.link}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={card.image} 
                     title={card.title}
                   />
+                  </a>
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
                       {card.project}
@@ -287,11 +310,93 @@ function Album(props) {
   );
 }
 
-
-
 Album.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Album);
 
+
+// The menu drawer component
+
+class TemporaryDrawer extends React.Component {
+  state = {
+    left: false
+     };
+
+  toggleDrawer = (side, open) => () => {
+    this.setState({
+      [side]: open,
+    });
+  };
+
+  render() {
+    const { classes } = this.props;
+
+    const sideList = (
+      <div className='drawer'>
+        <List>
+        <a href='https://adamjwright.com'>
+          <ListItem id='close'>
+            <ListItemIcon id='close'>
+              <img src={icon} alt='x icon' id='x-icon'/>
+            </ListItemIcon >
+              <p id='close'>CLOSE MENU</p>
+            </ListItem>
+        </a>
+            <Divider />
+           <a href='https://adamjwright.com/blog'>
+          <ListItem>
+              <p id='blog-link'>BLOG</p>
+          </ListItem>
+        </a>
+           <Divider />
+           <a href='https://adamjwright.com/#stack'>
+          <ListItem>
+              <p id='projects-link'>PROJECTS</p>
+          </ListItem>
+        </a>
+           <Divider />
+           <a href='https://adamjwright.com/#footer'>
+          <ListItem>
+              <p id='about-link'>ABOUT</p>
+          </ListItem>
+        </a>
+           <Divider />
+
+        </List>
+      </div>
+    );
+
+    return (
+      <div>
+        {/* <Button > */}
+          <div onClick={this.toggleDrawer('left', true)} id='menu-container'>
+            <img src={menu} alt='menu'  className={'menu'}/>
+              <p id='menu-text'>
+                  Menu
+              </p>
+          </div>
+        {/* </Button> */}
+         <Drawer open={this.state.left} onClose={this.toggleDrawer('left', false)}>
+          <div
+            tabIndex={0}
+            role="button"
+            onClick={this.toggleDrawer('left', false)}
+            onKeyDown={this.toggleDrawer('left', false)}
+          >
+            {sideList}
+          </div>
+        </Drawer>
+      </div>
+    );
+  }
+}
+
+TemporaryDrawer.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+// export default withStyles(styles)(TemporaryDrawer);
+
+export default withStyles(styles)(Album,TemporaryDrawer);
+              

@@ -77,6 +77,14 @@ a:hover {
   -o-transition: 0.4s;
   transition: 0.4s;
 }
+.darken{
+  width:210px;
+  height:115px;
+  margin-left:-40px;
+}
+
+
+/* Full size navbar links */
 
 #about {
   margin-left:4.8vw;
@@ -98,6 +106,58 @@ a:hover {
   }
 }
 
+/* The mobile menu */
+
+@media only screen and (min-width: 960px) {
+  #menu-container {
+       display:none;
+  }
+}
+
+
+@media only screen and (max-width: 960px) {
+#menu-container{
+position:absolute;
+/* float:right; */
+/* margin-right:25%; */
+width:100px;
+height:20px;
+margin-left: 50%;
+margin-right:1%;
+cursor: pointer;
+}
+.menu{
+  width:16px;
+  text-decoration: none;
+}
+#menu-text{
+  display:inline;
+  margin-left:10px;
+  
+  }
+}
+@media only screen and (min-width: 588px) {
+  #menu-container {
+       margin-left:65%;
+    }
+}
+
+#x-icon{
+  width:16px;
+  height:16px;
+}
+.classes.list{
+  /* text-decoration: none; */
+
+}
+.drawer{
+  width:300px;
+  text-decoration: none;
+}
+#close{
+  text-decoration: none;
+font-size: 16px;
+}
 
 /* The skills section icons */
 
