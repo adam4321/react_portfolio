@@ -1,18 +1,12 @@
 
-
 /* The navigation bar */
-
 
 html {scroll-behavior:smooth}
 
-body{
-
-}
-
 .barbar {
   width:100%;
-  
 }
+
 .logogo {
   margin-left: 8.85vw;
   margin-top: .4vw;
@@ -33,14 +27,14 @@ body{
 }
 .underline {
   color: #fff;
-    text-decoration: none;
+    /* text-decoration: none; */
     float: right;
     font-weight: 600;
     font-size: 16.3px;
     letter-spacing: .9px;
 }
 .underline:link {
-  text-decoration: none;
+  /* text-decoration: none; */
   color:#fff;
   position: relative;
 }
@@ -67,6 +61,7 @@ a {
   -moz-transition:  0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
+  text-decoration: none;
 }
 a:hover {
   color: rgba(154, 182, 196, 0.582);
@@ -82,7 +77,6 @@ a:hover {
   height:115px;
   margin-left:-40px;
 }
-
 
 /* Full size navbar links */
 
@@ -114,17 +108,16 @@ a:hover {
   }
 }
 
-
 @media only screen and (max-width: 960px) {
 #menu-container{
 position:absolute;
 /* float:right; */
 /* margin-right:25%; */
-width:100px;
-height:20px;
-margin-left: 50%;
-margin-right:1%;
-cursor: pointer;
+  width:100px;
+  height:20px;
+  margin-left: 50%;
+  margin-right:1%;
+  cursor: pointer;
 }
 .menu{
   width:16px;
@@ -133,34 +126,70 @@ cursor: pointer;
 #menu-text{
   display:inline;
   margin-left:10px;
-  
   }
 }
 @media only screen and (min-width: 588px) {
   #menu-container {
-       margin-left:65%;
-    }
+      margin-left:65%;
+  }
 }
-
-#x-icon{
+.divider{
+  border: rgba(247, 243, 243, 0.685);
+}
+#x-icon {
   width:16px;
   height:16px;
-}
-.classes.list{
-  /* text-decoration: none; */
+  margin-top:10px;
 
 }
-.drawer{
+/* .classes.list {
+  text-decoration: none;
+
+} */
+.drawer {
   width:300px;
-  text-decoration: none;
+  padding:0;
+  cursor: pointer;
 }
-#close{
-  text-decoration: none;
-font-size: 16px;
+
+#close {
+  font-size: 16px;
+  height:45px;
+  background-color: rgba(247, 243, 243, 0.685);
 }
+#close-text {
+  font-size: 13.3px;
+  font-weight: 600;
+  height:50px;
+  margin-top: 35.3px;
+}
+
+#projects-link {
+  height:40px;
+  margin-top:11px;
+  margin-bottom:1px;
+  font-size: 14px;
+  color:black;
+}
+#about-link {
+  height:40px;
+  margin-top:11px;
+  margin-bottom:1px;
+  font-size: 14px;
+  color:black;
+}
+#blog-link {
+  height:40px;
+  margin-top:11px;
+  margin-bottom:1px;
+  font-size: 14px;
+  color:black;
+}
+/* .no-under{
+  text-decoration: none!important;
+} */
 
 /* The skills section icons */
-
 
 #icon-container {
   margin-top:-2.5vw;

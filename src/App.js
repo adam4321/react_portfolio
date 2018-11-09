@@ -335,34 +335,34 @@ class TemporaryDrawer extends React.Component {
     const sideList = (
       <div className='drawer'>
         <List>
-        <a href='https://adamjwright.com'>
+        <a className='no-under' onClick={this.toggleDrawer('left', false)}>
           <ListItem id='close'>
             <ListItemIcon id='close'>
               <img src={icon} alt='x icon' id='x-icon'/>
             </ListItemIcon >
-              <p id='close'>CLOSE MENU</p>
+              <p id='close-text'>CLOSE MENU</p>
             </ListItem>
         </a>
-            <Divider />
-           <a href='https://adamjwright.com/blog'>
-          <ListItem>
-              <p id='blog-link'>BLOG</p>
-          </ListItem>
-        </a>
-           <Divider />
+            <Divider className='divider'/>
+          
            <a href='https://adamjwright.com/#stack'>
-          <ListItem>
-              <p id='projects-link'>PROJECTS</p>
+          <ListItem id='projects-link'>
+              <p id='projects-link'>Projects</p>
           </ListItem>
         </a>
-           <Divider />
+           <Divider className='divider' />
            <a href='https://adamjwright.com/#footer'>
-          <ListItem>
-              <p id='about-link'>ABOUT</p>
+          <ListItem id='about-link'>
+              <p id='about-link'>About</p>
           </ListItem>
         </a>
-           <Divider />
-
+           <Divider className='divider' />
+           <a href='https://adamjwright.com/blog'>
+          <ListItem id='blog-link'>
+              <p id='blog-link'>Blog</p>
+          </ListItem>
+        </a>
+           <Divider className='divider' />
         </List>
       </div>
     );
