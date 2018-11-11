@@ -111,8 +111,6 @@ a:hover {
 @media only screen and (max-width: 960px) {
 #menu-container{
 position:absolute;
-/* float:right; */
-/* margin-right:25%; */
   width:100px;
   height:20px;
   margin-left: 50%;
@@ -135,17 +133,18 @@ position:absolute;
 }
 .divider{
   border: rgba(247, 243, 243, 0.685);
+  border-width: thin;
 }
 #x-icon {
   width:16px;
   height:16px;
-  margin-top:10px;
+  margin-top:19px;
 
 }
-/* .classes.list {
-  text-decoration: none;
-
-} */
+#menu-list {
+  margin:0;
+  padding:0;
+}
 .drawer {
   width:300px;
   padding:0;
@@ -154,14 +153,14 @@ position:absolute;
 
 #close {
   font-size: 16px;
-  height:45px;
+  height:52px;
   background-color: rgba(247, 243, 243, 0.685);
 }
 #close-text {
   font-size: 13.3px;
   font-weight: 600;
   height:50px;
-  margin-top: 35.3px;
+  margin-top: 46px;
 }
 
 #projects-link {
@@ -185,19 +184,19 @@ position:absolute;
   font-size: 14px;
   color:black;
 }
-/* .no-under{
-  text-decoration: none!important;
-} */
 
 /* The skills section icons */
 
 #icon-container {
   margin-top:-2.5vw;
+  /* margin-bottom:10vw; */
+  height:50vw;
+  width:70vw;
   
 }
 
 .tech-icon {
-  margin:1.9vw;
+  margin:2vw;
 }
 
 #html-icon {
@@ -211,8 +210,9 @@ position:absolute;
   margin-left:3vw;
 }
 #git-icon {
-  width: 10.2vw;
+  width: 10vw;
   margin-left:3vw;
+  margin-bottom:2.5vw;
 }
 #react-icon {
   width:12vw;
@@ -225,7 +225,7 @@ position:absolute;
   width:11vw;
 }
 #wordpress-icon {
-  width:12vw;
+  width:11.5vw;
 }
 
 
@@ -260,7 +260,15 @@ position:absolute;
 @media only screen and (min-width: 600px) {
   #about-text {
   position: absolute;
-  top:3%;
+  top:-20vw;
+  left:33%;
+  width:30%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #about-text {
+  position: absolute;
+  top:-2vw;
   left:33%;
   width:30%;
   }
@@ -279,7 +287,15 @@ position:absolute;
 @media only screen and (min-width: 600px) {
   .contact {
   position: absolute;
-  top:-1%;
+  top:-20vw;
+  left:4%;
+  width:23%;
+ }
+}
+@media only screen and (min-width:1200px) {
+  .contact {
+  position: absolute;
+  top:-2vw;
   left:4%;
   width:23%;
  }
@@ -350,13 +366,22 @@ position:absolute;
 
 /* The image and pin */
 
+@media only screen and (max-width: 600px) {
+  #footer {
+    height:50vw;
+    margin:0!important;
+    padding:0!important;
+    border:0!important;
+  }
+}
+@media only screen and (min-width: 600px) {
   #footer {
     height:auto;
     margin:0!important;
     padding:0!important;
     border:0!important;
   }
-
+}
   @media only screen and (max-width: 600px) {
     .skyline-img {
     max-width: 100%;
@@ -404,12 +429,27 @@ position:absolute;
       height: 100%;
       width: 100%;
       margin: 0 auto;
-      margin-top:15%;
+      margin-top:30vw;
       text-align: center;
       position: relative;
       display: inline-block;
       }
     }
+    @media only screen and (min-width: 1200px) {
+      .bottom-container {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        margin-top:10vw;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        }
+      }
 
 /* The red pin icon inside the overlay is positioned in the middle */
 

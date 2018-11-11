@@ -334,7 +334,7 @@ class TemporaryDrawer extends React.Component {
 
     const sideList = (
       <div className='drawer'>
-        <List>
+        <List id='menu-list'>
         <a className='no-under' onClick={this.toggleDrawer('left', false)}>
           <ListItem id='close'>
             <ListItemIcon id='close'>
@@ -342,26 +342,25 @@ class TemporaryDrawer extends React.Component {
             </ListItemIcon >
               <p id='close-text'>CLOSE MENU</p>
             </ListItem>
-        </a>
+         </a>
             <Divider className='divider'/>
-          
-           <a href='https://adamjwright.com/#stack'>
+        <a href='https://adamjwright.com/#stack'>
           <ListItem id='projects-link'>
               <p id='projects-link'>Projects</p>
           </ListItem>
-        </a>
+         </a>
            <Divider className='divider' />
-           <a href='https://adamjwright.com/#footer'>
+        <a href='https://adamjwright.com/#footer'>
           <ListItem id='about-link'>
               <p id='about-link'>About</p>
           </ListItem>
-        </a>
+         </a>
            <Divider className='divider' />
-           <a href='https://adamjwright.com/blog'>
+        <a href='https://adamjwright.com/blog'>
           <ListItem id='blog-link'>
               <p id='blog-link'>Blog</p>
           </ListItem>
-        </a>
+         </a>
            <Divider className='divider' />
         </List>
       </div>
