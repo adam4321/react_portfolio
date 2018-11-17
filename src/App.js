@@ -36,7 +36,10 @@ import mui from './mui.png';
 import npm from './npm.png';
 import wordpress from './wordpress.jpg';
 import menu from './menu.png';
-import icon from './x-icon.png'
+import icon from './x-icon.png';
+import github from './github-icon.png';
+import linkedin from './linkedin-icon.png';
+import facebook from './facebook-icon.png';
 
 
 
@@ -98,10 +101,10 @@ const styles = theme => ({
 
 
 const cards = [
-{key:1,image:"https://i.imgur.com/7MfMVOs.png",title:"Random Quote Machine",project:"Random Quote Machine",link:"https://adamjwright.com/quote_machine",about:"Displays a new quote when you press the button and is just generally very very cool."},
-{key:2,image:"https://i.imgur.com/OMTqyYd.png",title:"React Drum Machine",project:"React Drum Machine",link:"https://adamjwright.com/drum_machine",about:"Plays sounds when you press the key or click the button and is just generally very cool."},
-{key:3,image:"https://i.imgur.com/EXLZRSi.png",title:"React Drum Machine",project:"React Calculator App",link:"https://i.imgur.com/EXLZRSi.png",about:"Plays sounds when you press the key or click the button and is just generally very cool."},
-{key:4,image:"https://i.imgur.com/EXLZRSi.png",title:"React Drum Machine",project:"React Pomodoro Timer",link:"https://i.imgur.com/EXLZRSi.png",about:"Plays sounds when you press the key or click the button and is just generally very cool."}
+{key:1,image:"https://i.imgur.com/0AGbvX1.png",title:"Random Quote Generator",project:"Random Quote Generator",link:"https://adamjwright.com/quote_generator",about:"Displays a new quote when you press the new quote button and will tweet the quote for you."},
+{key:2,image:"https://i.imgur.com/oiuRp3S.png",title:"React Drum Machine",project:"React Drum Machine",link:"https://adamjwright.com/drum_machine",about:"Plays a sound when you press the keyboard key or click the button for the displayed letter."},
+{key:3,image:"https://i.imgur.com/EXLZRSi.png",title:"React Calculator",project:"React Calculator App",link:"https://i.imgur.com/EXLZRSi.png",about:"Modern style calculator application that is fully mobile responsive ."},
+{key:4,image:"https://i.imgur.com/IENvKLW.png",title:"React Markup Previewer",project:"React Markdown Previewer",link:"https://adamjwright.com/markdown_previewer",about:"Turns the entries into the box on the left into Git Flavored Markdown on the right."}
 ];  
 
 
@@ -264,8 +267,13 @@ function Album(props) {
           About Me
           </Typography>
         <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          I am a Seattle based developer who is completing a computer science degree and looking to better at programming every day.
+          I am a Seattle based developer who is completing a computer science degree and looking to better at programming each and every day.
           </Typography>
+          <div id='social'>
+          <a href='https://github.com/adam4321'><img id='github'src={github} /></a>
+          <a href='https://www.linkedin.com/in/adamjw321/'><img id='linkedin'src={linkedin} /></a>
+          <a href='https://www.facebook.com/adam.wright.10690203'><img id='facebook'src={facebook} /></a>
+          </div>
       </div>
 
   {/* Contact Form */}

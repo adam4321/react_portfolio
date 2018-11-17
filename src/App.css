@@ -268,11 +268,24 @@ position:absolute;
 @media only screen and (min-width: 1200px) {
   #about-text {
   position: absolute;
-  top:-2vw;
+  top:1vw;
   left:33%;
   width:30%;
   }
 }
+
+/* The social link icons */
+
+#social{
+  margin-top:2vw;
+}
+#github{
+  margin-right:1.5vw;
+}
+#linkedin{
+  margin-right:1.5vw;
+}
+
 
   /* The contact box */
 
@@ -359,6 +372,10 @@ position:absolute;
   font-size:13px;
   padding:11px 23px;
   margin-top:12px;
+  -webkit-transition: 0.4s;
+    -moz-transition:  0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
 }
 #submit:hover {
   background-color:rgb(14, 13, 13);
