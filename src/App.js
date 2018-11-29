@@ -126,15 +126,7 @@ function Album(props) {
           <img src={logo} alt='logo'  className={'logogo'}/>
         </a>
            <div id='scroll-links'>
-            <a variant="h6" href='https://adamjwright.com/blog' id='blog' className="underline"  noWrap>
-              Blog
-            </a>
-            <a variant="h6" href='#footer' id='about' className="underline" noWrap>
-              About
-            </a>
-            <a variant="h6" href='#stack' id='projects' className="underline" noWrap>
-             Projects
-            </a>
+            <Section />
               
               {/* Responsive menu component */}
 
@@ -443,62 +435,32 @@ class Section extends React.Component {
   render() {
   	return (
       <div>
-        <Link activeClass="active" to="test1" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
-          Test 1
+        
+        
+        <a variant="h6" href='https://adamjwright.com/blog' id='blog' className="underline"  noWrap>
+              Blog
+            </a>
+   
+        <Link activeClass="active" to="bottom-container" spy={true} smooth={true} offset={50} duration={550} delay={200}>
+        <a variant="h6" href='#footer' id='about' className="underline" noWrap>
+              About
+            </a>
         </Link>
-        <Link activeClass="active" to="test1" spy={true} smooth={true} offset={50} duration={500} delay={1000}>
-          Test 2 (delay)
+        <Link activeClass="active" to="bottom-container" spy={true} smooth={true} offset={50} duration={550} delay={200}>
+        <a variant="h6" href='#stack' id='projects' className="underline" noWrap>
+             Projects
+            </a>
         </Link>
-        <Link className="test6" to="anchor" spy={true} smooth={true} duration={500}>
-          Test 6 (anchor)
-        </Link>
-        <Button activeClass="active" className="btn" type="submit" value="Test 2" to="test2" spy={true} smooth={true} offset={50} duration={500} >
-          Test 2
-        </Button>
- 
-        <Element name="test1" className="element">
-          test 1
-        </Element>
- 
-        <Element name="test2" className="element">
-          test 2
-        </Element>
- 
-        <div id="anchor" className="element">
-          test 6 (anchor)
-        </div>
- 
- 
-        <Link to="firstInsideContainer" containerId="containerElement">
-          Go to first element inside container
-        </Link>
- 
-        <Link to="secondInsideContainer" containerId="containerElement">
-          Go to second element inside container
-        </Link>
-        <div className="element" id="containerElement">
-          <Element name="firstInsideContainer">
-            first element inside container
-          </Element>
- 
-          <Element name="secondInsideContainer">
-            second element inside container
-          </Element>
-        </div>
- 
-        <a onClick={this.scrollToTop}>To the top!</a>
-        <br/>
-        <a onClick={this.scrollToBottom}>To the bottom!</a>
-        <br/>
-        <a onClick={this.scrollTo}>Scroll to 100px from the top</a>
-        <br/>
-        <a onClick={this.scrollMore}>Scroll 100px more from the current position!</a>
+      
+        
+           
+           
+
       </div>
     );
   }
 };
 
-// export default withStyles(styles)(TemporaryDrawer);
 
 export default withStyles(styles)(Album,TemporaryDrawer,Section);
               
