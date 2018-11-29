@@ -417,17 +417,8 @@ class Section extends React.Component {
     Events.scrollEvent.remove('begin');
     Events.scrollEvent.remove('end');
   }
-  scrollToTop() {
-    scroll.scrollToTop();
-  }
-  scrollToBottom() {
-    scroll.scrollToBottom();
-  }
   scrollTo() {
     scroll.scrollTo(100);
-  }
-  scrollMore() {
-    scroll.scrollMore(100);
   }
   handleSetActive(to) {
     console.log(to);
@@ -435,27 +426,20 @@ class Section extends React.Component {
   render() {
   	return (
       <div>
-        
-        
         <a variant="h6" href='https://adamjwright.com/blog' id='blog' className="underline"  noWrap>
               Blog
             </a>
-   
-        <Link activeClass="active" to="bottom-container" spy={true} smooth={true} offset={50} duration={550} delay={200}>
+      <Link activeClass="active" to="bottom-container" spy={true} smooth={true} offset={50} duration={550} delay={200}>
         <a variant="h6" href='#footer' id='about' className="underline" noWrap>
               About
             </a>
-        </Link>
-        <Link activeClass="active" to="bottom-container" spy={true} smooth={true} offset={50} duration={550} delay={200}>
+       </Link>
+      <Link activeClass="active" to="full-stack" spy={true} smooth={true} offset={15} duration={550} delay={200}>
         <a variant="h6" href='#stack' id='projects' className="underline" noWrap>
              Projects
             </a>
-        </Link>
-      
-        
-           
-           
-
+       </Link>   
+          
       </div>
     );
   }
