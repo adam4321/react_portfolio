@@ -185,9 +185,10 @@ position:absolute;
 /* The skills section icons */
 
 #icon-container {
-  margin-top:-3vw;
+  margin-top:-4vw;
   height:50vw;
   width:70vw;
+  margin-left:-1vw;
   
 }
 
@@ -207,7 +208,7 @@ position:absolute;
 }
 #git-icon {
   width: 10vw;
-  margin-left:3vw;
+  margin-left:2vw;
   margin-bottom:2.5vw;
 }
 #react-icon {
@@ -218,10 +219,12 @@ position:absolute;
   margin-left: 1vw;
 }
 #npm-icon {
-  width:11vw;
+  width:10.5vw;
+  margin-left:4vw;
 }
 #wordpress-icon {
   width:11.5vw;
+  margin-left:3vw;
 }
 
 /* Third section of the page */

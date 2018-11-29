@@ -1,7 +1,7 @@
 
 //@ts-check
 
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
@@ -22,6 +22,9 @@ import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
+import * as Scroll from 'react-scroll';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 import logo from './Adam_logo.png';
 import skyline from './skyline.png';
 import pin from './maps-pin.png';
@@ -106,6 +109,7 @@ const cards = [
 ];  
 
 
+
 function Album(props) {
   const { classes } = props;
 
@@ -165,14 +169,14 @@ function Album(props) {
           <a href='https://en.wikipedia.org/wiki/JavaScript'>
             <img className='tech-icon' id='js-icon' alt='js' src={js} />
           </a>
-          <a href='https://en.wikipedia.org/wiki/Git'>
-            <img className='tech-icon' id='git-icon' alt='git' src={git} />
-          </a>
           <a href='https://en.wikipedia.org/wiki/React_(JavaScript_library)'>
             <img className='tech-icon' id='react-icon' alt='react' src={react} />
           </a>
           <a href='https://material-ui.com/getting-started/installation/'>
             <img className='tech-icon' id='mui-icon' alt='mui' src={mui} />
+          </a>
+          <a href='https://en.wikipedia.org/wiki/Git'>
+            <img className='tech-icon' id='git-icon' alt='git' src={git} />
           </a>
           <a href='https://en.wikipedia.org/wiki/Npm_(software)'>
             <img className='tech-icon' id='npm-icon' alt='npm' src={npm} />
@@ -265,7 +269,7 @@ function Album(props) {
           About Me
           </Typography>
         <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          I am a Seattle based developer who is completing a computer science degree and looking to better at programming each and every day. I am focusing on web programming. If you would like to reach out to me then feel free to use the contact box.
+          I am a Seattle based developer who is completing a computer science degree and looking to better at programming each and every day. I am focusing on web programming. If you would like to reach out to me then feel free to use the contact box or email adam@adamjwright.
           </Typography>
           <div id='social'>
           <a href='https://github.com/adam4321'><img id='github'src={github} /></a>
@@ -401,7 +405,100 @@ TemporaryDrawer.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
+
+
+class Section extends React.Component {
+  componentDidMount() {
+ 
+    Events.scrollEvent.register('begin', function(to, element) {
+      console.log("begin", arguments);
+    });
+ 
+    Events.scrollEvent.register('end', function(to, element) {
+      console.log("end", arguments);
+    });
+ 
+    scrollSpy.update();
+ 
+  }
+  componentWillUnmount() {
+    Events.scrollEvent.remove('begin');
+    Events.scrollEvent.remove('end');
+  }
+  scrollToTop() {
+    scroll.scrollToTop();
+  }
+  scrollToBottom() {
+    scroll.scrollToBottom();
+  }
+  scrollTo() {
+    scroll.scrollTo(100);
+  }
+  scrollMore() {
+    scroll.scrollMore(100);
+  }
+  handleSetActive(to) {
+    console.log(to);
+  }
+  render() {
+  	return (
+      <div>
+        <Link activeClass="active" to="test1" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
+          Test 1
+        </Link>
+        <Link activeClass="active" to="test1" spy={true} smooth={true} offset={50} duration={500} delay={1000}>
+          Test 2 (delay)
+        </Link>
+        <Link className="test6" to="anchor" spy={true} smooth={true} duration={500}>
+          Test 6 (anchor)
+        </Link>
+        <Button activeClass="active" className="btn" type="submit" value="Test 2" to="test2" spy={true} smooth={true} offset={50} duration={500} >
+          Test 2
+        </Button>
+ 
+        <Element name="test1" className="element">
+          test 1
+        </Element>
+ 
+        <Element name="test2" className="element">
+          test 2
+        </Element>
+ 
+        <div id="anchor" className="element">
+          test 6 (anchor)
+        </div>
+ 
+ 
+        <Link to="firstInsideContainer" containerId="containerElement">
+          Go to first element inside container
+        </Link>
+ 
+        <Link to="secondInsideContainer" containerId="containerElement">
+          Go to second element inside container
+        </Link>
+        <div className="element" id="containerElement">
+          <Element name="firstInsideContainer">
+            first element inside container
+          </Element>
+ 
+          <Element name="secondInsideContainer">
+            second element inside container
+          </Element>
+        </div>
+ 
+        <a onClick={this.scrollToTop}>To the top!</a>
+        <br/>
+        <a onClick={this.scrollToBottom}>To the bottom!</a>
+        <br/>
+        <a onClick={this.scrollTo}>Scroll to 100px from the top</a>
+        <br/>
+        <a onClick={this.scrollMore}>Scroll 100px more from the current position!</a>
+      </div>
+    );
+  }
+};
+
 // export default withStyles(styles)(TemporaryDrawer);
 
-export default withStyles(styles)(Album,TemporaryDrawer);
+export default withStyles(styles)(Album,TemporaryDrawer,Section);
               
