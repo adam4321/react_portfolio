@@ -197,33 +197,33 @@ position:absolute;
 }
 
 #html-icon {
-  width:12.5vw;
+  width:11.5vw;
 }
 #css-icon {
-  width:12vw;
+  width:11vw;
 }
 #js-icon {
-  width: 11.5vw;
+  width: 10.5vw;
   margin-left:3vw;
 }
 #git-icon {
-  width: 10vw;
+  width: 9vw;
   margin-left:2vw;
   margin-bottom:2.5vw;
 }
 #react-icon {
-  width:12vw;
+  width:11vw;
 }
 #mui-icon {
-  width:15vw;
+  width:13.8vw;
   margin-left: 1vw;
 }
 #npm-icon {
-  width:10.5vw;
+  width:9.5vw;
   margin-left:4vw;
 }
 #wordpress-icon {
-  width:11.5vw;
+  width:10.2vw;
   margin-left:3vw;
 }
 

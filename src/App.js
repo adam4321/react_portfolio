@@ -149,7 +149,7 @@ function Album(props) {
      </AppBar>
 
   {/* The skills section */}
-
+  <Section />
       <main>
         <div className={classes.heroUnit}>
          <div className={classes.heroContent}>
