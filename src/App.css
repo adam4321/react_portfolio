@@ -243,7 +243,7 @@ position:absolute;
 @media only screen and (min-width: 600px) {
   #about-text {
   position: absolute;
-  top:-90%;
+  top:-65vw;
   left:33%;
   width:30%;
   }
@@ -251,7 +251,7 @@ position:absolute;
 @media only screen and (min-width: 828px) {
   #about-text {
   position: absolute;
-  top:-50%;
+  top:-20vw;
   left:33%;
   width:30%;
   }
@@ -376,7 +376,7 @@ position:absolute;
 
 @media only screen and (max-width: 600px) {
   #footer {
-    height:210vw;
+    height:220vw;
     margin:0!important;
     padding:0!important;
     border:0!important;
@@ -437,12 +437,27 @@ position:absolute;
       height: 100%;
       width: 100%;
       margin: 0 auto;
-      margin-top:30vw;
+      margin-top:75vw;
       text-align: center;
       position: relative;
       display: inline-block;
       }
     }
+    @media only screen and (min-width: 828px) {
+      .bottom-container {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        margin-top:30vw;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        }
+      }
     @media only screen and (min-width: 1200px) {
       .bottom-container {
         top: 0;
