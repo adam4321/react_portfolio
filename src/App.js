@@ -146,7 +146,7 @@ function Album(props) {
 
  {/* Grid of tech icons */}
 
-       <div id='icon-container'>
+       {/* <div id='icon-container'> */}
           <a href='https://en.wikipedia.org/wiki/HTML'>
             <img className='tech-icon' id='html-icon' alt='html' src={html}/>
           </a>
@@ -171,7 +171,7 @@ function Album(props) {
           <a href='https://en.wikipedia.org/wiki/WordPress'>
             <img className='tech-icon' id='wordpress-icon' alt='wordpress' src={wordpress} />
           </a>
-       </div>
+       {/* </div> */}
       </Grid>
     </Grid>
     </div>

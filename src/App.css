@@ -197,33 +197,33 @@ position:absolute;
 }
 
 #html-icon {
-  width:11.5vw;
+  width:15%;
 }
 #css-icon {
-  width:11vw;
+  width:15%;
 }
 #js-icon {
-  width: 10.5vw;
+  width: 15%;
   margin-left:3vw;
 }
 #git-icon {
-  width: 9vw;
+  width: 13%;
   margin-left:2vw;
   margin-bottom:2.5vw;
 }
 #react-icon {
-  width:11vw;
+  width:15%;
 }
 #mui-icon {
-  width:13.8vw;
+  width:18%;
   margin-left: 1vw;
 }
 #npm-icon {
-  width:9.5vw;
+  width:13%;
   margin-left:4vw;
 }
 #wordpress-icon {
-  width:9.8vw;
+  width:13.5%;
   margin-left:3vw;
 }
 
@@ -243,7 +243,15 @@ position:absolute;
 @media only screen and (min-width: 600px) {
   #about-text {
   position: absolute;
-  top:-20vw;
+  top:-90%;
+  left:33%;
+  width:30%;
+  }
+}
+@media only screen and (min-width: 828px) {
+  #about-text {
+  position: absolute;
+  top:-50%;
   left:33%;
   width:30%;
   }
@@ -251,7 +259,7 @@ position:absolute;
 @media only screen and (min-width: 1200px) {
   #about-text {
   position: absolute;
-  top:1vw;
+  top:-1%;
   left:33%;
   width:30%;
   }
