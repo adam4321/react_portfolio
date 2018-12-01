@@ -24,7 +24,6 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import * as Scroll from 'react-scroll';
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-
 import logo from './Adam_logo.png';
 import skyline from './skyline.png';
 import pin from './maps-pin.png';
@@ -41,7 +40,6 @@ import icon from './x-icon.png';
 import github from './github-icon.png';
 import linkedin from './linkedin-icon.png';
 import facebook from './facebook-icon.png';
-
 
 
 const styles = theme => ({
@@ -100,7 +98,6 @@ const styles = theme => ({
 });
 
 
-
 const cards = [
 {key:1,image:"https://i.imgur.com/0AGbvX1.png",title:"Random Quote Generator",project:"Random Quote Generator",link:"https://adamjwright.com/quote_generator",about:"Displays a new quote when you press the new quote button and will tweet the quote for you."},
 {key:2,image:"https://i.imgur.com/oiuRp3S.png",title:"React Drum Machine",project:"React Drum Machine",link:"https://adamjwright.com/drum_machine",about:"Plays a sound when you press the keyboard key or click the button for the displayed letter."},
@@ -109,10 +106,8 @@ const cards = [
 ];  
 
 
-
 function Album(props) {
   const { classes } = props;
-
 
   return (
     <React.Fragment>
@@ -127,11 +122,11 @@ function Album(props) {
         </a>
            <div id='scroll-links'>
             <Section />
-              
-              {/* Responsive menu component */}
+           </div>  
 
-            </div>
-              <div id='menu-container'>
+  {/* Responsive menu component */}
+
+            <div id='menu-container'>
                 <a>
                    <TemporaryDrawer />
                 </a>    
@@ -242,7 +237,6 @@ function Album(props) {
              ))}  
           </Grid>
           </div>
-
         </div>
       </main>
 
@@ -315,7 +309,6 @@ function Album(props) {
 Album.propTypes = {
   classes: PropTypes.object.isRequired,
 };
-
 
 
 // The menu drawer component
@@ -397,11 +390,10 @@ TemporaryDrawer.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-
+// Implement Smooth Scrolling Links
 
 class Section extends React.Component {
   componentDidMount() {
- 
     Events.scrollEvent.register('begin', function(to, element) {
       console.log("begin", arguments);
     });
