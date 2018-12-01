@@ -198,6 +198,7 @@ position:absolute;
 
 #html-icon {
   width:15%;
+  margin-left:6vw;
 }
 #css-icon {
   width:15%;
@@ -216,7 +217,7 @@ position:absolute;
 }
 #mui-icon {
   width:18%;
-  margin-left: 1vw;
+  margin-left: 5.5vw;
 }
 #npm-icon {
   width:13%;
