@@ -1,6 +1,6 @@
 
-/* The navigation bar */
 
+/* The navigation bar */
 
 .barbar {
   width:100%;
@@ -26,14 +26,14 @@
 }
 .underline {
   color: #fff;
-    /* text-decoration: none; */
+    text-decoration: none;
     float: right;
     font-weight: 600;
     font-size: 16.3px;
     letter-spacing: .9px;
 }
 .underline:link {
-  /* text-decoration: none; */
+  text-decoration: none;
   color:#fff;
   position: relative;
 }
@@ -123,11 +123,13 @@ position:absolute;
   margin-left:10px;
   }
 }
+
 @media only screen and (min-width: 588px) {
   #menu-container {
       margin-left:65%;
   }
 }
+
 .divider{
   border: rgba(247, 243, 243, 0.685);
   border-width: thin;
@@ -185,27 +187,28 @@ position:absolute;
 /* The skills section icons */
 
 #icon-container {
-  margin-top:-4vw;
-  height:50vw;
+  margin-top:-1.5vw;
+  margin-bottom:5vw;
+  /* height:50vw; */
   width:70vw;
-  margin-left:-1vw;
+  /* margin-left:-1vw; */
   
 }
 
 .tech-icon {
-  margin:2vw;
+  margin:2.5vw;
 }
 
 #html-icon {
-  width:15%;
+  width:15.5%;
   margin-left:6vw;
 }
 #css-icon {
   width:15%;
 }
 #js-icon {
-  width: 15%;
-  margin-left:3vw;
+  width: 14.5%;
+  margin-left:2.5vw;
 }
 #git-icon {
   width: 13%;
@@ -233,13 +236,7 @@ position:absolute;
 /* About me box */
 
 @media only screen and (max-width: 600px) {
-  #about-text {
-  position: absolute;
-  top:-4vw;
-  left:15%;
-  width:70%;
-  margin-top:3vw;
-  }
+  
 }
 @media only screen and (min-width: 600px) {
   #about-text {
@@ -252,15 +249,15 @@ position:absolute;
 @media only screen and (min-width: 828px) {
   #about-text {
   position: absolute;
-  top:-20vw;
+  top:-5vw;
   left:33%;
   width:30%;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1278px) {
   #about-text {
   position: absolute;
-  top:-1%;
+  top:-1vw;
   left:33%;
   width:30%;
   }
@@ -282,12 +279,7 @@ position:absolute;
   /* The contact box */
 
 @media only screen and (max-width: 600px) {
-  .contact {
-  position: absolute;
-  top:125%;
-  left:10%;
-  width:70%;
- }
+  
 }
 @media only screen and (min-width: 600px) {
   .contact {
@@ -382,7 +374,49 @@ position:absolute;
     padding:0!important;
     border:0!important;
   }
+  .bottom-container {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 340px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top:15%;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    }
+    #about-text {
+      position: absolute;
+      top:-4vw;
+      left:15%;
+      width:70%;
+      margin-top:3vw;
+      }
+      .contact {
+        position: absolute;
+        top:125%;
+        left:10%;
+        width:70%;
+       }
+    .skyline-img {
+      max-width: 100%;
+      margin:0!important;
+      padding:0!important;
+      border:0!important;
+      position: absolute;
+      top:640px;
+      left:-0%;
+      }
+    #red-pin {
+    width:10%;
+    left:44%;
+    position: absolute;
+    top: 216%;
+  }
 }
+
 @media only screen and (min-width: 600px) {
   #footer {
     height:auto;
@@ -391,17 +425,11 @@ position:absolute;
     border:0!important;
   }
 }
+
   @media only screen and (max-width: 600px) {
-    .skyline-img {
-    max-width: 100%;
-    margin:0!important;
-    padding:0!important;
-    border:0!important;
-    position: absolute;
-    top:600px;
-    left:-0%;
-    }
+    
   }
+
 @media only screen and (min-width: 600px) {
   .skyline-img {
   max-width: 100%;
@@ -414,20 +442,7 @@ position:absolute;
 /* The bottom container */
 
 @media only screen and (max-width: 600px) {
-  .bottom-container {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 300px;
-    width: 100%;
-    margin: 0 auto;
-    margin-top:15%;
-    text-align: center;
-    position: relative;
-    display: inline-block;
-    
-    }
+  
   }
   @media only screen and (min-width: 600px) {
     .bottom-container {
@@ -444,7 +459,7 @@ position:absolute;
       display: inline-block;
       }
     }
-    @media only screen and (min-width: 828px) {
+    @media only screen and (min-width: 900px) {
       .bottom-container {
         top: 0;
         bottom: 0;
@@ -459,6 +474,7 @@ position:absolute;
         display: inline-block;
         }
       }
+
     @media only screen and (min-width: 1200px) {
       .bottom-container {
         top: 0;
@@ -478,13 +494,9 @@ position:absolute;
 /* The red pin icon inside the overlay is positioned in the middle */
 
 @media only screen and (max-width: 600px) {
-  #red-pin {
-  width:10%;
-  left:44%;
-  position: absolute;
-  top: 226%;
-  }
+  
 }
+
 @media only screen and (min-width: 600px) {
   #red-pin {
   width:9%;

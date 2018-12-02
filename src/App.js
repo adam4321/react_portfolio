@@ -142,11 +142,10 @@ function Album(props) {
          <div className={classes.heroContent}>
           <div className={classes.heroButtons}>
               <Grid container  justify="center">
-                <Grid item xs={9} sm={9} md={9} lg={12}>
+                <Grid id='icon-container' item xs={9} sm={9} md={9} lg={12}>
 
  {/* Grid of tech icons */}
 
-       {/* <div id='icon-container'> */}
           <a href='https://en.wikipedia.org/wiki/HTML'>
             <img className='tech-icon' id='html-icon' alt='html' src={html}/>
           </a>
@@ -171,7 +170,6 @@ function Album(props) {
           <a href='https://en.wikipedia.org/wiki/WordPress'>
             <img className='tech-icon' id='wordpress-icon' alt='wordpress' src={wordpress} />
           </a>
-       {/* </div> */}
       </Grid>
     </Grid>
     </div>
