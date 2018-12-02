@@ -88,17 +88,6 @@ a:hover {
   margin-left:6vw;
 }
 
-@media only screen and (min-width: 960px) {
-  #scroll-links {
-       width: 75%;
-    }
-}
-@media only screen and (max-width: 960px) {
-
-   #scroll-links {
-   display:none;
-  }
-}
 
 /* The mobile menu */
 
@@ -106,6 +95,9 @@ a:hover {
   #menu-container {
        display:none;
   }
+  #scroll-links {
+    width: 75%;
+ }
 }
 
 @media only screen and (max-width: 960px) {
@@ -125,6 +117,9 @@ position:absolute;
   display:inline;
   margin-left:10px;
   }
+  #scroll-links {
+    display:none;
+   }
 }
 
 @media only screen and (min-width: 588px) {
@@ -192,7 +187,7 @@ position:absolute;
 #icon-container {
   margin-top:-1.5vw;
   margin-bottom:5vw;
-  /* height:50vw; */
+  height:45vw;
   width:70vw;
   /* margin-left:-1vw; */
   
@@ -236,70 +231,8 @@ position:absolute;
 
 
 /* Third section of the page */
-/* About me box */
 
-@media only screen and (max-width: 600px) {
-  
-}
-@media only screen and (min-width: 600px) {
-  #about-text {
-  position: absolute;
-  top:-65vw;
-  left:33%;
-  width:30%;
-  }
-}
-@media only screen and (min-width: 828px) {
-  #about-text {
-  position: absolute;
-  top:-5vw;
-  left:33%;
-  width:30%;
-  }
-}
-@media only screen and (min-width: 1278px) {
-  #about-text {
-  position: absolute;
-  top:-1vw;
-  left:33%;
-  width:30%;
-  }
-}
-
-/* The social link icons */
-
-#social{
-  margin-top:2vw;
-}
-#github{
-  margin-right:1.5vw;
-}
-#linkedin{
-  margin-right:1.5vw;
-}
-
-
-  /* The contact box */
-
-@media only screen and (max-width: 600px) {
-  
-}
-@media only screen and (min-width: 600px) {
-  .contact {
-  position: absolute;
-  top:-20vw;
-  left:4%;
-  width:23%;
- }
-}
-@media only screen and (min-width:1200px) {
-  .contact {
-  position: absolute;
-  top:-2vw;
-  left:4%;
-  width:23%;
- }
-}
+/* The Contact Box */
 
 #name {
   float:left;
@@ -359,7 +292,7 @@ position:absolute;
   font-size:13px;
   padding:11px 23px;
   margin-top:12px;
-  -webkit-transition: 0.4s;
+    -webkit-transition: 0.4s;
     -moz-transition:  0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
@@ -368,7 +301,19 @@ position:absolute;
   background-color:rgb(14, 13, 13);
 }
 
-/* The image and pin */
+/* The social link icons */
+
+#social{
+  margin-top:2vw;
+}
+#github{
+  margin-right:1.5vw;
+}
+#linkedin{
+  margin-right:1.5vw;
+}
+
+/* Break Points */
 
 @media only screen and (max-width: 600px) {
   #footer {
@@ -420,33 +365,6 @@ position:absolute;
   }
 }
 
-@media only screen and (min-width: 600px) {
-  #footer {
-    height:auto;
-    margin:0!important;
-    padding:0!important;
-    border:0!important;
-  }
-}
-
-  @media only screen and (max-width: 600px) {
-    
-  }
-
-@media only screen and (min-width: 600px) {
-  .skyline-img {
-  max-width: 100%;
-  margin:0!important;
-  padding:0!important;
-  border:0!important;
-  }
-}
-
-/* The bottom container */
-
-@media only screen and (max-width: 600px) {
-  
-  }
   @media only screen and (min-width: 600px) {
     .bottom-container {
       top: 0;
@@ -461,7 +379,38 @@ position:absolute;
       position: relative;
       display: inline-block;
       }
+      #footer {
+        height:auto;
+        margin:0!important;
+        padding:0!important;
+        border:0!important;
+      }
+      .skyline-img {
+        max-width: 100%;
+        margin:0!important;
+        padding:0!important;
+        border:0!important;
+        }
+      #red-pin {
+        width:9%;
+        left:44%;
+        position: absolute;
+        top: 55%;
+      }
+      #about-text {
+        position: absolute;
+        top:-65vw;
+        left:33%;
+        width:30%;
+        }
+        .contact {
+          position: absolute;
+          top:-20vw;
+          left:4%;
+          width:23%;
+         }
     }
+
     @media only screen and (min-width: 900px) {
       .bottom-container {
         top: 0;
@@ -476,6 +425,12 @@ position:absolute;
         position: relative;
         display: inline-block;
         }
+        #about-text {
+          position: absolute;
+          top:-13vw;
+          left:33%;
+          width:30vw;
+          }
       }
 
     @media only screen and (min-width: 1200px) {
@@ -492,24 +447,21 @@ position:absolute;
         position: relative;
         display: inline-block;
         }
+        .contact {
+          position: absolute;
+          top:-2vw;
+          left:4%;
+          width:23%;
+         }
+         #about-text {
+          position: absolute;
+          top:-2vw;
+          left:33%;
+          width:30vw;
+          }
       }
 
-/* The red pin icon inside the overlay is positioned in the middle */
-
-@media only screen and (max-width: 600px) {
-  
-}
-
-@media only screen and (min-width: 600px) {
-  #red-pin {
-  width:9%;
-  left:44%;
-  position: absolute;
-  top: 55%;
-  }
-}
-
-/* When you move the mouse over the icon, change color */
+/* When you move the mouse over the pin icon, change color */
 
 .icon:hover {
   color: #eee;

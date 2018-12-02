@@ -183,7 +183,7 @@ function Album(props) {
             <img className='tech-icon' id='wordpress-icon' alt='wordpress' src={wordpress} />
           </a>
       </Grid>
-    </Grid>
+     </Grid>
     </div>
    </div>
   </div>
