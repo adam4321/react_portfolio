@@ -51,10 +51,13 @@
   transition-timing-function: ease-out;
 }
 .underline:hover:before,
-.underline:focus:before,
+
 .underline:active:before {
   right: 0;
 }
+/* .underline:focus:before {
+  transition: 2s;
+} */
 a {
   -webkit-transition: 0.4s;
   -moz-transition:  0.4s;

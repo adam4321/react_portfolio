@@ -120,9 +120,21 @@ function Album(props) {
         <a className='darken' href='https://adamjwright.com'>
           <img src={logo} alt='logo'  className={'logogo'}/>
         </a>
-           {/* <div > */}
-            <Section />
-           {/* </div>   */}
+           <div id='scroll-links'>
+        <a variant="h6" href='https://adamjwright.com/blog' id='blog' className="underline"  noWrap>
+              Blog
+            </a>
+      <Link activeClass="active" to="bottom-container" spy={true} smooth={true} offset={50} duration={550} delay={200}>
+        <a variant="h6" href='#footer' id='about' className="underline" noWrap>
+              About
+            </a>
+       </Link>
+      <Link activeClass="active" to="full-stack" spy={true} smooth={true} offset={15} duration={550} delay={200}>
+        <a variant="h6" href='#stack' id='projects' className="underline" noWrap>
+             Projects
+            </a>
+       </Link>   
+     </div>
 
   {/* Responsive menu component */}
 
@@ -136,7 +148,7 @@ function Album(props) {
      </AppBar>
 
   {/* The skills section */}
-  <Section />
+ 
       <main>
         <div className={classes.heroUnit}>
          <div className={classes.heroContent}>
@@ -388,53 +400,5 @@ TemporaryDrawer.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-// Implement Smooth Scrolling Links
-
-class Section extends React.Component {
-  componentDidMount() {
-    Events.scrollEvent.register('begin', function(to, element) {
-      console.log("begin", arguments);
-    });
- 
-    Events.scrollEvent.register('end', function(to, element) {
-      console.log("end", arguments);
-    });
- 
-    scrollSpy.update();
- 
-  }
-  componentWillUnmount() {
-    Events.scrollEvent.remove('begin');
-    Events.scrollEvent.remove('end');
-  }
-  scrollTo() {
-    scroll.scrollTo(100);
-  }
-  handleSetActive(to) {
-    console.log(to);
-  }
-  render() {
-  	return (
-      <div id='scroll-links'>
-        <a variant="h6" href='https://adamjwright.com/blog' id='blog' className="underline"  noWrap>
-              Blog
-            </a>
-      <Link activeClass="active" to="bottom-container" spy={false} smooth={true} offset={50} duration={550} delay={200}>
-        <a variant="h6" href='#footer' id='about' className="underline" noWrap>
-              About
-            </a>
-       </Link>
-      <Link activeClass="active" to="full-stack" spy={false} smooth={true} offset={15} duration={550} delay={200}>
-        <a variant="h6" href='#stack' id='projects' className="underline" noWrap>
-             Projects
-            </a>
-       </Link>   
-          
-      </div>
-    );
-  }
-};
-
-
-export default withStyles(styles)(Album,TemporaryDrawer,Section);
+export default withStyles(styles)(Album,TemporaryDrawer);
               
