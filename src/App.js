@@ -120,9 +120,9 @@ function Album(props) {
         <a className='darken' href='https://adamjwright.com'>
           <img src={logo} alt='logo'  className={'logogo'}/>
         </a>
-           <div id='scroll-links'>
+           {/* <div > */}
             <Section />
-           </div>  
+           {/* </div>   */}
 
   {/* Responsive menu component */}
 
@@ -415,16 +415,16 @@ class Section extends React.Component {
   }
   render() {
   	return (
-      <div>
+      <div id='scroll-links'>
         <a variant="h6" href='https://adamjwright.com/blog' id='blog' className="underline"  noWrap>
               Blog
             </a>
-      <Link activeClass="active" to="bottom-container" spy={true} smooth={true} offset={50} duration={550} delay={200}>
+      <Link activeClass="active" to="bottom-container" spy={false} smooth={true} offset={50} duration={550} delay={200}>
         <a variant="h6" href='#footer' id='about' className="underline" noWrap>
               About
             </a>
        </Link>
-      <Link activeClass="active" to="full-stack" spy={true} smooth={true} offset={15} duration={550} delay={200}>
+      <Link activeClass="active" to="full-stack" spy={false} smooth={true} offset={15} duration={550} delay={200}>
         <a variant="h6" href='#stack' id='projects' className="underline" noWrap>
              Projects
             </a>
