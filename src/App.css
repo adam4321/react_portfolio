@@ -185,20 +185,36 @@ position:absolute;
 
 /* The skills section icons */
 
+
 #icon-container {
   margin-top:-1.5vw;
   margin-bottom:5vw;
   height:45vw;
-  width:80vw;
+  width:90vw;
 }
 @media only screen and (max-width: 1200px) {
 .tech-icon {
   margin:2.8vw;
 }
+#icon-container {
+  margin-top:-1.5vw;
+  margin-bottom:5vw;
+  height:45vw;
+  width:90vw;
+}
 }
 @media only screen and (min-width: 1200px) {
   .tech-icon {
-    margin:2vw;
+    margin:2.3vw;
+  }
+  #icon-container {
+    margin-top:3.2vw;
+    /* margin-bottom:5vw; */
+    height:45vw;
+    width:90vw;
+  }
+  #stack {
+    padding-top:5vw;
   }
 }
 #html-icon {
@@ -356,22 +372,23 @@ position:absolute;
   width:9%;
   left:44%;
   position: absolute;
-  top: 55%;
 }
 
 
 /* Break Points */
 
-@media only screen and (max-width: 425px) {
+
+
+@media only screen and (max-width: 600px) {
   .bottom-container {
-   height: 400px;
-   margin-top:15%;
+   height: 300px;
+   margin-top:15vw;
     }
   #footer {
-    height:400vw;
+    height:165vw;
     }
   #about-text {
-    top:-8vw;
+    top:-4vw;
     left:15%;
     width:70%;
     margin-top:3vw;
@@ -388,40 +405,6 @@ position:absolute;
     }
   #red-pin {
     width:10%;
-    left:44%;
-    position: absolute;
-    top: 230%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .bottom-container {
-   height: 300px;
-   margin-top:15%;
-    }
-  #footer {
-    height:160vw;
-    }
-  #about-text {
-    top:-4vw;
-    left:15%;
-    width:70%;
-    margin-top:3vw;
-    }
-  .contact {
-    top:125%;
-    left:10%;
-    width:70%;
-    }
-  .skyline-img {
-    position: absolute;
-    top:640px;
-    left:-0%;
-    }
-  #red-pin {
-    width:10%;
-    left:44%;
-    position: absolute;
     top: 240%;
   }
 }
@@ -446,8 +429,6 @@ position:absolute;
         }
         #red-pin {
           width:9%;
-          left:44%;
-          position: absolute;
           top: 55%;
         }
     }
@@ -492,4 +473,33 @@ position:absolute;
             width:9%;
             top: 55%;
           }
+      }
+      @media only screen and (max-width: 425px) {
+        .bottom-container {
+         /* height: 200vw; */
+         margin-top:15vw;
+          }
+        #footer {
+          height:110vh;
+          }
+        #about-text {
+          /* top:5vh; */
+          left:15%;
+          width:70%;
+          margin-top:8vw;
+          }
+        .contact {
+          top:60vh;
+          left:10%;
+          width:70%;
+          }
+        .skyline-img {
+          position: absolute;
+          top:100vh;
+          left:-0%;
+          }
+        #red-pin {
+          width:10%;
+          top: 110vh;
+        }
       }
