@@ -182,24 +182,28 @@ position:absolute;
   color:black;
 }
 
+
 /* The skills section icons */
 
 #icon-container {
   margin-top:-1.5vw;
   margin-bottom:5vw;
   height:45vw;
-  width:70vw;
-  /* margin-left:-1vw; */
-  
+  width:80vw;
 }
-
+@media only screen and (max-width: 1200px) {
 .tech-icon {
-  margin:2.5vw;
+  margin:2.8vw;
 }
-
+}
+@media only screen and (min-width: 1200px) {
+  .tech-icon {
+    margin:2vw;
+  }
+}
 #html-icon {
   width:15.5%;
-  margin-left:6vw;
+  margin-left:4.5vw;
 }
 #css-icon {
   width:15%;
@@ -208,21 +212,20 @@ position:absolute;
   width: 14.5%;
   margin-left:2.5vw;
 }
-#git-icon {
-  width: 13%;
-  margin-left:2vw;
-  margin-bottom:2.5vw;
-}
 #react-icon {
   width:15%;
 }
 #mui-icon {
   width:18%;
-  margin-left: 5.5vw;
+  margin-left: 3.6vw;
+}
+#git-icon {
+  width: 13%;
+  margin-left:2vw;
 }
 #npm-icon {
   width:13%;
-  margin-left:4vw;
+  margin-left:3.4vw;
 }
 #wordpress-icon {
   width:13.5%;
@@ -304,6 +307,7 @@ position:absolute;
 /* The social link icons */
 
 #social{
+  /* width:5vw; */
   margin-top:2vw;
 }
 #github{
@@ -313,156 +317,179 @@ position:absolute;
   margin-right:1.5vw;
 }
 
-/* Break Points */
-
-@media only screen and (max-width: 600px) {
-  #footer {
-    height:220vw;
-    margin:0!important;
-    padding:0!important;
-    border:0!important;
-  }
-  .bottom-container {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 340px;
-    width: 100%;
-    margin: 0 auto;
-    margin-top:15%;
-    text-align: center;
-    position: relative;
-    display: inline-block;
-    }
-    #about-text {
-      position: absolute;
-      top:-4vw;
-      left:15%;
-      width:70%;
-      margin-top:3vw;
-      }
-      .contact {
-        position: absolute;
-        top:125%;
-        left:10%;
-        width:70%;
-       }
-    .skyline-img {
-      max-width: 100%;
-      margin:0!important;
-      padding:0!important;
-      border:0!important;
-      position: absolute;
-      top:640px;
-      left:-0%;
-      }
-    #red-pin {
-    width:10%;
-    left:44%;
-    position: absolute;
-    top: 216%;
-  }
-}
-
-  @media only screen and (min-width: 600px) {
-    .bottom-container {
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 100%;
-      width: 100%;
-      margin: 0 auto;
-      margin-top:75vw;
-      text-align: center;
-      position: relative;
-      display: inline-block;
-      }
-      #footer {
-        height:auto;
-        margin:0!important;
-        padding:0!important;
-        border:0!important;
-      }
-      .skyline-img {
-        max-width: 100%;
-        margin:0!important;
-        padding:0!important;
-        border:0!important;
-        }
-      #red-pin {
-        width:9%;
-        left:44%;
-        position: absolute;
-        top: 55%;
-      }
-      #about-text {
-        position: absolute;
-        top:-65vw;
-        left:33%;
-        width:30%;
-        }
-        .contact {
-          position: absolute;
-          top:-20vw;
-          left:4%;
-          width:23%;
-         }
-    }
-
-    @media only screen and (min-width: 900px) {
-      .bottom-container {
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        margin: 0 auto;
-        margin-top:30vw;
-        text-align: center;
-        position: relative;
-        display: inline-block;
-        }
-        #about-text {
-          position: absolute;
-          top:-13vw;
-          left:33%;
-          width:30vw;
-          }
-      }
-
-    @media only screen and (min-width: 1200px) {
-      .bottom-container {
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        margin: 0 auto;
-        margin-top:10vw;
-        text-align: center;
-        position: relative;
-        display: inline-block;
-        }
-        .contact {
-          position: absolute;
-          top:-2vw;
-          left:4%;
-          width:23%;
-         }
-         #about-text {
-          position: absolute;
-          top:-2vw;
-          left:33%;
-          width:30vw;
-          }
-      }
-
 /* When you move the mouse over the pin icon, change color */
 
 .icon:hover {
   color: #eee;
 }
+
+
+.bottom-container {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+.skyline-img {
+  max-width: 100%;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+}
+#footer {
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+}
+.contact {
+  position: absolute;
+}
+#about-text {
+  position: absolute;
+}
+#red-pin {
+  width:9%;
+  left:44%;
+  position: absolute;
+  top: 55%;
+}
+
+
+/* Break Points */
+
+@media only screen and (max-width: 425px) {
+  .bottom-container {
+   height: 300px;
+   margin-top:15%;
+    }
+  #footer {
+    height:300vw;
+    }
+  #about-text {
+    top:-4vw;
+    left:15%;
+    width:70%;
+    margin-top:3vw;
+    }
+  .contact {
+    top:125%;
+    left:10%;
+    width:70%;
+    }
+  .skyline-img {
+    position: absolute;
+    top:640px;
+    left:-0%;
+    }
+  #red-pin {
+    width:10%;
+    left:44%;
+    position: absolute;
+    top: 230%;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .bottom-container {
+   height: 300px;
+   margin-top:15%;
+    }
+  #footer {
+    height:160vw;
+    }
+  #about-text {
+    top:-4vw;
+    left:15%;
+    width:70%;
+    margin-top:3vw;
+    }
+  .contact {
+    top:125%;
+    left:10%;
+    width:70%;
+    }
+  .skyline-img {
+    position: absolute;
+    top:640px;
+    left:-0%;
+    }
+  #red-pin {
+    width:10%;
+    left:44%;
+    position: absolute;
+    top: 240%;
+  }
+}
+
+  @media only screen and (min-width: 600px) {
+    .bottom-container {
+      height: 100%;
+      margin-top:75vw;
+      }
+      #footer {
+        height:auto;
+      }
+      #about-text {
+        top:-65vw;
+        left:10%;
+        width:80%;
+        }
+      .contact {
+          top:-20vw;
+          left:10%;
+          width:70%;
+        }
+        #red-pin {
+          width:9%;
+          left:44%;
+          position: absolute;
+          top: 55%;
+        }
+    }
+
+    @media only screen and (min-width: 960px) {
+      .bottom-container {
+        height: 100%;
+        margin-top:20vw;
+      }
+        .contact {
+          top:-13vw;
+          left:4%;
+          width:23%;
+         }
+        #about-text {
+          top:-13vw;
+          left:33%;
+          width:30vw;
+          }
+          #red-pin {
+            width:9%;
+            top: 55%;
+          }
+      }
+
+    @media only screen and (min-width: 1200px) {
+      .bottom-container {
+        height: 100%;
+        margin-top:10vw;
+        }
+        .contact {
+          top:-2vw;
+          left:4%;
+          width:23%;
+         }
+         #about-text {
+          top:-2vw;
+          left:33%;
+          width:30vw;
+          }
+          #red-pin {
+            width:9%;
+            top: 55%;
+          }
+      }
