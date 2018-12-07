@@ -275,8 +275,10 @@ function Album(props) {
       </div>
 
   {/* Contact Form */}
- 
+
+   
     <div className='contact'>
+    <div id='contact-wrapper'>
         <form id="contactform" action="https://formspree.io/adam@adamjwright.com" method="POST">
          <label for="name" id='name' >Name</label>
               <br />
@@ -297,6 +299,7 @@ function Album(props) {
          <input type="submit" value="SUBMIT" id='submit' />
          <input type="hidden" name="_next" value="https://adamjwright.com" />
         </form>
+      </div>
     </div>
 
   {/* The skyline and location Pin */}

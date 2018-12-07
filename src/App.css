@@ -185,7 +185,10 @@ position:absolute;
 
 /* The skills section icons */
 
+.tech-icon{
+  color:white;
 
+}
 #icon-container {
   margin-top:-1.5vw;
   margin-bottom:5vw;
@@ -396,7 +399,24 @@ position:absolute;
   .contact {
     top:135%;
     left:10%;
-    width:70%;
+    margin:0 auto;
+    margin-left:-10%;
+    padding-left:8vw;
+    width:100%;
+    height:100%;
+    background-color:white;
+    }
+    #contact-wrapper {
+      position:absolute;
+      width:82%;
+      height:100%;
+      margin:0 auto;
+    }
+    #email-in {
+      width:71%;
+    }
+    #comments-in {
+      height:15vw;
     }
   .skyline-img {
     position: absolute;
@@ -474,32 +494,4 @@ position:absolute;
             top: 55%;
           }
       }
-      @media only screen and (max-width: 425px) {
-        .bottom-container {
-         /* height: 200vw; */
-         margin-top:15vw;
-          }
-        #footer {
-          height:110vh;
-          }
-        #about-text {
-          /* top:5vh; */
-          left:15%;
-          width:70%;
-          margin-top:8vw;
-          }
-        .contact {
-          top:60vh;
-          left:10%;
-          width:70%;
-          }
-        .skyline-img {
-          position: absolute;
-          top:100vh;
-          left:-0%;
-          }
-        #red-pin {
-          width:10%;
-          top: 110vh;
-        }
-      }
+    
