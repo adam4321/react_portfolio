@@ -1,4 +1,8 @@
 
+body {
+  font-family: 'Open Sans', sans-serif;
+
+}
 
 /* The navigation bar */
 
@@ -28,8 +32,8 @@
   color: #fff;
     text-decoration: none;
     float: right;
-    font-weight: 600;
-    font-size: 16.3px;
+    font-weight: 500;
+    font-size: 16.4px;
     letter-spacing: .9px;
 }
 .underline:link {
@@ -96,7 +100,8 @@ a:hover {
        display:none;
   }
   #scroll-links {
-    width: 75%;
+    width: 80%;
+    margin-top:.5vw;
  }
 }
 
@@ -196,16 +201,28 @@ position:absolute;
   width:90vw;
 }
 @media only screen and (max-width: 1200px) {
-.tech-icon {
-  margin:2.8vw;
+  .tech-icon {
+    margin:2.8vw;
+  }
+  #icon-container {
+    margin-top:-8vw;
+    margin-bottom:5vw;
+    height:30vw;
+    width:90vw;
+  }
+  }
+@media only screen and (max-width: 400px) {
+  .tech-icon {
+    margin:2.8vw;
+  }
+  #icon-container {
+    margin-top:-20vw;
+    margin-bottom:5vw;
+    height:25vw;
+    width:90vw;
+  }
 }
-#icon-container {
-  margin-top:-1.5vw;
-  margin-bottom:5vw;
-  height:45vw;
-  width:90vw;
-}
-}
+
 @media only screen and (min-width: 1200px) {
   .tech-icon {
     margin:2.3vw;
@@ -213,7 +230,7 @@ position:absolute;
   #icon-container {
     margin-top:3.2vw;
     /* margin-bottom:5vw; */
-    height:45vw;
+    height:28vw;
     width:90vw;
   }
   #stack {
