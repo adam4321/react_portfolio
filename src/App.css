@@ -1,7 +1,6 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-
 }
 
 /* The navigation bar */
@@ -91,7 +90,6 @@ a:hover {
 #blog {
   margin-left:6vw;
 }
-
 
 /* The mobile menu */
 
@@ -210,6 +208,10 @@ position:absolute;
     height:30vw;
     width:90vw;
   }
+  #mui-icon {
+    margin-right: 4vw;
+  }
+  
   }
 @media only screen and (max-width: 400px) {
   .tech-icon {
@@ -261,11 +263,11 @@ position:absolute;
 }
 #npm-icon {
   width:13%;
-  margin-left:3.4vw;
+  margin-left:3.5vw;
 }
 #wordpress-icon {
   width:13.5%;
-  margin-left:3vw;
+  margin-left:3.5vw;
 }
 
 
@@ -401,20 +403,20 @@ position:absolute;
 
 @media only screen and (max-width: 600px) {
   .bottom-container {
-   height: 300px;
+   height: 340px;
    margin-top:15vw;
     }
   #footer {
     height:165vw;
     }
   #about-text {
-    top:-4vw;
+    top:-5vw;
     left:15%;
     width:70%;
-    margin-top:3vw;
+    margin-top:2vw;
     }
   .contact {
-    top:135%;
+    top:120%;
     left:10%;
     margin:0 auto;
     margin-left:-10%;
@@ -437,12 +439,12 @@ position:absolute;
     }
   .skyline-img {
     position: absolute;
-    top:640px;
+    top:680px;
     left:-0%;
     }
   #red-pin {
     width:10%;
-    top: 240%;
+    top: 220%;
   }
 }
 
@@ -457,7 +459,7 @@ position:absolute;
       #about-text {
         top:-65vw;
         left:10%;
-        width:80%;
+        width:70%;
         }
       .contact {
           top:-20vw;
@@ -511,4 +513,5 @@ position:absolute;
             top: 55%;
           }
       }
+      
     
