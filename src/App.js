@@ -198,7 +198,7 @@ function Album(props) {
      <Grid item sm={6} md={6} lg={6}>
     
       <Card className={classes.card}>
-      <a href='https://i.imgur.com/EXLZRSi.png'>
+      <a href='https://adamjwright.com/amp_library'>
         <CardMedia
              className={classes.cardMedia}
              image={"https://i.imgur.com/tvwE6Yz.jpg"} 
