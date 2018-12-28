@@ -201,7 +201,7 @@ function Album(props) {
       <a href='https://adamjwright.com/amp_library'>
         <CardMedia
              className={classes.cardMedia}
-             image={"https://i.imgur.com/yFmtIlc.png"} 
+             image={"https://i.imgur.com/FYO43HV.png"} 
              title="Amp Information Library"
            />
            </a>
