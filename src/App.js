@@ -264,7 +264,7 @@ function Album(props) {
           About Me
           </Typography>
         <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          I am a Seattle based developer who is completing a computer science degree and looking to better at programming each and every day. I am focusing on web programming. If you would like to reach out to me then feel free to use the contact box or email adam@adamjwright.
+          I am a Seattle based developer who is completing a computer science degree and looking to better at programming each and every day. I am focusing on React in my spare time. If you would like to reach out to me then feel free to use the contact box or email adam@adamjwright.
           </Typography>
           <div id='social'>
           <a href='https://github.com/adam4321'><img id='github'src={github} /></a>
