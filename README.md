@@ -19,4 +19,4 @@ This is my personal website and portfolio page which I built using React and the
 
 ![alt text](https://i.imgur.com/tcOOnCw.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
