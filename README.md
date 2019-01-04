@@ -1,6 +1,6 @@
 
 
-##This is my personal website and portfolio page which I built using React and the Materail-UI component library. It holds 5 projects of mine and a link to my personl blog.
+## This is my personal website and portfolio page which I built using React and the Materail-UI component library. It holds 5 projects of mine and a link to my personl blog.
 
 ## Desktop View of the contact portion of the page
 
