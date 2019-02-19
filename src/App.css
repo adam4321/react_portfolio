@@ -19,6 +19,7 @@ body {
   -o-transition: 0.4s;
   transition: 0.4s;
 }
+
 .logogo:hover {
     background-color:#000;
     opacity:0.7;
@@ -27,6 +28,7 @@ body {
     -o-transition: 0.4s;
     transition: 0.4s;
 }
+
 .underline {
   color: #fff;
     text-decoration: none;
@@ -35,11 +37,13 @@ body {
     font-size: 16.45px;
     letter-spacing: .8px;
 }
+
 .underline:link {
   text-decoration: none;
   color:#fff;
   position: relative;
 }
+
 .underline:before {
   content: "";
   position: absolute;
@@ -53,14 +57,16 @@ body {
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
 }
-.underline:hover:before,
 
+.underline:hover:before,
 .underline:active:before {
   right: 0;
 }
+
 /* .underline:focus:before {
   transition: 2s;
 } */
+
 a {
   -webkit-transition: 0.4s;
   -moz-transition:  0.4s;
@@ -68,6 +74,7 @@ a {
   transition: 0.4s;
   text-decoration: none;
 }
+
 a:hover {
   color: rgba(154, 182, 196, 0.582);
   opacity:0.6;
@@ -76,6 +83,7 @@ a:hover {
   -o-transition: 0.4s;
   transition: 0.4s;
 }
+
 .darken{
   width:210px;
   height:115px;
@@ -87,21 +95,25 @@ a:hover {
 #about {
   margin-left:4.8vw;
 }
+
 #blog {
   margin-left:6vw;
 }
 
-/* The mobile menu */
+/* Media query above 960 px */
 
 @media only screen and (min-width: 960px) {
   #menu-container {
        display:none;
   }
+
   #scroll-links {
     width: 80%;
     margin-top:.5vw;
  }
 }
+
+/* Media query below 960 px */
 
 @media only screen and (max-width: 960px) {
 #menu-container{
@@ -112,22 +124,27 @@ position:absolute;
   margin-right:1%;
   cursor: pointer;
 }
+
 .menu{
   width:16px;
   text-decoration: none;
 }
+
 #menu-text{
   display:inline;
   margin-left:10px;
   }
+
   #scroll-links {
     display:none;
-   }
+  }
 }
+
+/* Media query above 588 px */
 
 @media only screen and (min-width: 588px) {
   #menu-container {
-      margin-left:65%;
+    margin-left:65%;
   }
 }
 
@@ -135,16 +152,19 @@ position:absolute;
   border: rgba(247, 243, 243, 0.685);
   border-width: thin;
 }
+
 #x-icon {
   width:16px;
   height:16px;
   margin-top:19px;
 
 }
+
 #menu-list {
   margin:0;
   padding:0;
 }
+
 .drawer {
   width:300px;
   padding:0;
@@ -156,6 +176,7 @@ position:absolute;
   height:52px;
   background-color: rgba(247, 243, 243, 0.685);
 }
+
 #close-text {
   font-size: 13.3px;
   font-weight: 600;
@@ -170,6 +191,7 @@ position:absolute;
   font-size: 14px;
   color:black;
 }
+
 #about-link {
   height:40px;
   margin-top:11px;
@@ -177,6 +199,7 @@ position:absolute;
   font-size: 14px;
   color:black;
 }
+
 #blog-link {
   height:40px;
   margin-top:11px;
@@ -185,38 +208,45 @@ position:absolute;
   color:black;
 }
 
-
 /* The skills section icons */
 
 .tech-icon{
   color:white;
-
 }
+
 #icon-container {
   margin-top:-1.5vw;
   margin-bottom:5vw;
   height:45vw;
   width:90vw;
 }
+
+/* Media query above 1200 px */
+
 @media only screen and (max-width: 1200px) {
   .tech-icon {
     margin:2.8vw;
   }
+
   #icon-container {
     margin-top:-8vw;
     margin-bottom:5vw;
     height:30vw;
     width:90vw;
   }
+
   #mui-icon {
     margin-right: 4vw;
   }
-  
-  }
+}
+
+/* Media query below 400 px */
+
 @media only screen and (max-width: 400px) {
   .tech-icon {
     margin:2.8vw;
   }
+
   #icon-container {
     margin-top:-20vw;
     margin-bottom:5vw;
@@ -225,60 +255,71 @@ position:absolute;
   }
 }
 
+/* Media query above 1200 px */
+
 @media only screen and (min-width: 1200px) {
   .tech-icon {
     margin:2.3vw;
   }
+
   #icon-container {
     margin-top:3.2vw;
     /* margin-bottom:5vw; */
     height:28vw;
     width:90vw;
   }
+
   #stack {
     padding-top:5vw;
   }
 }
+
 #html-icon {
   width:15.5%;
   margin-left:4.5vw;
 }
+
 #css-icon {
   width:15%;
 }
+
 #js-icon {
   width: 14.5%;
   margin-left:2.5vw;
 }
+
 #react-icon {
   width:15%;
 }
+
 #mui-icon {
   width:18%;
   margin-left: 3.6vw;
 }
+
 #git-icon {
   width: 13%;
   margin-left:2vw;
 }
+
 #npm-icon {
   width:13%;
   margin-left:3.5vw;
 }
+
 #wordpress-icon {
   width:13.5%;
   margin-left:3.5vw;
 }
 
-
 /* Third section of the page */
-
 /* The Contact Box */
 
 #name {
   float:left;
   color:  rgb(92, 92, 92);
 }
+
 #first-in {
   float:left;
   margin-right:1vw;
@@ -286,36 +327,43 @@ position:absolute;
   border:1px solid rgb(172, 172, 172);
   width:35%;
 }
+
 #first {
   float:left;
   color: rgb(172, 172, 172);
   font-size:13px;
 }
+
 #last-in {
   float:left;
   width:35%;
   border-radius:2px;
   border:1px solid rgb(172, 172, 172);
 }
+
 #last {
   margin-left:-20%;
   color: rgb(172, 172, 172);
   font-size:13px;
 }
+
 #email {
   float:left;
   color:  rgb(92, 92, 92);
-  }
+}
+
 #email-in {
   width:76%;
   float:left;
   border:1px solid rgb(172, 172, 172);
   border-radius:2px;
 }
+
 #comments {
   float:left;
   color:  rgb(92, 92, 92);
 }
+
 #comments-in {
   float:left;
   max-width:100%;
@@ -325,6 +373,7 @@ position:absolute;
   resize:vertical;  
   border-radius:2px;
 }
+
 #submit {
   float:left;
   background-color: rgb(92, 92, 92);
@@ -333,11 +382,12 @@ position:absolute;
   font-size:13px;
   padding:11px 23px;
   margin-top:12px;
-    -webkit-transition: 0.4s;
-    -moz-transition:  0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition:  0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
 }
+
 #submit:hover {
   background-color:rgb(14, 13, 13);
 }
@@ -348,9 +398,11 @@ position:absolute;
   /* width:5vw; */
   margin-top:2vw;
 }
+
 #github{
   margin-right:1.5vw;
 }
+
 #linkedin{
   margin-right:1.5vw;
 }
@@ -360,7 +412,6 @@ position:absolute;
 .icon:hover {
   color: #eee;
 }
-
 
 .bottom-container {
   top: 0;
@@ -373,23 +424,28 @@ position:absolute;
   position: relative;
   display: inline-block;
 }
+
 .skyline-img {
   max-width: 100%;
   margin:0!important;
   padding:0!important;
   border:0!important;
 }
+
 #footer {
   margin:0!important;
   padding:0!important;
   border:0!important;
 }
+
 .contact {
   position: absolute;
 }
+
 #about-text {
   position: absolute;
 }
+
 #red-pin {
   width:9%;
   left:44%;
