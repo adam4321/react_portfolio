@@ -21,12 +21,12 @@ body {
 }
 
 .logogo:hover {
-    background-color:#000;
-    opacity:0.7;
-    -webkit-transition: 0.4s;
-    -moz-transition:  0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
+  background-color:#000;
+  opacity:0.7;
+  -webkit-transition: 0.4s;
+  -moz-transition:  0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .underline {
@@ -290,7 +290,6 @@ a:hover {
 /* The social link icons */
 
 #social{
-  /* width:5vw; */
   margin-top:2vw;
 }
 
@@ -524,16 +523,19 @@ a:hover {
     height: 100%;
     margin-top:20vw;
  }
+
   .contact {
     top:-13vw;
     left:4%;
     width:23%;
   }
+
   #about-text {
     top:-13vw;
     left:33%;
     width:30vw;
   }
+  
   #red-pin {
     width:9%;
     top: 55%;
