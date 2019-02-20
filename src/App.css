@@ -31,11 +31,11 @@ body {
 
 .underline {
   color: #fff;
-    text-decoration: none;
-    float: right;
-    font-weight: 500;
-    font-size: 16.45px;
-    letter-spacing: .8px;
+  text-decoration: none;
+  float: right;
+  font-weight: 500;
+  font-size: 16.45px;
+  letter-spacing: .8px;
 }
 
 .underline:link {
@@ -62,10 +62,6 @@ body {
 .underline:active:before {
   right: 0;
 }
-
-/* .underline:focus:before {
-  transition: 2s;
-} */
 
 a {
   -webkit-transition: 0.4s;
@@ -100,54 +96,6 @@ a:hover {
   margin-left:6vw;
 }
 
-/* Media query above 960 px */
-
-@media only screen and (min-width: 960px) {
-  #menu-container {
-       display:none;
-  }
-
-  #scroll-links {
-    width: 80%;
-    margin-top:.5vw;
- }
-}
-
-/* Media query below 960 px */
-
-@media only screen and (max-width: 960px) {
-#menu-container{
-position:absolute;
-  width:90px;
-  height:20px;
-  margin-left: 50%;
-  margin-right:1%;
-  cursor: pointer;
-}
-
-.menu{
-  width:16px;
-  text-decoration: none;
-}
-
-#menu-text{
-  display:inline;
-  margin-left:10px;
-  }
-
-  #scroll-links {
-    display:none;
-  }
-}
-
-/* Media query above 588 px */
-
-@media only screen and (min-width: 588px) {
-  #menu-container {
-    margin-left:65%;
-  }
-}
-
 .divider{
   border: rgba(247, 243, 243, 0.685);
   border-width: thin;
@@ -157,7 +105,6 @@ position:absolute;
   width:16px;
   height:16px;
   margin-top:19px;
-
 }
 
 #menu-list {
@@ -221,59 +168,6 @@ position:absolute;
   width:90vw;
 }
 
-/* Media query above 1200 px */
-
-@media only screen and (max-width: 1200px) {
-  .tech-icon {
-    margin:2.8vw;
-  }
-
-  #icon-container {
-    margin-top:-8vw;
-    margin-bottom:5vw;
-    height:30vw;
-    width:90vw;
-  }
-
-  #mui-icon {
-    margin-right: 4vw;
-  }
-}
-
-/* Media query below 400 px */
-
-@media only screen and (max-width: 400px) {
-  .tech-icon {
-    margin:2.8vw;
-  }
-
-  #icon-container {
-    margin-top:-20vw;
-    margin-bottom:5vw;
-    height:25vw;
-    width:90vw;
-  }
-}
-
-/* Media query above 1200 px */
-
-@media only screen and (min-width: 1200px) {
-  .tech-icon {
-    margin:2.3vw;
-  }
-
-  #icon-container {
-    margin-top:3.2vw;
-    /* margin-bottom:5vw; */
-    height:28vw;
-    width:90vw;
-  }
-
-  #stack {
-    padding-top:5vw;
-  }
-}
-
 #html-icon {
   width:15.5%;
   margin-left:4.5vw;
@@ -313,6 +207,7 @@ position:absolute;
 }
 
 /* Third section of the page */
+
 /* The Contact Box */
 
 #name {
@@ -407,7 +302,7 @@ position:absolute;
   margin-right:1.5vw;
 }
 
-/* When you move the mouse over the pin icon, change color */
+/* When you move the mouse over the pin icon it changes color */
 
 .icon:hover {
   color: #eee;
@@ -453,24 +348,44 @@ position:absolute;
 }
 
 
-/* Break Points */
+/* Mobile Break Points */
 
+
+/* Media query below 400 px */
+
+@media only screen and (max-width: 400px) {
+  .tech-icon {
+    margin:2.8vw;
+  }
+
+  #icon-container {
+    margin-top:-20vw;
+    margin-bottom:5vw;
+    height:25vw;
+    width:90vw;
+  }
+}
+
+/* Media query below 600 px */
 
 
 @media only screen and (max-width: 600px) {
   .bottom-container {
-   height: 340px;
-   margin-top:15vw;
-    }
+    height: 340px;
+    margin-top:15vw;
+  }
+
   #footer {
     height:165vw;
-    }
+  }
+
   #about-text {
     top:-5vw;
     left:15%;
     width:70%;
     margin-top:2vw;
-    }
+  }
+
   .contact {
     top:120%;
     left:10%;
@@ -480,94 +395,187 @@ position:absolute;
     width:100%;
     height:100%;
     background-color:white;
-    }
-    #contact-wrapper {
-      position:absolute;
-      width:82%;
-      height:100%;
-      margin:0 auto;
-    }
-    #email-in {
-      width:71%;
-    }
-    #comments-in {
-      height:15vw;
-    }
+  }
+
+  #contact-wrapper {
+    position:absolute;
+    width:82%;
+    height:100%;
+    margin:0 auto;
+  }
+
+  #email-in {
+    width:71%;
+  }
+
+  #comments-in {
+    height:15vw;
+  }
+
   .skyline-img {
     position: absolute;
     top:680px;
     left:-0%;
-    }
+  }
+
   #red-pin {
     width:10%;
     top: 220%;
   }
 }
 
-  @media only screen and (min-width: 600px) {
-    .bottom-container {
-      height: 100%;
-      margin-top:75vw;
-      }
-      #footer {
-        height:auto;
-      }
-      #about-text {
-        top:-65vw;
-        left:10%;
-        width:70%;
-        }
-      .contact {
-          top:-20vw;
-          left:10%;
-          width:70%;
-        }
-        #red-pin {
-          width:9%;
-          top: 55%;
-        }
-    }
+/* Media query below 960 px */
 
-    @media only screen and (min-width: 960px) {
-      .bottom-container {
-        height: 100%;
-        margin-top:20vw;
-      }
-        .contact {
-          top:-13vw;
-          left:4%;
-          width:23%;
-         }
-        #about-text {
-          top:-13vw;
-          left:33%;
-          width:30vw;
-          }
-          #red-pin {
-            width:9%;
-            top: 55%;
-          }
-      }
+@media only screen and (max-width: 960px) {
+  #menu-container {
+  position:absolute;
+    width:90px;
+    height:20px;
+    margin-left: 50%;
+    margin-right:1%;
+    cursor: pointer;
+  }
+  
+  .menu {
+    width:16px;
+    text-decoration: none;
+  }
+  
+  #menu-text {
+    display:inline;
+    margin-left:10px;
+  }
+  
+  #scroll-links {
+    display:none;
+  }
+}
 
-    @media only screen and (min-width: 1200px) {
-      .bottom-container {
-        height: 100%;
-        margin-top:10vw;
-        }
-        .contact {
-          top:-2vw;
-          left:4%;
-          width:23%;
-         }
-         #about-text {
-          top:-1vw;
-          left:33%;
-          width:30vw;
-          }
-          #red-pin {
-            width:9%;
-            top: 55%;
-          }
-      }
-      
-    
+ /* Media query below 1200 px */
+
+@media only screen and (max-width: 1200px) {
+  .tech-icon {
+    margin:2.8vw;
+  }
+
+  #icon-container {
+    margin-top:-8vw;
+    margin-bottom:5vw;
+    height:30vw;
+    width:90vw;
+  }
+
+  #mui-icon {
+    margin-right: 4vw;
+  }
+}
+
+/* Media query above 588 px */
+
+@media only screen and (min-width: 588px) {
+  #menu-container {
+    margin-left:65%;
+  }
+}
+
+/* Media query above 600 px */
+
+@media only screen and (min-width: 600px) {
+  .bottom-container {
+    height: 100%;
+    margin-top:75vw;
+  }
+
+  #footer {
+    height:auto;
+  }
+
+  #about-text {
+    top:-65vw;
+    left:10%;
+    width:70%;
+  }
+
+  .contact {
+    top:-20vw;
+    left:10%;
+    width:70%;
+  }
+
+  #red-pin {
+    width:9%;
+    top: 55%;
+  }
+}
+
+/* Media query above 960 px */
+
+@media only screen and (min-width: 960px) {
+  #menu-container {
+    display:none;
+  }
+
+  #scroll-links {
+    width: 80%;
+    margin-top:.5vw;
+ }
+
+ .bottom-container {
+    height: 100%;
+    margin-top:20vw;
+ }
+  .contact {
+    top:-13vw;
+    left:4%;
+    width:23%;
+  }
+  #about-text {
+    top:-13vw;
+    left:33%;
+    width:30vw;
+  }
+  #red-pin {
+    width:9%;
+    top: 55%;
+  }
+}
+
+/* Media query above 1200 px */
+
+@media only screen and (min-width: 1200px) {
+  .tech-icon {
+    margin:2.3vw;
+  }
+
+  #icon-container {
+    margin-top:3.2vw;
+    height:28vw;
+    width:90vw;
+  }
+
+  #stack {
+    padding-top:5vw;
+  }
+
+  .bottom-container {
+    height: 100%;
+    margin-top:10vw;
+  }
+
+  .contact {
+    top:-2vw;
+    left:4%;
+    width:23%;
+  }
+
+  #about-text {
+    top:-1vw;
+    left:33%;
+    width:30vw;
+  }
+
+  #red-pin {
+    width:9%;
+    top: 55%;
+  }
+}  
