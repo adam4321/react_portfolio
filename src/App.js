@@ -40,6 +40,7 @@ import github from './github-icon.png';
 import linkedin from './linkedin-icon.png';
 import facebook from './facebook-icon.png';
 
+// Material UI style object
 
 const styles = theme => ({
   appBar: {
@@ -96,6 +97,7 @@ const styles = theme => ({
   },
 });
 
+//Object holding the four lower project's information
 
 const cards = [
 {key:1,image:"https://i.imgur.com/0AGbvX1.png",title:"Random Quote Generator",project:"Random Quote Generator",link:"https://adamjwright.com/quote_generator",about:"Displays a new quote when you press the new quote button and will tweet the quote for you."},
@@ -119,41 +121,41 @@ function Album(props) {
         <a className='darken' href='https://adamjwright.com'>
           <img src={logo} alt='logo'  className={'logogo'}/>
         </a>
-           <div id='scroll-links'>
-        <a variant="h6" href='https://adamjwright.com/blog' id='blog' className="underline"  noWrap>
+          <div id='scroll-links'>
+            <a variant="h6" href='https://adamjwright.com/blog' id='blog' className="underline"  noWrap>
               Blog
             </a>
-      <Link activeClass="active" to="bottom-container" spy={true} smooth={true} offset={50} duration={550} delay={200}>
-        <a variant="h6" href='#footer' id='about' className="underline" noWrap>
+            <Link activeClass="active" to="bottom-container" spy={true} smooth={true} offset={50} duration={550} delay={200}>
+            <a variant="h6" href='#footer' id='about' className="underline" noWrap>
               About
             </a>
-       </Link>
-      <Link activeClass="active" to="full-stack" spy={true} smooth={true} offset={15} duration={550} delay={200}>
-        <a variant="h6" href='#stack' id='projects' className="underline" noWrap>
-             Projects
-            </a>
-       </Link>   
-     </div>
+           </Link>
+           <Link activeClass="active" to="full-stack" spy={true} smooth={true} offset={15} duration={550} delay={200}>
+             <a variant="h6" href='#stack' id='projects' className="underline" noWrap>
+              Projects
+             </a>
+           </Link>   
+         </div>
 
   {/* Responsive menu component */}
 
-            <div id='menu-container'>
-                <a>
-                   <TemporaryDrawer />
-                </a>    
-            </div>
+         <div id='menu-container'>
+           <a>
+            <TemporaryDrawer />
+           </a>    
+         </div>
 
       </Toolbar>
-     </AppBar>
+    </AppBar>
 
   {/* The skills section */}
  
-      <main>
-        <div className={classes.heroUnit}>
-         <div className={classes.heroContent}>
+    <main>
+      <div className={classes.heroUnit}>
+        <div className={classes.heroContent}>
           <div className={classes.heroButtons}>
-              <Grid container  justify="center">
-                <Grid id='icon-container' item xs={9} sm={9} md={9} lg={12}>
+            <Grid container  justify="center">
+              <Grid id='icon-container' item xs={9} sm={9} md={9} lg={12}>
 
  {/* Grid of tech icons */}
 
@@ -181,12 +183,11 @@ function Album(props) {
           <a href='https://en.wikipedia.org/wiki/WordPress'>
             <img className='tech-icon' id='wordpress-icon' alt='wordpress' src={wordpress} />
           </a>
-      </Grid>
-     </Grid>
-    </div>
-   </div>
-  </div>
-
+             </Grid>
+            </Grid>
+          </div>
+         </div>
+        </div>
 
   <div className={classNames(classes.layout, classes.cardGrid)}>
 
@@ -275,28 +276,27 @@ function Album(props) {
 
   {/* Contact Form */}
 
-   
     <div className='contact'>
-    <div id='contact-wrapper'>
+      <div id='contact-wrapper'>
         <form id="contactform" action="https://formspree.io/adam@adamjwright.com" method="POST">
-         <label for="name" id='name' >Name</label>
+          <label for="name" id='name' >Name</label>
               <br />
-         <input type="text" name="first" id='first-in'/>
-         <input type="text" name="last" id='last-in'/>
+          <input type="text" name="first" id='first-in'/>
+          <input type="text" name="last" id='last-in'/>
               <br />
-           <label for="name" id='first' >First</label>
-           <label for="name" id='last' >Last</label>
+          <label for="name" id='first' >First</label>
+          <label for="name" id='last' >Last</label>
               <br />
-           <label for="email" id='email' >Email</label>
+          <label for="email" id='email' >Email</label>
               <br />
-         <input type="email" name="_replyto" id='email-in' />
+          <input type="email" name="_replyto" id='email-in' />
               <br />
-           <label for="comments" id='comments'>Comment or Message</label>
+          <label for="comments" id='comments'>Comment or Message</label>
               <br />
-         <textarea name="message" id='comments-in'></textarea>
+          <textarea name="message" id='comments-in'></textarea>
               <br />
-         <input type="submit" value="SUBMIT" id='submit' />
-         <input type="hidden" name="_next" value="https://adamjwright.com" />
+          <input type="submit" value="SUBMIT" id='submit' />
+          <input type="hidden" name="_next" value="https://adamjwright.com" />
         </form>
       </div>
     </div>
@@ -305,12 +305,12 @@ function Album(props) {
 
         <img src={skyline} alt='seatle skyline' className='skyline-img'/>
           <div className='overlay'>
-          <a href='https://www.google.com/maps/place/1215+N+45th+St,+Seattle,+WA+98103/@47.6570521,-122.3612009,13.25z/data=!4m5!3m4!1s0x5490145167fe978d:0x64d3c93762b6dee3!8m2!3d47.6612275!4d-122.3430452' className='icon'>
-        <img src={pin} alt='red location icon' id='red-pin'/>
-          </a>
-        </div>
-      </div>   
-     </footer>
+            <a href='https://www.google.com/maps/place/1215+N+45th+St,+Seattle,+WA+98103/@47.6570521,-122.3612009,13.25z/data=!4m5!3m4!1s0x5490145167fe978d:0x64d3c93762b6dee3!8m2!3d47.6612275!4d-122.3430452' className='icon'>
+              <img src={pin} alt='red location icon' id='red-pin'/>
+            </a>
+          </div>
+        </div>   
+      </footer>
 
   {/* End footer */}
       
@@ -322,8 +322,7 @@ Album.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-
-// The menu drawer component
+// The mobile menu drawer component
 
 class TemporaryDrawer extends React.Component {
   state = {
@@ -342,33 +341,33 @@ class TemporaryDrawer extends React.Component {
     const sideList = (
       <div className='drawer'>
         <List id='menu-list'>
-        <a className='no-under' onClick={this.toggleDrawer('left', false)}>
-          <ListItem id='close'>
-            <ListItemIcon id='close'>
-              <img src={icon} alt='x icon' id='x-icon'/>
-            </ListItemIcon >
+          <a className='no-under' onClick={this.toggleDrawer('left', false)}>
+            <ListItem id='close'>
+              <ListItemIcon id='close'>
+                <img src={icon} alt='x icon' id='x-icon'/>
+              </ListItemIcon >
               <p id='close-text'>CLOSE MENU</p>
             </ListItem>
-         </a>
+          </a>
             <Divider className='divider'/>
-        <a href='https://adamjwright.com/#stack'>
-          <ListItem id='projects-link'>
+          <a href='https://adamjwright.com/#stack'>
+            <ListItem id='projects-link'>
               <p id='projects-link'>Projects</p>
-          </ListItem>
-         </a>
-           <Divider className='divider' />
-        <a href='https://adamjwright.com/#footer'>
-          <ListItem id='about-link'>
+            </ListItem>
+          </a>
+            <Divider className='divider' />
+          <a href='https://adamjwright.com/#footer'>
+            <ListItem id='about-link'>
               <p id='about-link'>About</p>
-          </ListItem>
-         </a>
-           <Divider className='divider' />
-        <a href='https://adamjwright.com/blog'>
-          <ListItem id='blog-link'>
+            </ListItem>
+          </a>
+            <Divider className='divider' />
+          <a href='https://adamjwright.com/blog'>
+            <ListItem id='blog-link'>
               <p id='blog-link'>Blog</p>
-          </ListItem>
-         </a>
-           <Divider className='divider' />
+            </ListItem>
+          </a>
+            <Divider className='divider' />
         </List>
       </div>
     );
@@ -381,7 +380,7 @@ class TemporaryDrawer extends React.Component {
                   Menu
               </p>
           </div>
-         <Drawer open={this.state.left} onClose={this.toggleDrawer('left', false)}>
+        <Drawer open={this.state.left} onClose={this.toggleDrawer('left', false)}>
           <div
             tabIndex={0}
             role="button"
