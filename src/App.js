@@ -15,13 +15,13 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
-import Button from '@material-ui/core/Button';
+// import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import * as Scroll from 'react-scroll';
+// import ListItemText from '@material-ui/core/ListItemText';
+// import * as Scroll from 'react-scroll';
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import logo from './Adam_logo.png';
 import skyline from './skyline.png';
@@ -233,13 +233,13 @@ function Album(props) {
                     image={card.image} 
                     title={card.title}
                   />
-                  </a>
+                </a>
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
                       {card.project}
                     </Typography>
                     <Typography>
-                    {card.about}
+                      {card.about}
                     </Typography>
                   </CardContent>
                 </Card>
