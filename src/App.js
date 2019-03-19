@@ -27,6 +27,8 @@ import quote_generator_screenshot from './quote-generator-screenshot.png';
 import markdown_screenshot from './markdown-screenshot.png'
 // @ts-ignore
 import calculator_screenshot from './calculator-screenshot.png'
+//@ts-ignore
+import amp_library_screenshot from './amp-library-screenshot.png'
 // @ts-ignore
 import logo from './Adam_logo.png';
 // @ts-ignore
@@ -222,7 +224,7 @@ function Album(props) {
       <a href='https://adamjwright.com/amp_library'>
         <CardMedia
              className={classes.cardMedia}
-             image={"https://i.imgur.com/FYO43HV.png"} 
+             image={amp_library_screenshot} 
              title="Amp Information Library"
            />
            </a>
