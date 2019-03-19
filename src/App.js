@@ -1,7 +1,6 @@
-
 // @ts-check
 
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
@@ -15,29 +14,42 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
-// import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
-// import ListItemText from '@material-ui/core/ListItemText';
-// import * as Scroll from 'react-scroll';
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link } from 'react-scroll'
+// @ts-ignore
 import logo from './Adam_logo.png';
+// @ts-ignore
 import skyline from './skyline.png';
+// @ts-ignore
 import pin from './maps-pin.png';
+// @ts-ignore
 import html from './html.png';
+// @ts-ignore
 import css from './css.png';
+// @ts-ignore
 import js from './js.png';
+// @ts-ignore
 import git from './git.png';
+// @ts-ignore
 import react from './react-1.png';
+// @ts-ignore
 import mui from './mui.png';
+// @ts-ignore
 import npm from './npm.png';
+// @ts-ignore
 import wordpress from './wordpress.jpg';
+// @ts-ignore
 import menu from './menu.png';
+// @ts-ignore
 import icon from './x-icon.png';
+// @ts-ignore
 import github from './github-icon.png';
+// @ts-ignore
 import linkedin from './linkedin-icon.png';
+// @ts-ignore
 import facebook from './facebook-icon.png';
 
 // material UI style object
@@ -268,9 +280,9 @@ function Album(props) {
           I am a Seattle based developer who is completing a computer science degree and looking to better at programming each and every day. I am focusing on React in my spare time. If you would like to reach out to me then feel free to use the contact box or email adam@adamjwright.
           </Typography>
           <div id='social'>
-          <a href='https://github.com/adam4321'><img id='github'src={github} /></a>
-          <a href='https://www.linkedin.com/in/adamjw321/'><img id='linkedin'src={linkedin} /></a>
-          <a href='https://www.facebook.com/adam.wright.10690203'><img id='facebook'src={facebook} /></a>
+          <a href='https://github.com/adam4321'><img id='github'src={github}  alt='github icon'/></a>
+          <a href='https://www.linkedin.com/in/adamjw321/'><img id='linkedin'src={linkedin} alt='linkedin icon' /></a>
+          <a href='https://www.facebook.com/adam.wright.10690203'><img id='facebook'src={facebook} alt='facebook icon' /></a>
           </div>
       </div>
 
