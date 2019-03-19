@@ -20,6 +20,14 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import { Link } from 'react-scroll'
 // @ts-ignore
+import drum_machine_screenshot from './drum-machine-screenshot.png';
+// @ts-ignore
+import quote_generator_screenshot from './quote-generator-screenshot.png';
+// @ts-ignore
+import markdown_screenshot from './markdown-screenshot.png'
+// @ts-ignore
+import calculator_screenshot from './calculator-screenshot.png'
+// @ts-ignore
 import logo from './Adam_logo.png';
 // @ts-ignore
 import skyline from './skyline.png';
@@ -112,10 +120,10 @@ const styles = theme => ({
 // object holding the four lower project's information
 
 const cards = [
-{key:1,image:"https://i.imgur.com/0AGbvX1.png",title:"Random Quote Generator",project:"Random Quote Generator",link:"https://adamjwright.com/quote_generator",about:"Displays a new quote when you press the new quote button and will tweet the quote for you."},
-{key:2,image:"https://i.imgur.com/oiuRp3S.png",title:"React Drum Machine",project:"React Drum Machine",link:"https://adamjwright.com/drum_machine",about:"Plays a sound when you press the keyboard key or click the button for the displayed letter."},
-{key:3,image:"https://i.imgur.com/IENvKLW.png",title:"React Markup Previewer",project:"React Markdown Previewer",link:"https://adamjwright.com/markdown_previewer",about:"Turns the entries into the box on the left into Git Flavored Markdown on the right."},
-{key:4,image:"https://i.imgur.com/IHKRgap.png",title:"React Calculator",project:"React Calculator App",link:"https://adamjwright.com/react_calculator",about:"Modern style calculator application that is fully mobile responsive ."}
+{key:1,image:quote_generator_screenshot,title:"Random Quote Generator",project:"Random Quote Generator",link:"https://adamjwright.com/quote_generator",about:"Displays a new quote when you press the new quote button and will tweet the quote for you."},
+{key:2,image:drum_machine_screenshot,title:"React Drum Machine",project:"React Drum Machine",link:"https://adamjwright.com/drum_machine",about:"Plays a sound when you press the keyboard key or click the button for the displayed letter."},
+{key:3,image:markdown_screenshot,title:"React Markup Previewer",project:"React Markdown Previewer",link:"https://adamjwright.com/markdown_previewer",about:"Turns the entries into the box on the left into Git Flavored Markdown on the right."},
+{key:4,image:calculator_screenshot,title:"React Calculator",project:"React Calculator App",link:"https://adamjwright.com/react_calculator",about:"Modern style calculator application that is fully mobile responsive ."}
 ];  
 
 
