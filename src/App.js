@@ -32,7 +32,7 @@ import amp_library_screenshot from './amp-library-screenshot.png'
 // @ts-ignore
 import logo from './Adam_logo.png';
 // @ts-ignore
-import skyline from './skyline.png';
+import skyline from './skyline.jpg';
 // @ts-ignore
 import pin from './maps-pin.png';
 // @ts-ignore
