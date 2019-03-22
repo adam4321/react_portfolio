@@ -22,9 +22,9 @@ import { Link } from 'react-scroll'
 // @ts-ignore
 import drum_machine_screenshot from './drum-machine-screenshot.png';
 // @ts-ignore
-import quote_generator_screenshot from './quote-generator-screenshot.png';
+import quote_generator_screenshot from './quote-generator-screenshot.jpg';
 // @ts-ignore
-import markdown_screenshot from './markdown-screenshot.png'
+import markdown_screenshot from './markdown-screenshot.jpg'
 // @ts-ignore
 import calculator_screenshot from './calculator-screenshot.jpg'
 //@ts-ignore
