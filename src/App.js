@@ -20,7 +20,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import { Link } from 'react-scroll'
 // @ts-ignore
-import drum_machine_screenshot from './drum-machine-screenshot.png';
+import drum_machine_screenshot from './drum-machine-screenshot.jpg';
 // @ts-ignore
 import quote_generator_screenshot from './quote-generator-screenshot.jpg';
 // @ts-ignore
