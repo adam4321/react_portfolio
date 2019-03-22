@@ -26,9 +26,9 @@ import quote_generator_screenshot from './quote-generator-screenshot.png';
 // @ts-ignore
 import markdown_screenshot from './markdown-screenshot.png'
 // @ts-ignore
-import calculator_screenshot from './calculator-screenshot.png'
+import calculator_screenshot from './calculator-screenshot.jpg'
 //@ts-ignore
-import amp_library_screenshot from './amp-library-screenshot.png'
+import amp_library_screenshot from './amp-library-screenshot.jpg'
 // @ts-ignore
 import logo from './Adam_logo.png';
 // @ts-ignore
