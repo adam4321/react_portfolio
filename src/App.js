@@ -311,11 +311,11 @@ function Album(props) {
               <br />
           <label for="email" id='email' >Email</label>
               <br />
-          <input type="email" name="_replyto" id='email-in' />
+          <input type="email" name="_replyto" id='email-in' required/>
               <br />
           <label for="comments" id='comments'>Comment or Message</label>
               <br />
-          <textarea name="message" id='comments-in'></textarea>
+          <textarea name="message" id='comments-in' ></textarea>
               <br />
           <input type="submit" value="SUBMIT" id='submit' />
           <input type="hidden" name="_next" value="https://adamjwright.com" />
