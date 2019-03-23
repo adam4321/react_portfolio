@@ -34,7 +34,7 @@ import logo from './Adam_logo.png';
 // @ts-ignore
 import skyline from './skyline.jpg';
 // @ts-ignore
-import pin from './maps-pin.png';
+import pin from './maps-pin-smaller.png';
 // @ts-ignore
 import html from './html.png';
 // @ts-ignore
@@ -48,9 +48,9 @@ import react from './react-1.png';
 // @ts-ignore
 import mui from './mui.png';
 // @ts-ignore
-import npm from './npm.png';
+import npm from './npm.jpg';
 // @ts-ignore
-import wordpress from './wordpress.jpg';
+import wordpress from './wordpress-smaller.jpg';
 // @ts-ignore
 import menu from './menu.png';
 // @ts-ignore
