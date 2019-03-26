@@ -3,7 +3,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* The navigation bar */
+/* navigation bar */
 
 .barbar {
   width:100%;
@@ -80,13 +80,13 @@ a:hover {
   transition: 0.4s;
 }
 
-.darken{
+.darken {
   width:210px;
   height:115px;
   margin-left:-40px;
 }
 
-/* Full size navbar links */
+/* full size navbar links */
 
 #about {
   margin-left:4.8vw;
@@ -96,7 +96,7 @@ a:hover {
   margin-left:6vw;
 }
 
-.divider{
+.divider {
   border: rgba(247, 243, 243, 0.685);
   border-width: thin;
 }
@@ -155,9 +155,9 @@ a:hover {
   color:black;
 }
 
-/* The skills section icons */
+/* skills section icons */
 
-.tech-icon{
+.tech-icon {
   color:white;
 }
 
@@ -206,9 +206,9 @@ a:hover {
   margin-left:3.5vw;
 }
 
-/* Third section of the page */
+/* third section of the page */
 
-/* The Contact Box */
+/* contact form */
 
 #name {
   float:left;
@@ -287,21 +287,21 @@ a:hover {
   background-color:rgb(14, 13, 13);
 }
 
-/* The social link icons */
+/* social link icons */
 
-#social{
+#social {
   margin-top:2vw;
 }
 
-#github{
+#github {
   margin-right:1.5vw;
 }
 
-#linkedin{
+#linkedin {
   margin-right:1.5vw;
 }
 
-/* When you move the mouse over the pin icon it changes color */
+/* when you move the mouse over the pin icon it changes color */
 
 .icon:hover {
   color: #eee;
@@ -347,12 +347,12 @@ a:hover {
 }
 
 
-/* Mobile Break Points */
-
+/* mobile break points */
 
 /* Media query below 400 px */
 
 @media only screen and (max-width: 400px) {
+
   .tech-icon {
     margin:2.8vw;
   }
@@ -367,8 +367,8 @@ a:hover {
 
 /* Media query below 600 px */
 
-
 @media only screen and (max-width: 600px) {
+
   .bottom-container {
     height: 340px;
     margin-top:15vw;
@@ -423,9 +423,10 @@ a:hover {
   }
 }
 
-/* Media query below 960 px */
+/* media query below 960 px */
 
 @media only screen and (max-width: 960px) {
+
   #menu-container {
   position:absolute;
     width:90px;
@@ -453,6 +454,7 @@ a:hover {
  /* Media query below 1200 px */
 
 @media only screen and (max-width: 1200px) {
+
   .tech-icon {
     margin:2.8vw;
   }
@@ -469,17 +471,19 @@ a:hover {
   }
 }
 
-/* Media query above 588 px */
+/* media query above 588 px */
 
 @media only screen and (min-width: 588px) {
+
   #menu-container {
     margin-left:65%;
   }
 }
 
-/* Media query above 600 px */
+/* media query above 600 px */
 
 @media only screen and (min-width: 600px) {
+
   .bottom-container {
     height: 100%;
     margin-top:75vw;
@@ -507,9 +511,10 @@ a:hover {
   }
 }
 
-/* Media query above 960 px */
+/* media query above 960 px */
 
 @media only screen and (min-width: 960px) {
+
   #menu-container {
     display:none;
   }
@@ -542,9 +547,10 @@ a:hover {
   }
 }
 
-/* Media query above 1200 px */
+/* media query above 1200 px */
 
 @media only screen and (min-width: 1200px) {
+  
   .tech-icon {
     margin:2.3vw;
   }
