@@ -6,14 +6,14 @@ body {
 /* Navigation bar */
 
 .barbar {
-  width:100%;
+  width: 100%;
 }
 
 .logogo {
   margin-left: 8.85vw;
   margin-top: .4vw;
   width: 212px;
-  height:115.85px;
+  height: 115.85px;
   -webkit-transition: 0.4s;
   -moz-transition:  0.4s;
   -o-transition: 0.4s;
@@ -21,8 +21,8 @@ body {
 }
 
 .logogo:hover {
-  background-color:#000;
-  opacity:0.7;
+  background-color: #000;
+  opacity: 0.7;
   -webkit-transition: 0.4s;
   -moz-transition:  0.4s;
   -o-transition: 0.4s;
@@ -40,7 +40,7 @@ body {
 
 .underline:link {
   text-decoration: none;
-  color:#fff;
+  color: #fff;
   position: relative;
 }
 
@@ -73,7 +73,7 @@ a {
 
 a:hover {
   color: rgba(154, 182, 196, 0.582);
-  opacity:0.6;
+  opacity: 0.6;
   -webkit-transition: 0.4s;
   -moz-transition:  0.4s;
   -o-transition: 0.4s;
@@ -81,19 +81,19 @@ a:hover {
 }
 
 .darken {
-  width:210px;
-  height:115px;
-  margin-left:-40px;
+  width: 210px;
+  height: 115px;
+  margin-left: -40px;
 }
 
 /* Full size navbar links */
 
 #about {
-  margin-left:4.8vw;
+  margin-left: 4.8vw;
 }
 
 #blog {
-  margin-left:6vw;
+  margin-left: 6vw;
 }
 
 .divider {
@@ -102,108 +102,108 @@ a:hover {
 }
 
 #x-icon {
-  width:16px;
-  height:16px;
-  margin-top:19px;
+  width: 16px;
+  height: 16px;
+  margin-top: 19px;
 }
 
 #menu-list {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 .drawer {
-  width:300px;
-  padding:0;
+  width: 300px;
+  padding: 0;
   cursor: pointer;
 }
 
 #close {
   font-size: 16px;
-  height:52px;
+  height: 52px;
   background-color: rgba(247, 243, 243, 0.685);
 }
 
 #close-text {
   font-size: 13.3px;
   font-weight: 600;
-  height:50px;
+  height: 50px;
   margin-top: 46px;
 }
 
 #projects-link {
-  height:40px;
-  margin-top:11px;
-  margin-bottom:1px;
+  height: 40px;
+  margin-top: 11px;
+  margin-bottom: 1px;
   font-size: 14px;
-  color:black;
+  color: black;
 }
 
 #about-link {
-  height:40px;
-  margin-top:11px;
-  margin-bottom:1px;
+  height: 40px;
+  margin-top: 11px;
+  margin-bottom: 1px;
   font-size: 14px;
-  color:black;
+  color: black;
 }
 
 #blog-link {
-  height:40px;
-  margin-top:11px;
-  margin-bottom:1px;
+  height: 40px;
+  margin-top: 11px;
+  margin-bottom: 1px;
   font-size: 14px;
-  color:black;
+  color: black;
 }
 
 /* Skills section icons */
 
 .tech-icon {
-  color:white;
+  color: white;
 }
 
 #icon-container {
-  margin-top:-1.5vw;
-  margin-bottom:5vw;
-  height:45vw;
-  width:90vw;
+  margin-top: -1.5vw;
+  margin-bottom: 5vw;
+  height: 45vw;
+  width: 90vw;
 }
 
 #html-icon {
-  width:15.5%;
-  margin-left:4.5vw;
+  width: 15.5%;
+  margin-left: 4.5vw;
 }
 
 #css-icon {
-  width:15%;
+  width: 15%;
 }
 
 #js-icon {
   width: 14.5%;
-  margin-left:2.5vw;
+  margin-left: 2.5vw;
 }
 
 #react-icon {
-  width:15%;
+  width: 15%;
 }
 
 #mui-icon {
-  width:18%;
+  width: 18%;
   margin-left: 3.6vw;
 }
 
 #git-icon {
   width: 13%;
-  margin-left:2vw;
+  margin-left: 2vw;
 }
 
 #npm-icon {
-  width:13%;
-  margin-left:3.5vw;
+  width: 13%;
+  margin-left: 3.5vw;
 }
 
 #wordpress-icon {
-  width:13.5%;
-  margin-left:3.5vw;
+  width: 13.5%;
+  margin-left: 3.5vw;
 }
 
 /* Third section of the page */
@@ -211,72 +211,72 @@ a:hover {
 /* Contact form */
 
 #name {
-  float:left;
+  float: left;
   color:  rgb(92, 92, 92);
 }
 
 #first-in {
-  float:left;
-  margin-right:1vw;
-  border-radius:2px;
-  border:1px solid rgb(172, 172, 172);
-  width:35%;
+  float: left;
+  margin-right: 1vw;
+  border-radius: 2px;
+  border: 1px solid rgb(172, 172, 172);
+  width: 35%;
 }
 
 #first {
-  float:left;
+  float: left;
   color: rgb(172, 172, 172);
-  font-size:13px;
+  font-size: 13px;
 }
 
 #last-in {
-  float:left;
-  width:35%;
-  border-radius:2px;
-  border:1px solid rgb(172, 172, 172);
+  float: left;
+  width: 35%;
+  border-radius: 2px;
+  border: 1px solid rgb(172, 172, 172);
 }
 
 #last {
-  margin-left:-20%;
+  margin-left: -20%;
   color: rgb(172, 172, 172);
-  font-size:13px;
+  font-size: 13px;
 }
 
 #email {
-  float:left;
+  float: left;
   color:  rgb(92, 92, 92);
 }
 
 #email-in {
-  width:76%;
-  float:left;
-  border:1px solid rgb(172, 172, 172);
-  border-radius:2px;
+  width: 76%;
+  float: left;
+  border: 1px solid rgb(172, 172, 172);
+  border-radius: 2px;
 }
 
 #comments {
-  float:left;
+  float: left;
   color:  rgb(92, 92, 92);
 }
 
 #comments-in {
-  float:left;
-  max-width:100%;
-  min-width:100%;
-  height:8vw;
-  border:1px solid rgb(172, 172, 172);
-  resize:vertical;  
-  border-radius:2px;
+  float: left;
+  max-width: 100%;
+  min-width: 100%;
+  height: 8vw;
+  border: 1px solid rgb(172, 172, 172);
+  resize: vertical;  
+  border-radius: 2px;
 }
 
 #submit {
-  float:left;
+  float: left;
   background-color: rgb(92, 92, 92);
   border-radius: 5px;
-  color:white;
-  font-size:13px;
-  padding:11px 23px;
-  margin-top:12px;
+  color: white;
+  font-size: 13px;
+  padding: 11px 23px;
+  margin-top: 12px;
   -webkit-transition: 0.4s;
   -moz-transition:  0.4s;
   -o-transition: 0.4s;
@@ -284,21 +284,21 @@ a:hover {
 }
 
 #submit:hover {
-  background-color:rgb(14, 13, 13);
+  background-color: rgb(14, 13, 13);
 }
 
 /* Social link icons */
 
 #social {
-  margin-top:2vw;
+  margin-top: 2vw;
 }
 
 #github {
-  margin-right:1.5vw;
+  margin-right: 1.5vw;
 }
 
 #linkedin {
-  margin-right:1.5vw;
+  margin-right: 1.5vw;
 }
 
 /* When you move the mouse over the pin icon it changes color */
@@ -321,15 +321,15 @@ a:hover {
 
 .skyline-img {
   max-width: 100%;
-  margin:0!important;
-  padding:0!important;
-  border:0!important;
+  margin: 0!important;
+  padding: 0!important;
+  border: 0!important;
 }
 
 #footer {
-  margin:0!important;
-  padding:0!important;
-  border:0!important;
+  margin: 0!important;
+  padding: 0!important;
+  border: 0!important;
 }
 
 .contact {
@@ -341,8 +341,8 @@ a:hover {
 }
 
 #red-pin {
-  width:9%;
-  left:44%;
+  width: 9%;
+  left: 44%;
   position: absolute;
 }
 
@@ -354,14 +354,14 @@ a:hover {
 @media only screen and (max-width: 400px) {
 
   .tech-icon {
-    margin:2.8vw;
+    margin: 2.8vw;
   }
 
   #icon-container {
-    margin-top:-20vw;
-    margin-bottom:5vw;
-    height:25vw;
-    width:90vw;
+    margin-top: -20vw;
+    margin-bottom: 5vw;
+    height: 25vw;
+    width: 90vw;
   }
 }
 
@@ -371,54 +371,54 @@ a:hover {
 
   .bottom-container {
     height: 340px;
-    margin-top:15vw;
+    margin-top: 15vw;
   }
 
   #footer {
-    height:165vw;
+    height: 165vw;
   }
 
   #about-text {
-    top:-5vw;
-    left:15%;
-    width:70%;
-    margin-top:2vw;
+    top: -5vw;
+    left: 15%;
+    width: 70%;
+    margin-top: 2vw;
   }
 
   .contact {
-    top:120%;
-    left:10%;
-    margin:0 auto;
-    margin-left:-10%;
-    padding-left:8vw;
-    width:100%;
-    height:100%;
-    background-color:white;
+    top: 120%;
+    left: 10%;
+    margin: 0 auto;
+    margin-left: -10%;
+    padding-left: 8vw;
+    width: 100%;
+    height: 100%;
+    background-color: white;
   }
 
   #contact-wrapper {
-    position:absolute;
-    width:82%;
-    height:100%;
-    margin:0 auto;
+    position: absolute;
+    width: 82%;
+    height: 100%;
+    margin: 0 auto;
   }
 
   #email-in {
-    width:71%;
+    width: 71%;
   }
 
   #comments-in {
-    height:15vw;
+    height: 15vw;
   }
 
   .skyline-img {
     position: absolute;
-    top:680px;
-    left:-0%;
+    top: 680px;
+    left: -0%;
   }
 
   #red-pin {
-    width:10%;
+    width: 10%;
     top: 220%;
   }
 }
@@ -428,26 +428,26 @@ a:hover {
 @media only screen and (max-width: 960px) {
 
   #menu-container {
-  position:absolute;
-    width:90px;
-    height:20px;
+  position: absolute;
+    width: 90px;
+    height: 20px;
     margin-left: 50%;
-    margin-right:1%;
+    margin-right: 1%;
     cursor: pointer;
   }
   
   .menu {
-    width:16px;
+    width: 16px;
     text-decoration: none;
   }
   
   #menu-text {
-    display:inline;
-    margin-left:10px;
+    display: inline;
+    margin-left: 10px;
   }
   
   #scroll-links {
-    display:none;
+    display: none;
   }
 }
 
@@ -456,14 +456,14 @@ a:hover {
 @media only screen and (max-width: 1200px) {
 
   .tech-icon {
-    margin:2.8vw;
+    margin: 2.8vw;
   }
 
   #icon-container {
-    margin-top:-8vw;
-    margin-bottom:5vw;
-    height:30vw;
-    width:90vw;
+    margin-top: -8vw;
+    margin-bottom: 5vw;
+    height: 30vw;
+    width: 90vw;
   }
 
   #mui-icon {
@@ -476,7 +476,7 @@ a:hover {
 @media only screen and (min-width: 588px) {
 
   #menu-container {
-    margin-left:65%;
+    margin-left: 65%;
   }
 }
 
@@ -486,27 +486,27 @@ a:hover {
 
   .bottom-container {
     height: 100%;
-    margin-top:75vw;
+    margin-top: 75vw;
   }
 
   #footer {
-    height:auto;
+    height: auto;
   }
 
   #about-text {
-    top:-65vw;
-    left:10%;
-    width:70%;
+    top: -65vw;
+    left: 10%;
+    width: 70%;
   }
 
   .contact {
-    top:-20vw;
-    left:10%;
-    width:70%;
+    top: -20vw;
+    left: 10%;
+    width: 70%;
   }
 
   #red-pin {
-    width:9%;
+    width: 9%;
     top: 55%;
   }
 }
@@ -516,33 +516,33 @@ a:hover {
 @media only screen and (min-width: 960px) {
 
   #menu-container {
-    display:none;
+    display: none;
   }
 
   #scroll-links {
     width: 80%;
-    margin-top:.5vw;
+    margin-top: .5vw;
  }
 
  .bottom-container {
     height: 100%;
-    margin-top:20vw;
+    margin-top: 20vw;
  }
 
   .contact {
-    top:-13vw;
-    left:4%;
-    width:23%;
+    top: -13vw;
+    left: 4%;
+    width: 23%;
   }
 
   #about-text {
-    top:-13vw;
-    left:33%;
-    width:30vw;
+    top: -13vw;
+    left: 33%;
+    width: 30vw;
   }
   
   #red-pin {
-    width:9%;
+    width: 9%;
     top: 55%;
   }
 }
@@ -552,38 +552,38 @@ a:hover {
 @media only screen and (min-width: 1200px) {
   
   .tech-icon {
-    margin:2.3vw;
+    margin: 2.3vw;
   }
 
   #icon-container {
-    margin-top:3.2vw;
-    height:28vw;
-    width:90vw;
+    margin-top: 3.2vw;
+    height: 28vw;
+    width: 90vw;
   }
 
   #stack {
-    padding-top:5vw;
+    padding-top: 5vw;
   }
 
   .bottom-container {
     height: 100%;
-    margin-top:10vw;
+    margin-top: 10vw;
   }
 
   .contact {
-    top:-2vw;
-    left:4%;
-    width:23%;
+    top: -2vw;
+    left: 4%;
+    width: 23%;
   }
 
   #about-text {
-    top:-1vw;
-    left:33%;
-    width:30vw;
+    top: -1vw;
+    left: 33%;
+    width: 30vw;
   }
 
   #red-pin {
-    width:9%;
+    width: 9%;
     top: 55%;
   }
 }  

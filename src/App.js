@@ -20,47 +20,26 @@ import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import { Link } from 'react-scroll'
-// @ts-ignore
 import drum_machine_screenshot from './drum-machine-screenshot.jpg';
-// @ts-ignore
-import quote_generator_screenshot from './quote-generator-screenshot.jpg';
-// @ts-ignore
-import markdown_screenshot from './markdown-screenshot.jpg'
-// @ts-ignore
-import calculator_screenshot from './calculator-screenshot.jpg'
-//@ts-ignore
+import quote_generator_screenshot from './quote-generator-screenshot.png';
+import markdown_screenshot from './markdown-screenshot.png'
+import calculator_screenshot from './calculator-screenshot.png'
 import amp_library_screenshot from './amp-library-screenshot.jpg'
-// @ts-ignore
 import logo from './Adam_logo.png';
-// @ts-ignore
 import skyline from './skyline.jpg';
-// @ts-ignore
 import pin from './maps-pin-smaller.png';
-// @ts-ignore
 import html from './html.png';
-// @ts-ignore
 import css from './css.png';
-// @ts-ignore
 import js from './js.png';
-// @ts-ignore
 import git from './git.png';
-// @ts-ignore
 import react from './react-1.png';
-// @ts-ignore
 import mui from './mui.png';
-// @ts-ignore
 import npm from './npm.jpg';
-// @ts-ignore
 import wordpress from './wordpress-smaller.jpg';
-// @ts-ignore
 import menu from './menu.png';
-// @ts-ignore
 import icon from './x-icon.png';
-// @ts-ignore
 import github from './github-icon.png';
-// @ts-ignore
 import linkedin from './linkedin-icon.png';
-// @ts-ignore
 import facebook from './facebook-icon.png';
 
 // Material UI style object
@@ -123,10 +102,10 @@ const styles = theme => ({
 // Object holding the four lower project's information
 
 const cards = [
-{key:1,image:quote_generator_screenshot,title:"Random Quote Generator",project:"Random Quote Generator",link:"https://adamjwright.com/quote_generator",about:"Displays a new quote when you press the new quote button and will tweet the quote for you."},
-{key:2,image:drum_machine_screenshot,title:"React Drum Machine",project:"React Drum Machine",link:"https://adamjwright.com/drum_machine",about:"Plays a sound when you press the keyboard key or click the button for the displayed letter."},
-{key:3,image:markdown_screenshot,title:"React Markup Previewer",project:"React Markdown Previewer",link:"https://adamjwright.com/markdown_previewer",about:"Turns the entries into the box on the left into Git Flavored Markdown on the right."},
-{key:4,image:calculator_screenshot,title:"React Calculator",project:"React Calculator App",link:"https://adamjwright.com/react_calculator",about:"Modern style calculator application that is fully mobile responsive ."}
+{key:1, image:quote_generator_screenshot, title:"Random Quote Generator", project:"Random Quote Generator", link:"https://adamjwright.com/quote_generator", about:"Displays a new quote when you press the new quote button and will tweet the quote for you."},
+{key:2, image:drum_machine_screenshot, title:"React Drum Machine", project:"React Drum Machine", link:"https://adamjwright.com/drum_machine", about:"Plays a sound when you press the keyboard key or click the button for the displayed letter."},
+{key:3, image:markdown_screenshot, title:"React Markup Previewer", project:"React Markdown Previewer", link:"https://adamjwright.com/markdown_previewer", about:"Turns the entries into the box on the left into Git Flavored Markdown on the right."},
+{key:4, image:calculator_screenshot, title:"React Calculator", project:"React Calculator App", link:"https://adamjwright.com/react_calculator", about:"Modern style calculator application that is fully mobile responsive ."}
 ];  
 
 
