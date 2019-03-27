@@ -63,7 +63,7 @@ import linkedin from './linkedin-icon.png';
 // @ts-ignore
 import facebook from './facebook-icon.png';
 
-// material UI style object
+// Material UI style object
 
 const styles = theme => ({
   appBar: {
@@ -120,7 +120,7 @@ const styles = theme => ({
   },
 });
 
-// object holding the four lower project's information
+// Object holding the four lower project's information
 
 const cards = [
 {key:1,image:quote_generator_screenshot,title:"Random Quote Generator",project:"Random Quote Generator",link:"https://adamjwright.com/quote_generator",about:"Displays a new quote when you press the new quote button and will tweet the quote for you."},
@@ -137,7 +137,7 @@ function Album(props) {
     <React.Fragment>
       <CssBaseline />
 
-  {/* the header nav bar */}
+  {/* Header nav bar */}
 
     <AppBar position="static"   className={classes.appBar}>
       <Toolbar className={'barbar'}>
@@ -160,7 +160,7 @@ function Album(props) {
            </Link>   
          </div>
 
-  {/* responsive menu component */}
+  {/* Responsive menu component */}
 
          <div id='menu-container'>
            <a>
@@ -171,7 +171,7 @@ function Album(props) {
       </Toolbar>
     </AppBar>
 
-  {/* the skills section */}
+  {/* Skills section */}
  
     <main>
       <div className={classes.heroUnit}>
@@ -180,7 +180,7 @@ function Album(props) {
             <Grid container  justify="center">
               <Grid id='icon-container' item xs={9} sm={9} md={9} lg={12}>
 
- {/* grid of tech icons */}
+ {/* Grid of my skills tech icons */}
 
           <a href='https://en.wikipedia.org/wiki/HTML'>
             <img className='tech-icon' id='html-icon' alt='html' src={html}/>
@@ -214,7 +214,7 @@ function Album(props) {
 
   <div className={classNames(classes.layout, classes.cardGrid)}>
 
-{/* full stack project card */}
+{/* Full stack project card */}
 
     <div className='full-stack' id='stack'>
 
@@ -242,7 +242,7 @@ function Album(props) {
        </Grid>
       </div>
 
- {/* smaller project cards */}
+ {/* Smaller project cards */}
 
       <div className='smaller-apps' >
 
@@ -273,15 +273,12 @@ function Album(props) {
         </div>
       </main>
 
-  {/* footer */}
+  {/* Footer, which is the bottom 1/3 of the page */}
 
-      <footer id='footer' className={classes.footer}>
-        
-  {/* The bottom of the page */}
-      
+      <footer id='footer' className={classes.footer}>      
          <div  className='bottom-container'>
 
-  {/* about me section */}
+  {/* About me box */}
 
       <div id='about-text'>
         <Typography variant="h6" align="center" id='me'gutterBottom>
@@ -297,7 +294,7 @@ function Album(props) {
           </div>
       </div>
 
-  {/* contact form */}
+  {/* Contact form */}
 
     <div className='contact'>
       <div id='contact-wrapper'>
@@ -324,7 +321,7 @@ function Album(props) {
       </div>
     </div>
 
-  {/* the skyline and location pin */}
+  {/* The skyline background and location pin */}
 
         <img src={skyline} alt='seatle skyline' className='skyline-img'/>
           <div className='overlay'>
@@ -335,7 +332,7 @@ function Album(props) {
         </div>   
       </footer>
 
-  {/* end footer */}
+  {/* End of the footer */}
       
     </React.Fragment>
   );
@@ -345,7 +342,8 @@ Album.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-// the mobile menu drawer component
+
+// The mobile menu drawer component
 
 class TemporaryDrawer extends React.Component {
   state = {

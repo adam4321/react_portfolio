@@ -3,7 +3,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* navigation bar */
+/* Navigation bar */
 
 .barbar {
   width:100%;
@@ -86,7 +86,7 @@ a:hover {
   margin-left:-40px;
 }
 
-/* full size navbar links */
+/* Full size navbar links */
 
 #about {
   margin-left:4.8vw;
@@ -155,7 +155,7 @@ a:hover {
   color:black;
 }
 
-/* skills section icons */
+/* Skills section icons */
 
 .tech-icon {
   color:white;
@@ -206,9 +206,9 @@ a:hover {
   margin-left:3.5vw;
 }
 
-/* third section of the page */
+/* Third section of the page */
 
-/* contact form */
+/* Contact form */
 
 #name {
   float:left;
@@ -287,7 +287,7 @@ a:hover {
   background-color:rgb(14, 13, 13);
 }
 
-/* social link icons */
+/* Social link icons */
 
 #social {
   margin-top:2vw;
@@ -301,7 +301,7 @@ a:hover {
   margin-right:1.5vw;
 }
 
-/* when you move the mouse over the pin icon it changes color */
+/* When you move the mouse over the pin icon it changes color */
 
 .icon:hover {
   color: #eee;
@@ -347,7 +347,7 @@ a:hover {
 }
 
 
-/* mobile break points */
+/* Mobile break points */
 
 /* Media query below 400 px */
 
@@ -423,7 +423,7 @@ a:hover {
   }
 }
 
-/* media query below 960 px */
+/* Media query below 960 px */
 
 @media only screen and (max-width: 960px) {
 
@@ -471,7 +471,7 @@ a:hover {
   }
 }
 
-/* media query above 588 px */
+/* Media query above 588 px */
 
 @media only screen and (min-width: 588px) {
 
@@ -480,7 +480,7 @@ a:hover {
   }
 }
 
-/* media query above 600 px */
+/* Media query above 600 px */
 
 @media only screen and (min-width: 600px) {
 
@@ -511,7 +511,7 @@ a:hover {
   }
 }
 
-/* media query above 960 px */
+/* Media query above 960 px */
 
 @media only screen and (min-width: 960px) {
 
@@ -547,7 +547,7 @@ a:hover {
   }
 }
 
-/* media query above 1200 px */
+/* Media query above 1200 px */
 
 @media only screen and (min-width: 1200px) {
   
