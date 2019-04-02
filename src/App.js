@@ -124,16 +124,16 @@ function Album(props) {
           <img src={logo} alt='logo'  className={'logogo'}/>
         </a>
           <div id='scroll-links'>
-            <a  href='https://adamjwright.com/blog' id='blog' className={'underline'}>
+            <a  href='https://adamjwright.com/blog' id='blog' className='underline'>
               Blog
             </a>
             <Link activeClass="active" to="bottom-container" spy={true} smooth={true} offset={50} duration={550} delay={200}>
-            <a variant="h6" href='#footer' id='about' className="underline" noWrap>
+            <a href='#footer' id='about' className='underline'>
               About
             </a>
            </Link>
            <Link activeClass="active" to="full-stack" spy={true} smooth={true} offset={15} duration={550} delay={200}>
-             <a variant="h6" href='#stack' id='projects' className="underline" noWrap>
+             <a href='#stack' id='projects' className="underline">
               Projects
              </a>
            </Link>   
