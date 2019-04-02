@@ -278,19 +278,19 @@ function Album(props) {
     <div className='contact'>
       <div id='contact-wrapper'>
         <form id="contactform" action="https://formspree.io/adam@adamjwright.com" method="POST">
-          <label for="name" id='name' >Name</label>
+          <label id='name' >Name</label>
               <br />
           <input type="text" name="first" id='first-in'/>
           <input type="text" name="last" id='last-in'/>
               <br />
-          <label for="name" id='first' >First</label>
-          <label for="name" id='last' >Last</label>
+          <label id='first' >First</label>
+          <label id='last' >Last</label>
               <br />
-          <label for="email" id='email' >Email</label>
+          <label id='email' >Email</label>
               <br />
           <input type="email" name="_replyto" id='email-in' required/>
               <br />
-          <label for="comments" id='comments'>Comment or Message</label>
+          <label id='comments'>Comment or Message</label>
               <br />
           <textarea name="message" id='comments-in' ></textarea>
               <br />
