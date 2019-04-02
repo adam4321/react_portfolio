@@ -124,7 +124,7 @@ function Album(props) {
           <img src={logo} alt='logo'  className={'logogo'}/>
         </a>
           <div id='scroll-links'>
-            <a variant="h6" href='https://adamjwright.com/blog' id='blog' className="underline"  noWrap>
+            <a  href='https://adamjwright.com/blog' id='blog' className={'underline'}>
               Blog
             </a>
             <Link activeClass="active" to="bottom-container" spy={true} smooth={true} offset={50} duration={550} delay={200}>
