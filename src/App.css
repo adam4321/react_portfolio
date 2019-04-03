@@ -80,6 +80,26 @@ a:hover {
   transition: 0.4s;
 }
 
+.button-styled-link {
+  -webkit-transition: 0.4s;
+  -moz-transition:  0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  text-decoration: none;
+  border: none;
+  color: white;
+  width: 100%;
+}
+
+.button-styled-link:hover {
+  color: rgba(154, 182, 196, 0.582);
+  opacity: 0.6;
+  -webkit-transition: 0.4s;
+  -moz-transition:  0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
 .darken {
   width: 210px;
   height: 115px;
@@ -127,8 +147,9 @@ a:hover {
 #close-text {
   font-size: 13.3px;
   font-weight: 600;
+  color: black;
   height: 50px;
-  margin-top: 46px;
+  margin-top: 50px;
 }
 
 #projects-link {
@@ -433,6 +454,7 @@ a:hover {
     height: 20px;
     margin-left: 50%;
     margin-right: 1%;
+    margin-bottom: 20px;
     cursor: pointer;
   }
   
@@ -444,6 +466,7 @@ a:hover {
   #menu-text {
     display: inline;
     margin-left: 10px;
+    font-size: 17px;
   }
   
   #scroll-links {

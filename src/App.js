@@ -142,9 +142,9 @@ function Album(props) {
   {/* Responsive menu component */}
 
          <div id='menu-container'>
-           <a>
+           <button className='button-styled-link'>
             <TemporaryDrawer />
-           </a>    
+           </button>    
          </div>
 
       </Toolbar>
@@ -336,19 +336,18 @@ class TemporaryDrawer extends React.Component {
   };
 
   render() {
-    const { classes } = this.props;
 
     const sideList = (
       <div className='drawer'>
         <List id='menu-list'>
-          <a className='no-under' onClick={this.toggleDrawer('left', false)}>
+          <button className='button-styled-link' onClick={this.toggleDrawer('left', false)}>
             <ListItem id='close'>
               <ListItemIcon id='close'>
                 <img src={icon} alt='x icon' id='x-icon'/>
               </ListItemIcon >
               <p id='close-text'>CLOSE MENU</p>
             </ListItem>
-          </a>
+          </button>
             <Divider className='divider'/>
           <a href='https://adamjwright.com/#stack'>
             <ListItem id='projects-link'>
@@ -399,5 +398,6 @@ TemporaryDrawer.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
+// @ts-ignore
 export default withStyles(styles)(Album,TemporaryDrawer);
               
