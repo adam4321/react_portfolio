@@ -264,12 +264,12 @@ function Album(props) {
           About Me
           </Typography>
         <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          I am a Seattle based 3rd year Computer Science student who is working in C++ on Linux in my B.S., but all of the code must stay in private repos. I am focusing on React in my spare time and that is what I used to build this site. If you would like to reach out to me then feel free to use the contact box or email adam@adamjwright.
+          I am a Seattle based 3rd year Computer Science student who is working in C/C++ on Linux in my B.S., but all of the code must stay in private repos. I am focusing on React in my spare time and that is what I used to build this site. If you would like to reach out to me then feel free to use the contact box or email adam@adamjwright.
           </Typography>
           <div id='social'>
           <a href='https://github.com/adam4321'><img id='github'src={github}  alt='github icon'/></a>
           <a href='https://www.linkedin.com/in/adamjw321/'><img id='linkedin'src={linkedin} alt='linkedin icon' /></a>
-          <a href='https://www.facebook.com/adam.wright.10690203'><img id='facebook'src={facebook} alt='facebook icon' /></a>
+          {/* <a href='https://www.facebook.com/adam.wright.10690203'><img id='facebook'src={facebook} alt='facebook icon' /></a> */}
           </div>
       </div>
 
