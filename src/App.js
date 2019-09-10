@@ -20,27 +20,27 @@ import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import { Link } from 'react-scroll'
-import drum_machine_screenshot from './drum-machine-screenshot.jpg';
-import quote_generator_screenshot from './quote-generator-screenshot.png';
-import markdown_screenshot from './markdown-screenshot.png'
-import calculator_screenshot from './calculator-screenshot.png'
-import amp_library_screenshot from './amp-library-screenshot.jpg'
-import logo from './Adam_logo.png';
-import skyline from './skyline.jpg';
-import pin from './maps-pin-smaller.png';
-import html from './html.png';
-import css from './css.png';
-import js from './js.png';
-import git from './git.png';
-import react from './react-1.png';
-import mui from './mui.png';
-import npm from './npm.jpg';
-import wordpress from './wordpress-smaller.jpg';
-import menu from './menu.png';
-import icon from './x-icon.png';
-import github from './github-icon.png';
-import linkedin from './linkedin-icon.png';
-import facebook from './facebook-icon.png';
+import drum_machine_screenshot from './images/drum-machine-screenshot.jpg';
+import quote_generator_screenshot from './images/quote-generator-screenshot.png';
+import markdown_screenshot from './images/markdown-screenshot.png'
+import calculator_screenshot from './images/calculator-screenshot.png'
+import amp_library_screenshot from './images/amp-library-screenshot.jpg'
+import logo from './images/Adam_logo.png';
+import skyline from './images/skyline.jpg';
+import pin from './images/maps-pin-smaller.png';
+import html from './images/html.png';
+import css from './images/css.png';
+import js from './images/js.png';
+import git from './images/git.png';
+import react from './images/react-1.png';
+import mui from './images/mui.png';
+import npm from './images/npm.jpg';
+import wordpress from './images/wordpress-smaller.jpg';
+import menu from './images/menu.png';
+import icon from './images/x-icon.png';
+import github from './images/github-icon.png';
+import linkedin from './images/linkedin-icon.png';
+import facebook from './images/facebook-icon.png';
 
 // Material UI style object
 
