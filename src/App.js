@@ -40,7 +40,7 @@ import menu from './images/menu.png';
 import icon from './images/x-icon.png';
 import github from './images/github-icon.png';
 import linkedin from './images/linkedin-icon.png';
-import facebook from './images/facebook-icon.png';
+// import facebook from './images/facebook-icon.png';
 
 // Material UI style object
 
