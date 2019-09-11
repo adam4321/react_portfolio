@@ -14,11 +14,7 @@ import Grid from '@material-ui/core/Grid';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
-import Drawer from '@material-ui/core/Drawer';
-import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
+import TemporaryDrawer from './temporaryDrawer.js';
 import { Link } from 'react-scroll'
 import drum_machine_screenshot from './images/drum-machine-screenshot.jpg';
 import quote_generator_screenshot from './images/quote-generator-screenshot.png';
@@ -36,8 +32,6 @@ import react from './images/react-1.png';
 import mui from './images/mui.png';
 import npm from './images/npm.jpg';
 import wordpress from './images/wordpress-smaller.jpg';
-import menu from './images/menu.png';
-import icon from './images/x-icon.png';
 import github from './images/github-icon.png';
 import linkedin from './images/linkedin-icon.png';
 // import facebook from './images/facebook-icon.png';
@@ -322,82 +316,6 @@ Album.propTypes = {
 };
 
 
-// The mobile menu drawer component
-
-class TemporaryDrawer extends React.Component {
-  state = {
-    left: false
-     };
-
-  toggleDrawer = (side, open) => () => {
-    this.setState({
-      [side]: open,
-    });
-  };
-
-  render() {
-
-    const sideList = (
-      <div className='drawer'>
-        <List id='menu-list'>
-          <button className='button-styled-link' onClick={this.toggleDrawer('left', false)}>
-            <ListItem id='close'>
-              <ListItemIcon id='close'>
-                <img src={icon} alt='x icon' id='x-icon'/>
-              </ListItemIcon >
-              <p id='close-text'>CLOSE MENU</p>
-            </ListItem>
-          </button>
-            <Divider className='divider'/>
-          <a href='https://adamjwright.com/#stack'>
-            <ListItem id='projects-link'>
-              <p id='projects-link'>Projects</p>
-            </ListItem>
-          </a>
-            <Divider className='divider' />
-          <a href='https://adamjwright.com/#footer'>
-            <ListItem id='about-link'>
-              <p id='about-link'>About</p>
-            </ListItem>
-          </a>
-            <Divider className='divider' />
-          <a href='https://adamjwright.com/blog'>
-            <ListItem id='blog-link'>
-              <p id='blog-link'>Blog</p>
-            </ListItem>
-          </a>
-            <Divider className='divider' />
-        </List>
-      </div>
-    );
-
-    return (
-      <div>
-          <div onClick={this.toggleDrawer('left', true)} id='menu-container'>
-            <img src={menu} alt='menu'  className={'menu'}/>
-              <p id='menu-text'>
-                  Menu
-              </p>
-          </div>
-        <Drawer open={this.state.left} onClose={this.toggleDrawer('left', false)}>
-          <div
-            tabIndex={0}
-            role="button"
-            onClick={this.toggleDrawer('left', false)}
-            onKeyDown={this.toggleDrawer('left', false)}
-          >
-            {sideList}
-          </div>
-        </Drawer>
-      </div>
-    );
-  }
-}
-
-TemporaryDrawer.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
 // @ts-ignore
-export default withStyles(styles)(Album,TemporaryDrawer);
+export default withStyles(styles)(Album);
               
