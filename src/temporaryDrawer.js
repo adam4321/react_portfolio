@@ -1,4 +1,6 @@
 
+// The mobile menu drawer component rendered below 960px screen width
+
 import React from 'react';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
@@ -8,7 +10,6 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import menu from './images/menu.png';
 import icon from './images/x-icon.png';
 
-// The mobile menu drawer component
 
 class TemporaryDrawer extends React.Component {
     state = {
