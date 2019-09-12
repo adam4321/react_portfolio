@@ -1,3 +1,7 @@
+/* 
+This is the main file for the site and renders all of the site's layout.
+*/
+
 // @ts-check
 
 import React from 'react';

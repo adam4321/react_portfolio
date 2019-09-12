@@ -1,3 +1,9 @@
+/* 
+This is the primary Css file for the site's styling.
+It works along with the style object in app.js which contains 
+setting options for Material Ui's Css in JS setup.
+*/
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
