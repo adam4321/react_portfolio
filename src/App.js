@@ -1,5 +1,5 @@
 /* 
-This is the main file for the site and renders all of the site's layout.
+The main file for the site which renders all of the site's layout.
 */
 
 // @ts-check
@@ -37,7 +37,6 @@ import npm from './images/npm.jpg';
 import wordpress from './images/wordpress-smaller.jpg';
 import github from './images/github-icon.png';
 import linkedin from './images/linkedin-icon.png';
-// import facebook from './images/facebook-icon.png';
 
 // Material UI style object
 
@@ -406,7 +405,6 @@ function Album(props) {
                                     alt="linkedin icon"
                                 />
                             </a>
-                            {/* <a href='https://www.facebook.com/adam.wright.10690203'><img id='facebook'src={facebook} alt='facebook icon' /></a> */}
                         </div>
                     </div>
 
