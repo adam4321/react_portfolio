@@ -1,9 +1,11 @@
 /* 
 The main file for the site which renders all of the site's layout.
+It uses Material Ui as a component library.
 */
 
 // @ts-check
 
+// Imported libraries
 import React from 'react';
 import './App.css';
 import PropTypes from 'prop-types';
@@ -19,6 +21,8 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import TemporaryDrawer from './temporaryDrawer.js';
 import { Link } from 'react-scroll';
+
+// Images for the page
 import drum_machine_screenshot from './images/drum-machine-screenshot.jpg';
 import quote_generator_screenshot from './images/quote-generator-screenshot.png';
 import markdown_screenshot from './images/markdown-screenshot.png';
