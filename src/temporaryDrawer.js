@@ -92,11 +92,4 @@ class TemporaryDrawer extends React.Component {
     }
 }
 
-// TemporaryDrawer.propTypes = {
-//   classes: PropTypes.object.isRequired,
-// };
-
-// @ts-ignore
-// export default withStyles(styles)(TemporaryDrawer);
-
 export default TemporaryDrawer;
