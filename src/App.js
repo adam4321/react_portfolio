@@ -8,6 +8,7 @@ It uses Material Ui as a component library.
 // Imported libraries
 import React from 'react';
 import './App.css';
+import './mediaQuery.css';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import AppBar from '@material-ui/core/AppBar';
