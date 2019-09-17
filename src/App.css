@@ -147,6 +147,7 @@ a:hover {
     font-size: 16px;
     height: 52px;
     background-color: rgba(247, 243, 243, 0.685);
+    cursor: pointer;
 }
 
 #close-text {
