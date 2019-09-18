@@ -1,8 +1,10 @@
 /*
-Mobile break points for responsive layout changes
+    Mobile break points for responsive layout changes
 */
 
-/* Media query below 400 px */
+/* 
+    Media query below 400 px 
+*/
 
 @media only screen and (max-width: 400px) {
     .tech-icon {
@@ -17,7 +19,9 @@ Mobile break points for responsive layout changes
     }
 }
 
-/* Media query below 600 px */
+/* 
+    Media query below 600 px 
+*/
 
 @media only screen and (max-width: 600px) {
     .bottom-container {
@@ -74,7 +78,9 @@ Mobile break points for responsive layout changes
     }
 }
 
-/* Media query below 960 px */
+/* 
+    Media query below 960 px 
+*/
 
 @media only screen and (max-width: 960px) {
     #menu-container {
@@ -103,7 +109,9 @@ Mobile break points for responsive layout changes
     }
 }
 
-/* Media query below 1200 px */
+/* 
+    Media query below 1200 px 
+*/
 
 @media only screen and (max-width: 1200px) {
     .tech-icon {
@@ -122,7 +130,9 @@ Mobile break points for responsive layout changes
     }
 }
 
-/* Media query above 588 px */
+/* 
+    Media query above 588 px 
+*/
 
 @media only screen and (min-width: 588px) {
     #menu-container {
@@ -130,7 +140,9 @@ Mobile break points for responsive layout changes
     }
 }
 
-/* Media query above 600 px */
+/* 
+    Media query above 600 px 
+*/
 
 @media only screen and (min-width: 600px) {
     .bottom-container {
@@ -160,7 +172,9 @@ Mobile break points for responsive layout changes
     }
 }
 
-/* Media query above 960 px */
+/* 
+    Media query above 960 px 
+*/
 
 @media only screen and (min-width: 960px) {
     #menu-container {
@@ -195,7 +209,9 @@ Mobile break points for responsive layout changes
     }
 }
 
-/* Media query above 1200 px */
+/* 
+    Media query above 1200 px 
+*/
 
 @media only screen and (min-width: 1200px) {
     .tech-icon {

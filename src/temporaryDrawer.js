@@ -1,7 +1,7 @@
 /* 
-Mobile menu drawer component rendered when below 960px screen width.
-It is imported into app.js to allow for a a usable tablet and phone
-menu experience. It is a Material Ui component.
+    Mobile menu drawer component rendered when below 960px screen width.
+    It is imported into app.js to allow for a a usable tablet and phone
+    menu experience. It is a Material Ui component.
 */
 
 // @ts-check

@@ -1,6 +1,6 @@
 /* 
-The main file for the site which renders all of the site's layout.
-It uses Material Ui as a component library.
+    The main file for the site which renders all of the site's layout.
+    It uses Material Ui as a component library.
 */
 
 // @ts-check
@@ -294,6 +294,7 @@ function Album(props) {
                 </div>
 
                 <div className={classNames(classes.layout, classes.cardGrid)}>
+
                     {/* Full stack project card */}
 
                     <div className="full-stack" id="stack">
@@ -481,8 +482,6 @@ function Album(props) {
                     </div>
                 </div>
             </footer>
-
-            {/* End of the footer */}
         </React.Fragment>
     );
 }
