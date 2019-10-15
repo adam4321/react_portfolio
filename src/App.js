@@ -1,7 +1,9 @@
-/* 
-    The main file for the site which renders all of the site's layout.
-    It uses Material Ui as a component library.
-*/
+/**********************************************************************
+** Author:       Adam Wright
+** Description:  The main file for my personal portfolio site. This file
+**               renders the site's layout. It uses Material Ui as a 
+**               component library.
+**********************************************************************/
 
 // @ts-check
 
@@ -44,7 +46,6 @@ import github from './images/github-icon.png';
 import linkedin from './images/linkedin-icon.png';
 
 // Material UI style object
-
 const styles = theme => ({
     appBar: {
         position: 'relative',
@@ -101,9 +102,8 @@ const styles = theme => ({
     }
 });
 
-// Object holding the four lower project's information
-
-const cards = [
+// Object holding the information for the four lower project's cards
+const SMALL_PROJ_CARDS = [
     {
         key: 1,
         image: quote_generator_screenshot,
@@ -142,6 +142,67 @@ const cards = [
     }
 ];
 
+// Object holding the data for grid of tech skills icons below
+const TECH_ICONS_DATA = [
+    {
+        href: 'https://en.wikipedia.org/wiki/HTML',
+        className: 'tech-icon',
+        id: 'html-icon',
+        alt: 'html',
+        src: html,
+    },
+    {
+        href: 'https://en.wikipedia.org/wiki/Cascading_Style_Sheets',
+        className: 'tech-icon',
+        id: 'css-icon',
+        alt: 'css',
+        src: css,
+    },
+    {
+        href: 'https://en.wikipedia.org/wiki/JavaScript',
+        className: 'tech-icon',
+        id: 'js-icon',
+        alt: 'js',
+        src: js,
+    },
+    {
+        href: 'https://en.wikipedia.org/wiki/React_(JavaScript_library)',
+        className: 'tech-icon',
+        id: 'react-icon',
+        alt: 'react',
+        src: react,
+    },
+    {
+        href: 'https://material-ui.com/getting-started/installation/',
+        className: 'tech-icon',
+        id: 'mui-icon',
+        alt: 'mui',
+        src: mui,
+    },
+    {
+        href: 'https://en.wikipedia.org/wiki/Git',
+        className: 'tech-icon',
+        id: 'git-icon',
+        alt: 'git',
+        src: git,
+    },
+    {
+        href: 'https://en.wikipedia.org/wiki/Npm_(software)',
+        className: 'tech-icon',
+        id: 'npm-icon',
+        alt: 'npm',
+        src: npm,
+    },
+    {
+        href: 'https://en.wikipedia.org/wiki/WordPress',
+        className: 'tech-icon',
+        id: 'wordpress-icon',
+        alt: 'wordpress',
+        src: wordpress,
+    },
+];
+
+
 function Album(props) {
     const { classes } = props;
 
@@ -153,17 +214,9 @@ function Album(props) {
 
             <AppBar position="static" className={classes.appBar}>
                 <Toolbar className={'barbar'}>
-                    <a className="darken" href="https://adamjwright.com">
-                        <img src={logo} alt="logo" className={'logogo'} />
-                    </a>
+                    <a className="darken" href="https://adamjwright.com"> <img src={logo} alt="logo" className={'logogo'}/> </a>
                     <div id="scroll-links">
-                        <a
-                            href="https://adamjwright.com/blog"
-                            id="blog"
-                            className="underline"
-                        >
-                            Blog
-                        </a>
+                        <a href="https://adamjwright.com/blog" id="blog" className="underline"> Blog </a>
                         <Link
                             activeClass="active"
                             to="bottom-container"
@@ -173,9 +226,7 @@ function Album(props) {
                             duration={550}
                             delay={200}
                         >
-                            <a href="#footer" id="about" className="underline">
-                                About
-                            </a>
+                            <a href="#footer" id="about" className="underline"> About </a>
                         </Link>
                         <Link
                             activeClass="active"
@@ -186,13 +237,7 @@ function Album(props) {
                             duration={550}
                             delay={200}
                         >
-                            <a
-                                href="#stack"
-                                id="projects"
-                                className="underline"
-                            >
-                                Projects
-                            </a>
+                            <a href="#stack" id="projects" className="underline"> Projects </a>
                         </Link>
                     </div>
 
@@ -213,80 +258,21 @@ function Album(props) {
                     <div className={classes.heroContent}>
                         <div className={classes.heroButtons}>
                             <Grid container justify="center">
-                                <Grid
-                                    id="icon-container"
-                                    item
-                                    xs={9}
-                                    sm={9}
-                                    md={9}
-                                    lg={12}
-                                >
-                                    {/* Grid of my skills tech icons */}
+                                <Grid id="icon-container" item xs={9} sm={9} md={9} lg={12}>
 
-                                    <a href="https://en.wikipedia.org/wiki/HTML">
-                                        <img
-                                            className="tech-icon"
-                                            id="html-icon"
-                                            alt="html"
-                                            src={html}
-                                        />
-                                    </a>
-                                    <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">
-                                        <img
-                                            className="tech-icon"
-                                            id="css-icon"
-                                            alt="css"
-                                            src={css}
-                                        />
-                                    </a>
-                                    <a href="https://en.wikipedia.org/wiki/JavaScript">
-                                        <img
-                                            className="tech-icon"
-                                            id="js-icon"
-                                            alt="js"
-                                            src={js}
-                                        />
-                                    </a>
-                                    <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)">
-                                        <img
-                                            className="tech-icon"
-                                            id="react-icon"
-                                            alt="react"
-                                            src={react}
-                                        />
-                                    </a>
-                                    <a href="https://material-ui.com/getting-started/installation/">
-                                        <img
-                                            className="tech-icon"
-                                            id="mui-icon"
-                                            alt="mui"
-                                            src={mui}
-                                        />
-                                    </a>
-                                    <a href="https://en.wikipedia.org/wiki/Git">
-                                        <img
-                                            className="tech-icon"
-                                            id="git-icon"
-                                            alt="git"
-                                            src={git}
-                                        />
-                                    </a>
-                                    <a href="https://en.wikipedia.org/wiki/Npm_(software)">
-                                        <img
-                                            className="tech-icon"
-                                            id="npm-icon"
-                                            alt="npm"
-                                            src={npm}
-                                        />
-                                    </a>
-                                    <a href="https://en.wikipedia.org/wiki/WordPress">
-                                        <img
-                                            className="tech-icon"
-                                            id="wordpress-icon"
-                                            alt="wordpress"
-                                            src={wordpress}
-                                        />
-                                    </a>
+                                    {/* Grid of tech skills icons */}
+
+                                    {TECH_ICONS_DATA.map(data => (
+                                        <a href={data.href}>
+                                            <img
+                                                className={data.className}
+                                                id={data.id}
+                                                alt={data.alt}
+                                                src={data.src}
+                                            />
+                                        </a>
+                                    ))}
+
                                 </Grid>
                             </Grid>
                         </div>
@@ -308,16 +294,8 @@ function Album(props) {
                                             title="Amp Information Library"
                                         />
                                     </a>
-                                    <CardContent
-                                        className={classes.cardContent}
-                                    >
-                                        <Typography
-                                            gutterBottom
-                                            variant="h5"
-                                            component="h2"
-                                        >
-                                            Amp Information Library
-                                        </Typography>
+                                    <CardContent className={classes.cardContent}>
+                                        <Typography gutterBottom variant="h5" component="h2"> Amp Information Library </Typography>
                                         <Typography>
                                             A library where the user can sign in
                                             and add photos, schematics,
@@ -335,35 +313,26 @@ function Album(props) {
 
                     <div className="smaller-apps">
                         <Grid container spacing={40}>
-                            {cards.map(card => (
+
+                            {/* This section maps the SMALL_PROJ_CARDS object into 4 card components */}
+
+                            {SMALL_PROJ_CARDS.map(card => (
                                 <Grid item key={card.key} sm={6} md={3} lg={3}>
                                     <Card className={classes.card}>
                                         <a href={card.link}>
-                                            <CardMedia
-                                                className={classes.cardMedia}
-                                                image={card.image}
-                                                title={card.title}
-                                            />
+                                            <CardMedia className={classes.cardMedia} image={card.image} title={card.title}/>
                                         </a>
-                                        <CardContent
-                                            className={classes.cardContent}
-                                        >
-                                            <Typography
-                                                gutterBottom
-                                                variant="h5"
-                                                component="h2"
-                                            >
-                                                {card.project}
-                                            </Typography>
-                                            <Typography>
-                                                {card.about}
-                                            </Typography>
+                                        <CardContent className={classes.cardContent}>
+                                            <Typography gutterBottom variant="h5" component="h2"> {card.project} </Typography>
+                                            <Typography> {card.about} </Typography>
                                         </CardContent>
                                     </Card>
                                 </Grid>
                             ))}
+
                         </Grid>
                     </div>
+
                 </div>
             </main>
 
@@ -371,23 +340,12 @@ function Album(props) {
 
             <footer id="footer" className={classes.footer}>
                 <div className="bottom-container">
+
                     {/* About me box */}
 
                     <div id="about-text">
-                        <Typography
-                            variant="h6"
-                            align="center"
-                            id="me"
-                            gutterBottom
-                        >
-                            About Me
-                        </Typography>
-                        <Typography
-                            variant="subtitle1"
-                            align="center"
-                            color="textSecondary"
-                            component="p"
-                        >
+                        <Typography variant="h6" align="center" id="me" gutterBottom> About Me </Typography>
+                        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
                             I am a Seattle based 3rd year Computer Science
                             student who is working in C/C++ on Linux in my B.S.,
                             but all of the code must stay in private repos. I am
@@ -398,18 +356,10 @@ function Album(props) {
                         </Typography>
                         <div id="social">
                             <a href="https://github.com/adam4321">
-                                <img
-                                    id="github"
-                                    src={github}
-                                    alt="github icon"
-                                />
+                                <img id="github" src={github} alt="github icon"/>
                             </a>
                             <a href="https://www.linkedin.com/in/adamjw321/">
-                                <img
-                                    id="linkedin"
-                                    src={linkedin}
-                                    alt="linkedin icon"
-                                />
+                                <img id="linkedin" src={linkedin} alt="linkedin icon"/>
                             </a>
                         </div>
                     </div>
@@ -424,62 +374,39 @@ function Album(props) {
                                 method="POST"
                             >
                                 <label id="name">Name</label>
-                                <br />
+                                    <br/>
                                 <input type="text" name="first" id="first-in" />
                                 <input type="text" name="last" id="last-in" />
-                                <br />
+                                    <br/>
                                 <label id="first">First</label>
                                 <label id="last">Last</label>
-                                <br />
+                                    <br/>
                                 <label id="email">Email</label>
-                                <br />
-                                <input
-                                    type="email"
-                                    name="_replyto"
-                                    id="email-in"
-                                    required
-                                />
-                                <br />
+                                    <br/>
+                                <input type="email" name="_replyto" id="email-in" required/>
+                                    <br/>
                                 <label id="comments">Comment or Message</label>
-                                <br />
-                                <textarea
-                                    name="message"
-                                    id="comments-in"
-                                ></textarea>
-                                <br />
-                                <input
-                                    type="submit"
-                                    value="SUBMIT"
-                                    id="submit"
-                                />
-                                <input
-                                    type="hidden"
-                                    name="_next"
-                                    value="https://adamjwright.com"
-                                />
+                                    <br/>
+                                <textarea name="message" id="comments-in"></textarea>
+                                    <br/>
+                                <input type="submit" value="SUBMIT" id="submit"/>
+                                <input type="hidden" name="_next" value="https://adamjwright.com"/>
                             </form>
                         </div>
                     </div>
 
                     {/* The skyline background and location pin */}
 
-                    <img
-                        src={skyline}
-                        alt="seatle skyline"
-                        className="skyline-img"
-                    />
+                    <img src={skyline} alt="seatle skyline" className="skyline-img"/>
                     <div className="overlay">
                         <a
                             href="https://www.google.com/maps/place/1215+N+45th+St,+Seattle,+WA+98103/@47.6570521,-122.3612009,13.25z/data=!4m5!3m4!1s0x5490145167fe978d:0x64d3c93762b6dee3!8m2!3d47.6612275!4d-122.3430452"
                             className="icon"
                         >
-                            <img
-                                src={pin}
-                                alt="red location icon"
-                                id="red-pin"
-                            />
+                            <img src={pin} alt="red location icon" id="red-pin"/>
                         </a>
                     </div>
+
                 </div>
             </footer>
         </React.Fragment>

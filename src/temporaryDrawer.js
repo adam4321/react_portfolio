@@ -1,8 +1,8 @@
-/* 
-    Mobile menu drawer component rendered when below 960px screen width.
-    It is imported into app.js to allow for a a usable tablet and phone
-    menu experience. It is a Material Ui component.
-*/
+/**************************************************************************** 
+**    Mobile menu drawer component rendered when below 960px screen width.
+**    It is imported into app.js to allow for a a usable tablet and phone
+**    menu experience. It is a Material Ui component.
+****************************************************************************/
 
 // @ts-check
 
@@ -31,53 +31,44 @@ class TemporaryDrawer extends React.Component {
         const sideList = (
             <div className="drawer">
                 <List id="menu-list">
-                    <button
-                        className="button-styled-link"
-                        onClick={this.toggleDrawer('left', false)}
-                    >
+                    <button className="button-styled-link" onClick={this.toggleDrawer('left', false)}>
                         <ListItem id="close">
                             <ListItemIcon id="close">
-                                <img src={icon} alt="x icon" id="x-icon" />
+                                <img src={icon} alt="x icon" id="x-icon"/>
                             </ListItemIcon>
                             <p id="close-text">CLOSE MENU</p>
                         </ListItem>
                     </button>
-                    <Divider className="divider" />
+                    <Divider className="divider"/>
                     <a href="https://adamjwright.com/#stack">
                         <ListItem id="projects-link">
                             <p id="projects-link">Projects</p>
                         </ListItem>
                     </a>
-                    <Divider className="divider" />
+                    <Divider className="divider"/>
                     <a href="https://adamjwright.com/#footer">
                         <ListItem id="about-link">
                             <p id="about-link">About</p>
                         </ListItem>
                     </a>
-                    <Divider className="divider" />
+                    <Divider className="divider"/>
                     <a href="https://adamjwright.com/blog">
                         <ListItem id="blog-link">
                             <p id="blog-link">Blog</p>
                         </ListItem>
                     </a>
-                    <Divider className="divider" />
+                    <Divider className="divider"/>
                 </List>
             </div>
         );
 
         return (
             <div>
-                <div
-                    onClick={this.toggleDrawer('left', true)}
-                    id="menu-container"
-                >
+                <div onClick={this.toggleDrawer('left', true)} id="menu-container">
                     <img src={menu} alt="menu" className={'menu'} />
                     <p id="menu-text">Menu</p>
                 </div>
-                <Drawer
-                    open={this.state.left}
-                    onClose={this.toggleDrawer('left', false)}
-                >
+                <Drawer open={this.state.left} onClose={this.toggleDrawer('left', false)}>
                     <div
                         tabIndex={0}
                         role="button"

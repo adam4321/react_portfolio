@@ -1,15 +1,15 @@
-/* 
-    This is the primary Css file for the site's styling.
-    It works along with the style object in app.js which contains 
-    setting options for Material Ui's Css in JS setup.
-*/
+/***************************************************************** 
+** This is the primary Css file for the site's styling.
+** It works along with the style object in app.js which contains 
+** setting options for Material Ui's Css in JS setup.
+*****************************************************************/
 
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
 /* 
-    Navigation bar 
+*  Navigation bar 
 */
 
 .barbar {
@@ -114,7 +114,7 @@ a:hover {
 }
 
 /* 
-    Full size navbar links 
+*   Full size navbar links 
 */
 
 #about {
@@ -182,7 +182,7 @@ a:hover {
 }
 
 /* 
-    Skills section icons 
+*   Skills section icons 
 */
 
 .tech-icon {
@@ -235,8 +235,8 @@ a:hover {
 }
 
 /* 
-    Third section of the page
-    Contact form 
+*   Third section of the page
+*   Contact form 
 */
 
 #name {
@@ -324,7 +324,7 @@ a:hover {
 }
 
 /* 
-    Social link icons 
+*   Social link icons 
 */
 
 #social {
@@ -336,7 +336,7 @@ a:hover {
 }
 
 /* 
-    When you move the mouse over the pin icon it changes color 
+*   When you move the mouse over the pin icon it changes color 
 */
 
 .icon:hover {
