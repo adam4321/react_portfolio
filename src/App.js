@@ -7,7 +7,8 @@
 
 // @ts-check
 
-// Imported libraries
+/* Imported libraries ------------------------------------------------------*/
+
 import React from 'react';
 import './App.css';
 import './mediaQuery.css';
@@ -25,7 +26,9 @@ import { withStyles } from '@material-ui/core/styles';
 import TemporaryDrawer from './temporaryDrawer.js';
 import { Link } from 'react-scroll';
 
-// Images for the page
+
+/* Images for the page -----------------------------------------------------*/
+
 import drum_machine_screenshot from './images/drum-machine-screenshot.jpg';
 import quote_generator_screenshot from './images/quote-generator-screenshot.png';
 import markdown_screenshot from './images/markdown-screenshot.png';
@@ -45,7 +48,9 @@ import wordpress from './images/wordpress-smaller.jpg';
 import github from './images/github-icon.png';
 import linkedin from './images/linkedin-icon.png';
 
-// Material UI style object
+
+/* Material UI styles object ------------------------------------------------*/
+
 const styles = theme => ({
     appBar: {
         position: 'relative',
@@ -102,7 +107,9 @@ const styles = theme => ({
     }
 });
 
-// Object holding the information for the four lower project's cards
+
+/* Object holding the information for the four lower project's cards ------ */
+
 const SMALL_PROJ_CARDS = [
     {
         key: 1,
@@ -142,7 +149,9 @@ const SMALL_PROJ_CARDS = [
     }
 ];
 
-// Object holding the data for grid of tech skills icons below
+
+/* Object holding the data for grid of tech skills icons below-------------- */
+
 const TECH_ICONS_DATA = [
     {
         href: 'https://en.wikipedia.org/wiki/HTML',
@@ -203,6 +212,8 @@ const TECH_ICONS_DATA = [
 ];
 
 
+/* Page layout ------------------------------------------------------------- */
+
 function Album(props) {
     const { classes } = props;
 
@@ -210,13 +221,22 @@ function Album(props) {
         <React.Fragment>
             <CssBaseline />
 
-            {/* Header nav bar */}
+            {/* Header nav bar -------------------------------------------- */}
 
             <AppBar position="static" className={classes.appBar}>
                 <Toolbar className={'barbar'}>
-                    <a className="darken" href="https://adamjwright.com"> <img src={logo} alt="logo" className={'logogo'}/> </a>
+                    <a 
+                        className="darken" 
+                        href="https://adamjwright.com"
+                    > 
+                        <img src={logo} alt="logo" className={'logogo'}/>
+                    </a>
                     <div id="scroll-links">
-                        <a href="https://adamjwright.com/blog" id="blog" className="underline"> Blog </a>
+                        <a 
+                            href="https://adamjwright.com/blog"
+                            id="blog"
+                            className="underline"
+                        > Blog </a>
                         <Link
                             activeClass="active"
                             to="bottom-container"
@@ -241,7 +261,7 @@ function Album(props) {
                         </Link>
                     </div>
 
-                    {/* Responsive menu component */}
+                    {/* Responsive menu component ------------------------- */}
 
                     <div id="menu-container">
                         <button className="button-styled-link">
@@ -251,7 +271,7 @@ function Album(props) {
                 </Toolbar>
             </AppBar>
 
-            {/* Skills section */}
+            {/* Skills section -------------------------------------------- */}
 
             <main>
                 <div className={classes.heroUnit}>
@@ -281,7 +301,7 @@ function Album(props) {
 
                 <div className={classNames(classes.layout, classes.cardGrid)}>
 
-                    {/* Full stack project card */}
+                    {/* Full stack project card --------------------------- */}
 
                     <div className="full-stack" id="stack">
                         <Grid container spacing={40} justify="center">
@@ -295,7 +315,12 @@ function Album(props) {
                                         />
                                     </a>
                                     <CardContent className={classes.cardContent}>
-                                        <Typography gutterBottom variant="h5" component="h2"> Amp Information Library </Typography>
+                                        <Typography 
+                                            gutterBottom variant="h5" 
+                                            component="h2"
+                                        > 
+                                            Amp Information Library 
+                                        </Typography>
                                         <Typography>
                                             A library where the user can sign in
                                             and add photos, schematics,
@@ -309,7 +334,7 @@ function Album(props) {
                         </Grid>
                     </div>
 
-                    {/* Smaller project cards */}
+                    {/* Smaller project cards ----------------------------- */}
 
                     <div className="smaller-apps">
                         <Grid container spacing={40}>
@@ -336,12 +361,12 @@ function Album(props) {
                 </div>
             </main>
 
-            {/* Footer, which is the bottom 1/3 of the page */}
+            {/* Footer, which is the bottom 1/3 of the page --------------- */}
 
             <footer id="footer" className={classes.footer}>
                 <div className="bottom-container">
 
-                    {/* About me box */}
+                    {/* About me box -------------------------------------- */}
 
                     <div id="about-text">
                         <Typography variant="h6" align="center" id="me" gutterBottom> About Me </Typography>
@@ -364,7 +389,7 @@ function Album(props) {
                         </div>
                     </div>
 
-                    {/* Contact form */}
+                    {/* Contact form -------------------------------------- */}
 
                     <div className="contact">
                         <div id="contact-wrapper">
@@ -395,7 +420,7 @@ function Album(props) {
                         </div>
                     </div>
 
-                    {/* The skyline background and location pin */}
+                    {/* The skyline background and location pin ----------- */}
 
                     <img src={skyline} alt="seatle skyline" className="skyline-img"/>
                     <div className="overlay">
