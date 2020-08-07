@@ -1,7 +1,8 @@
 /**************************************************************************** 
-**    Mobile menu drawer component rendered when below 960px screen width.
-**    It is imported into app.js to allow for a a usable tablet and phone
-**    menu experience. It is a Material Ui component.
+**    Mobile menu drawer component which can open from the left when the
+**    screen width is below 960px screen width. It is imported into app.js
+**    to allow for a a usable tablet and phone menu experience. It is a
+**    Material Ui component.
 ****************************************************************************/
 
 // @ts-check
@@ -15,6 +16,8 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import menu from './images/menu.png';
 import icon from './images/x-icon.png';
 
+
+/* Mobile Drawer Component ------------------------------------------------- */
 
 class TemporaryDrawer extends React.Component {
     state = {
