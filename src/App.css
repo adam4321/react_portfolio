@@ -36,38 +36,19 @@ body {
     transition: 0.4s;
 }
 
-.underline {
+.header-link {
     color: #fff;
     text-decoration: none;
     float: right;
     font-weight: 500;
-    font-size: 16.45px;
+    font-size: 16.46px;
     letter-spacing: 0.8px;
 }
 
-.underline:link {
+.header-link:link {
     text-decoration: none;
     color: #fff;
     position: relative;
-}
-
-.underline:before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    right: 100%;
-    bottom: -6px;
-    background: #fff;
-    height: 2.4px;
-    transition-property: left right;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-}
-
-.underline:hover:before,
-.underline:active:before {
-    right: 0;
 }
 
 a {
@@ -113,9 +94,8 @@ a:hover {
     margin-left: -40px;
 }
 
-/* 
-*   Full size navbar links 
-*/
+
+/* Full size navbar links -------------------------------------------------- */
 
 #about {
     margin-left: 4.8vw;
@@ -181,9 +161,8 @@ a:hover {
     color: black;
 }
 
-/* 
-*   Skills section icons 
-*/
+
+/* Skills section icons ---------------------------------------------------- */
 
 .tech-icon {
     color: white;
@@ -234,10 +213,8 @@ a:hover {
     margin-left: 3.5vw;
 }
 
-/* 
-*   Third section of the page
-*   Contact form 
-*/
+
+/* Third section of the page | Contact form -------------------------------- */
 
 #name {
     float: left;
@@ -324,9 +301,8 @@ a:hover {
     background-color: rgb(14, 13, 13);
 }
 
-/* 
-*   Social link icons 
-*/
+
+/* Social link icons ------------------------------------------------------- */
 
 #social {
     margin-top: 2vw;
@@ -336,9 +312,8 @@ a:hover {
     margin-right: 1.5vw;
 }
 
-/* 
-*   When you move the mouse over the pin icon it changes color 
-*/
+
+/* When you move the mouse over the pin icon it changes color -------------- */
 
 .icon:hover {
     color: #eee;

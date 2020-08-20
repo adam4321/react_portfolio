@@ -235,7 +235,7 @@ function Album(props) {
                         <a 
                             href="https://adamjwright.com/blog"
                             id="blog"
-                            className="underline"
+                            className="header-link"
                         > Blog </a>
                         <Link
                             activeClass="active"
@@ -246,7 +246,7 @@ function Album(props) {
                             duration={550}
                             delay={200}
                         >
-                            <a href="#footer" id="about" className="underline"> About </a>
+                            <a href="#footer" id="about" className="header-link"> About </a>
                         </Link>
                         <Link
                             activeClass="active"
@@ -257,7 +257,7 @@ function Album(props) {
                             duration={550}
                             delay={200}
                         >
-                            <a href="#stack" id="projects" className="underline"> Projects </a>
+                            <a href="#stack" id="projects" className="header-link"> Projects </a>
                         </Link>
                     </div>
 
