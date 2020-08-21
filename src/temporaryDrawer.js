@@ -61,6 +61,12 @@ class TemporaryDrawer extends React.Component {
                         </ListItem>
                     </a>
                     <Divider className="divider"/>
+                    <a href="https://adamjwright.com/blog/contact-me">
+                        <ListItem id="contact-me-link">
+                            <p id="contact-me-link">Contact Me</p>
+                        </ListItem>
+                    </a>
+                    <Divider className="divider"/>
                 </List>
             </div>
         );

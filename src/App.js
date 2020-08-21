@@ -233,6 +233,11 @@ function Album(props) {
                     </a>
                     <div id="scroll-links">
                         <a 
+                            href="https://adamjwright.com/blog/contact-me"
+                            id="contact-me"
+                            className="header-link"
+                        > Contact Me </a>
+                        <a 
                             href="https://adamjwright.com/blog"
                             id="blog"
                             className="header-link"
