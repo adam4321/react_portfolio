@@ -396,20 +396,20 @@ function Album(props) {
                     {/* Social Links -------------------------------------- */}
 
                     <div id="social">
-                        <Typography variant="h5" align="center" id="me" gutterBottom> Social Links </Typography>
-                        <div>
-                            <a href="https://github.com/adam4321">
-                                <Typography variant="subtitle1" align="left" color="textSecondary" component="p">
-                                    <img id="github" src={github} alt="github icon"/> GitHub 
-                                </Typography>
-                            </a>
-                            <br />
-                            <a href="https://www.linkedin.com/in/adamjw321/">
-                                <Typography variant="subtitle1" align="left" color="textSecondary" component="p">
-                                    <img id="linkedin" src={linkedin} alt="linkedin icon"/> LinkedIn 
-                                </Typography>
-                            </a>
-                        </div>
+                        <Typography variant="h5" align="center" id="social-title" gutterBottom> Social Links </Typography>
+                        <a href="https://github.com/adam4321">
+                            <img id="github-img" src={github} alt="github icon"/>  
+                            <Typography id="github" variant="subtitle1" color="textSecondary" component="p">
+                                GitHub
+                            </Typography>
+                        </a>
+                        <br />
+                        <a href="https://www.linkedin.com/in/adamjw321/">
+                            <img id="linkedin-img" src={linkedin} alt="linkedin icon"/>
+                            <Typography id="linkedin" variant="subtitle1" color="textSecondary" component="p">
+                                LinkedIn 
+                            </Typography>
+                        </a>
                     </div>
 
 

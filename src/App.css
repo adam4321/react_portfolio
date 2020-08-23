@@ -231,24 +231,39 @@ a:hover {
 
 /* Social link icons ------------------------------------------------------- */
 
-
 #about-text {
     position: absolute;
 }
 
 #social {
-    margin-top: 2vw;
+    margin-top: 2.5vw;
     position: absolute;
 }
 
+#social-block {
+    float: left;
+}
+
+#github-img {
+    margin-left: -6vw;
+    margin-top: 3px;
+}
+
 #github {
-    
-    margin-top: .75vw;
-    margin-left: -4vw;
+    position: absolute;
+    margin-top: -48px;
+    margin-left: 6vw;
+}
+
+#linkedin-img {
+    margin-left: -5.9vw;
+    margin-top: 10px;
 }
 
 #linkedin {
-    margin-left: -3.5vw;
+    position: absolute;
+    margin-top: -48px;
+    margin-left: 6vw;
 }
 
 
@@ -284,6 +299,6 @@ a:hover {
 }
 
 #red-pin {
-    left: 44%;
+    left: 43.5%;
     position: absolute;
 }
