@@ -233,7 +233,7 @@ function Album(props) {
                     </a>
                     <div id="scroll-links">
                         <a 
-                            href="https://adamjwright.com/blog/contact-me"
+                            href="https://adamjwright.com/blog/contact_me"
                             id="contact-me"
                             className="header-link"
                         > Contact Me </a>
@@ -371,59 +371,47 @@ function Album(props) {
             <footer id="footer" className={classes.footer}>
                 <div className="bottom-container">
 
+
                     {/* About me box -------------------------------------- */}
 
                     <div id="about-text">
-                        <Typography variant="h6" align="center" id="me" gutterBottom> About Me </Typography>
-                        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-                            I am a Seattle based 3rd year Computer Science
-                            student who is working in C/C++ on Linux in my B.S.,
-                            but all of the code must stay in private repos. I am
-                            focusing on React in my spare time and that is what
-                            I used to build this site. If you would like to
-                            reach out to me then feel free to use the contact
-                            box or email adam@adamjwright.
+                        <Typography variant="h5" align="center" id="me" gutterBottom> About Me </Typography>
+                        <Typography variant="subtitle1" align="left" color="textSecondary" component="p">
+                            I am Computer Science student in Seattle who is looking
+                            for my first position after graduation. I have worked in
+                            a variety of technologies while completing my B.S. Those technologies 
+                            range from C, C++, and Python command line application on Linux to.
+                            but all of the code must stay in private repos. I have worked with
+                            React in my spare time to build client-side rendered web applications and
+                            that is what I used to build most of this site.
                         </Typography>
-                        <div id="social">
+                        <br />
+                        <Typography variant="subtitle1" align="left" color="textSecondary" component="p">
+                            If you would like to reach out to me then feel free to use the contact page on
+                            this site or email me at adam@adamjwright.
+                        </Typography> 
+                    </div>
+
+
+                    {/* Social Links -------------------------------------- */}
+
+                    <div id="social">
+                        <Typography variant="h5" align="center" id="me" gutterBottom> Social Links </Typography>
+                        <div>
                             <a href="https://github.com/adam4321">
-                                <img id="github" src={github} alt="github icon"/>
+                                <Typography variant="subtitle1" align="left" color="textSecondary" component="p">
+                                    <img id="github" src={github} alt="github icon"/> GitHub 
+                                </Typography>
                             </a>
+                            <br />
                             <a href="https://www.linkedin.com/in/adamjw321/">
-                                <img id="linkedin" src={linkedin} alt="linkedin icon"/>
+                                <Typography variant="subtitle1" align="left" color="textSecondary" component="p">
+                                    <img id="linkedin" src={linkedin} alt="linkedin icon"/> LinkedIn 
+                                </Typography>
                             </a>
                         </div>
                     </div>
 
-                    {/* Contact form -------------------------------------- */}
-
-                    <div className="contact">
-                        <div id="contact-wrapper">
-                            <form
-                                id="contactform"
-                                action="https://formspree.io/adam@adamjwright.com"
-                                method="POST"
-                            >
-                                <label id="name">Name</label>
-                                    <br/>
-                                <input type="text" name="first" id="first-in" />
-                                <input type="text" name="last" id="last-in" />
-                                    <br/>
-                                <label id="first">First</label>
-                                <label id="last">Last</label>
-                                    <br/>
-                                <label id="email">Email</label>
-                                    <br/>
-                                <input type="email" name="_replyto" id="email-in" required/>
-                                    <br/>
-                                <label id="comments">Comment or Message</label>
-                                    <br/>
-                                <textarea name="message" id="comments-in"></textarea>
-                                    <br/>
-                                <input type="submit" value="SUBMIT" id="submit"/>
-                                <input type="hidden" name="_next" value="https://adamjwright.com"/>
-                            </form>
-                        </div>
-                    </div>
 
                     {/* The skyline background and location pin ----------- */}
 

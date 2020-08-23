@@ -229,102 +229,26 @@ a:hover {
 }
 
 
-/* Third section of the page | Contact form -------------------------------- */
-
-#name {
-    float: left;
-    position: relative;
-    top: -10px;
-    color: rgb(92, 92, 92);
-}
-
-#first-in {
-    float: left;
-    height: 30px;
-    margin-top: -10px;
-    margin-right: 1vw;
-    border-radius: 2px;
-    border: 1px solid rgb(172, 172, 172);
-    width: 35%;
-}
-
-#first {
-    float: left;
-    color: rgb(172, 172, 172);
-    font-size: 13px;
-}
-
-#last-in {
-    float: left;
-    height: 30px;
-    margin-top: -10px;
-    width: 35%;
-    border-radius: 2px;
-    border: 1px solid rgb(172, 172, 172);
-}
-
-#last {
-    margin-left: -20%;
-    color: rgb(172, 172, 172);
-    font-size: 13px;
-}
-
-#email {
-    float: left;
-    color: rgb(92, 92, 92);
-}
-
-#email-in {
-    width: 76%;
-    height: 30px;
-    float: left;
-    border: 1px solid rgb(172, 172, 172);
-    border-radius: 2px;
-}
-
-#comments {
-    float: left;
-    margin-top: 10px;
-    color: rgb(92, 92, 92);
-}
-
-#comments-in {
-    float: left;
-    max-width: 100%;
-    min-width: 100%;
-    height: 8vw;
-    border: 1px solid rgb(172, 172, 172);
-    resize: vertical;
-    border-radius: 2px;
-}
-
-#submit {
-    float: left;
-    background-color: rgb(92, 92, 92);
-    border-radius: 5px;
-    color: white;
-    font-size: 13px;
-    padding: 11px 23px;
-    margin-top: 12px;
-    -webkit-transition: 0.4s;
-    -moz-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
-}
-
-#submit:hover {
-    background-color: rgb(14, 13, 13);
-}
-
-
 /* Social link icons ------------------------------------------------------- */
+
+
+#about-text {
+    position: absolute;
+}
 
 #social {
     margin-top: 2vw;
+    position: absolute;
 }
 
 #github {
-    margin-right: 1.5vw;
+    
+    margin-top: .75vw;
+    margin-left: -4vw;
+}
+
+#linkedin {
+    margin-left: -3.5vw;
 }
 
 
@@ -359,16 +283,7 @@ a:hover {
     border: 0 !important;
 }
 
-.contact {
-    position: absolute;
-}
-
-#about-text {
-    position: absolute;
-}
-
 #red-pin {
-    width: 9%;
     left: 44%;
     position: absolute;
 }

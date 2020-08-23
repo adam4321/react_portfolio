@@ -1,10 +1,9 @@
-/*
-    Mobile break points for responsive layout changes
-*/
+/******************************************************************************
+**    Mobile break points for responsive layout changes
+******************************************************************************/
 
-/* 
-    Media query below 400 px 
-*/
+
+/* Media query below 400 px ------------------------------------------------ */
 
 @media only screen and (max-width: 400px) {
     .tech-icon {
@@ -19,9 +18,8 @@
     }
 }
 
-/* 
-    Media query below 600 px 
-*/
+
+/*  Media query below 600 px ----------------------------------------------- */
 
 @media only screen and (max-width: 600px) {
     .bottom-container {
@@ -78,9 +76,8 @@
     }
 }
 
-/* 
-    Media query below 960 px 
-*/
+
+/* Media query below 960 px ------------------------------------------------ */
 
 @media only screen and (max-width: 960px) {
     #menu-container {
@@ -109,9 +106,8 @@
     }
 }
 
-/* 
-    Media query below 1200 px 
-*/
+
+/* Media query below 1200 px ----------------------------------------------- */
 
 @media only screen and (max-width: 1200px) {
     .tech-icon {
@@ -130,9 +126,8 @@
     }
 }
 
-/* 
-    Media query above 588 px 
-*/
+
+/* Media query above 588 px ------------------------------------------------ */
 
 @media only screen and (min-width: 588px) {
     #menu-container {
@@ -140,9 +135,8 @@
     }
 }
 
-/* 
-    Media query above 600 px 
-*/
+
+/* Media query above 600 px ------------------------------------------------ */
 
 @media only screen and (min-width: 600px) {
     .bottom-container {
@@ -172,9 +166,8 @@
     }
 }
 
-/* 
-    Media query above 960 px 
-*/
+
+/* Media query above 960 px ------------------------------------------------ */
 
 @media only screen and (min-width: 960px) {
     #menu-container {
@@ -209,9 +202,8 @@
     }
 }
 
-/* 
-    Media query above 1200 px 
-*/
+
+/* Media query above 1200 px ----------------------------------------------- */
 
 @media only screen and (min-width: 1200px) {
     .tech-icon {
@@ -233,20 +225,19 @@
         margin-top: 10vw;
     }
 
-    .contact {
-        top: -2vw;
-        left: 4%;
-        width: 23%;
+    #about-text {
+        top: 0vw;
+        left: 9%;
+        width: 28vw;
     }
 
-    #about-text {
-        top: -1vw;
-        left: 33%;
-        width: 30vw;
+    #social {
+        left: 60%;
+        top: -4%;
     }
 
     #red-pin {
-        width: 9%;
-        top: 55%;
+        width: 10%;
+        top: 47%;
     }
 }
