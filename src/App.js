@@ -145,7 +145,7 @@ const SMALL_PROJ_CARDS = [
         project: 'React Calculator App',
         link: 'https://adamjwright.com/react_calculator',
         about:
-            'Modern style calculator application that is fully mobile responsive .'
+            'Modern style calculator application that is fully mobile responsive and supports all the basic operations.'
     }
 ];
 

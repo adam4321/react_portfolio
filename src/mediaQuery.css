@@ -13,9 +13,22 @@
     #icon-container {
         margin-top: -20vw;
         margin-bottom: 5vw;
-        height: 25vw;
+        height: 20vw;
         width: 90vw;
     }
+
+    .bottom-container {
+        height: 580px;
+        margin-top: 15vw;
+    }
+
+    #about-text {
+
+        left: 10%;
+        width: 500px;
+        top: -70vw;
+    }
+
 }
 
 
@@ -23,56 +36,30 @@
 
 @media only screen and (max-width: 600px) {
     .bottom-container {
-        height: 340px;
-        margin-top: 15vw;
-    }
-
-    #footer {
-        height: 165vw;
+        margin-top: 50px;
     }
 
     #about-text {
-        top: -5vw;
+        top: -150px;
         left: 15%;
         width: 70%;
-        margin-top: 2vw;
+        margin-top: 180px;
     }
 
-    .contact {
-        top: 120%;
-        left: 10%;
-        margin: 0 auto;
-        margin-left: -10%;
-        padding-left: 8vw;
-        width: 100%;
-        height: 100%;
-        background-color: white;
-    }
-
-    #contact-wrapper {
-        position: absolute;
-        width: 82%;
-        height: 100%;
-        margin: 0 auto;
-    }
-
-    #email-in {
-        width: 71%;
-    }
-
-    #comments-in {
-        height: 15vw;
+    #social {
+        left: 22%;
+        margin-top: 150px;
     }
 
     .skyline-img {
         position: absolute;
-        top: 680px;
+        top: 800px;
         left: -0%;
     }
 
     #red-pin {
         width: 10%;
-        top: 220%;
+        top: 885px;
     }
 }
 
@@ -103,6 +90,11 @@
 
     #scroll-links {
         display: none;
+    }
+
+    #social {
+        left: 22%;
+        top: 470px;
     }
 }
 
@@ -149,15 +141,14 @@
     }
 
     #about-text {
-        top: -65vw;
-        left: 10%;
+        top: -470px;
+        left: 16%;
         width: 70%;
     }
 
-    .contact {
-        top: -20vw;
-        left: 10%;
-        width: 70%;
+    #social {
+        left: 42%;
+        top: -100px;
     }
 
     #red-pin {
@@ -181,7 +172,7 @@
 
     .bottom-container {
         height: 100%;
-        margin-top: 20vw;
+        margin-top: 350px;
     }
 
     .contact {
@@ -191,9 +182,14 @@
     }
 
     #about-text {
-        top: -13vw;
-        left: 33%;
-        width: 30vw;
+        top: -240px;
+        left: 13%;
+        width: 380px;
+    }
+
+    #social {
+        left: 62%;
+        top: -260px;
     }
 
     #red-pin {
@@ -203,9 +199,9 @@
 }
 
 
-/* Media query above 1200 px ----------------------------------------------- */
+/* Media query above 1660 px ----------------------------------------------- */
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1660px) {
     .tech-icon {
         margin: 2.3vw;
     }
@@ -222,13 +218,13 @@
 
     .bottom-container {
         height: 100%;
-        margin-top: 10vw;
+        margin-top: 150px;
     }
 
     #about-text {
-        top: 0vw;
+        top: 7px;
         left: 10%;
-        width: 28vw;
+        width: 500px;
     }
 
     #social {

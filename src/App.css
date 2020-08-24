@@ -233,6 +233,8 @@ a:hover {
 
 #about-text {
     position: absolute;
+    left: 10%;
+    width: 500px;
 }
 
 #social {
@@ -245,25 +247,25 @@ a:hover {
 }
 
 #github-img {
-    margin-left: -6vw;
+    margin-left: -95px;
     margin-top: 3px;
 }
 
 #github {
     position: absolute;
     margin-top: -48px;
-    margin-left: 6vw;
+    margin-left: 100px;
 }
 
 #linkedin-img {
-    margin-left: -5.9vw;
+    margin-left: -92px;
     margin-top: 10px;
 }
 
 #linkedin {
     position: absolute;
     margin-top: -48px;
-    margin-left: 6vw;
+    margin-left: 100px;
 }
 
 
@@ -285,6 +287,13 @@ a:hover {
     display: inline-block;
 }
 
+#footer {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1000px;
+}
+
 .skyline-img {
     max-width: 100%;
     margin: 0 !important;
@@ -292,13 +301,7 @@ a:hover {
     border: 0 !important;
 }
 
-#footer {
-    margin: 0 !important;
-    padding: 0 !important;
-    border: 0 !important;
-}
-
 #red-pin {
-    left: 43.5%;
+    left: 44%;
     position: absolute;
 }
