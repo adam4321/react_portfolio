@@ -33,6 +33,7 @@ import drum_machine_screenshot from './images/drum-machine-screenshot.jpg';
 import quote_generator_screenshot from './images/quote-generator-screenshot.png';
 import markdown_screenshot from './images/markdown-screenshot.png';
 import calculator_screenshot from './images/calculator-screenshot.png';
+import bug_tracker_screenshot from './images/bug_tracker_screenshot.png';
 import amp_library_screenshot from './images/amp-library-screenshot.jpg';
 import logo from './images/Adam_logo.png';
 import skyline from './images/skyline.jpg';
@@ -64,7 +65,7 @@ const styles = theme => ({
         backgroundColor: theme.palette.background.paper
     },
     heroContent: {
-        maxWidth: 1000,
+        maxWidth: 1100,
         margin: '0 auto',
         padding: `${theme.spacing.unit * 8}px 0 ${theme.spacing.unit * 6}px`
     },
@@ -75,8 +76,8 @@ const styles = theme => ({
         width: 'auto',
         marginLeft: theme.spacing.unit * 3,
         marginRight: theme.spacing.unit * 3,
-        [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
-            width: 1100,
+        [theme.breakpoints.up(1500 + theme.spacing.unit * 3 * 2)]: {
+            width: 1500,
             marginLeft: 'auto',
             marginRight: 'auto'
         }
@@ -106,6 +107,30 @@ const styles = theme => ({
         width: 'auto'
     }
 });
+
+
+/* Object holding the information for the two upper project's cards -------- */
+
+const LARGE_PROJ_CARDS = [
+    {
+        key: 1,
+        image: bug_tracker_screenshot,
+        title: 'Software Bug Tracker',
+        project: 'Software Bug Tracker',
+        link: 'https://adamjwright.com/bug_tracker',
+        about:
+            'A dashboard which allows the user to add new software bugs and to track and update their status as they are discovered.'
+    },
+    {
+        key: 2,
+        image: amp_library_screenshot,
+        title: 'Amp Information Library',
+        project: 'Amp Information Library',
+        link: 'https://adamjwright.com/amp_library',
+        about:
+            'A library where the user can sign in and add photos, schematics, settings, and other helpful information about electric guitar amplifiers.'
+    }
+];
 
 
 /* Object holding the information for the four lower project's cards ------ */
@@ -140,15 +165,6 @@ const SMALL_PROJ_CARDS = [
     },
     {
         key: 4,
-        image: calculator_screenshot,
-        title: 'React Calculator',
-        project: 'React Calculator App',
-        link: 'https://adamjwright.com/react_calculator',
-        about:
-            'Modern style calculator application that is fully mobile responsive and supports all the basic operations.'
-    },
-    {
-        key: 5,
         image: calculator_screenshot,
         title: 'React Calculator',
         project: 'React Calculator App',
@@ -319,32 +335,26 @@ function Album(props) {
 
                     <div className="full-stack" id="stack">
                         <Grid container spacing={40} justify="center">
-                            <Grid item sm={6} md={6} lg={6}>
-                                <Card className={classes.card}>
-                                    <a href="https://adamjwright.com/amp_library">
-                                        <CardMedia
-                                            className={classes.cardMedia}
-                                            image={amp_library_screenshot}
-                                            title="Amp Information Library"
-                                        />
-                                    </a>
-                                    <CardContent className={classes.cardContent}>
-                                        <Typography 
-                                            gutterBottom variant="h5" 
-                                            component="h2"
-                                        > 
-                                            Amp Information Library 
-                                        </Typography>
-                                        <Typography>
-                                            A library where the user can sign in
-                                            and add photos, schematics,
-                                            settings, and other helpful
-                                            information about electric guitar
-                                            amplifiers.
-                                        </Typography>
-                                    </CardContent>
-                                </Card>
-                            </Grid>
+
+                            {/* This section maps the LARGE_PROJ_CARDS object into 2 card components */}
+
+                            {LARGE_PROJ_CARDS.map(card => (
+                                <Grid item key={card.key} sm={6} md={5} lg={5}>
+                                    <Card className={classes.card}>
+                                        <a href={card.link}>
+                                            <CardMedia 
+                                                className={classes.cardMedia} 
+                                                image={card.image} 
+                                                title={card.title}
+                                            />
+                                        </a>
+                                        <CardContent className={classes.cardContent}>
+                                            <Typography gutterBottom variant="h5" component="h2"> {card.project} </Typography>
+                                            <Typography> {card.about} </Typography>
+                                        </CardContent>
+                                    </Card>
+                                </Grid>
+                            ))}
                         </Grid>
                     </div>
 
@@ -359,7 +369,11 @@ function Album(props) {
                                 <Grid item key={card.key} sm={6} md={3} lg={3}>
                                     <Card className={classes.card}>
                                         <a href={card.link}>
-                                            <CardMedia className={classes.cardMedia} image={card.image} title={card.title}/>
+                                            <CardMedia 
+                                                className={classes.cardMedia} 
+                                                image={card.image} 
+                                                title={card.title}
+                                            />
                                         </a>
                                         <CardContent className={classes.cardContent}>
                                             <Typography gutterBottom variant="h5" component="h2"> {card.project} </Typography>

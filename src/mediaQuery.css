@@ -11,14 +11,14 @@
     }
 
     #icon-container {
-        margin-top: -8vw;
-        margin-bottom: 5vw;
+        margin-top: 1vw;
+        margin-bottom: 9vw;
         height: 30vw;
         width: 90vw;
     }
 
-    #mui-icon {
-        margin-right: 4vw;
+    #git-icon {
+        margin-right: 3.8vw;
     }
 }
 
@@ -254,6 +254,26 @@
 }
 
 
+/* Media query above 1200 px ----------------------------------------------- */
+
+@media only screen and (min-width: 1200px) {
+    .tech-icon {
+        margin: 2.8vw;
+    }
+
+    #icon-container {
+        margin-top: 1vw;
+        margin-bottom: 10vw;
+        height: 30vw;
+        width: 90vw;
+    }
+
+    #git-icon {
+        margin-right: 3.8vw;
+    }
+}
+
+
 /* Media query above 1660 px ----------------------------------------------- */
 
 @media only screen and (min-width: 1660px) {
@@ -265,6 +285,10 @@
         margin-top: 3.2vw;
         height: 28vw;
         width: 90vw;
+    }
+
+    #git-icon {
+        margin-right: 3vw;
     }
 
     #stack {
