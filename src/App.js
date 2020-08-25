@@ -380,8 +380,8 @@ function Album(props) {
                             I am Computer Science student in Seattle who is looking
                             for my first position after graduation. I have worked in
                             a variety of technologies while completing my B.S. Those technologies 
-                            range from C, C++, and Python command line application on Linux to.
-                            but all of the code must stay in private repos. I have worked with
+                            range from C/C++ and Python command line applications on Linux to full stack web 
+                            applications using node.js and Handlebars for server-side rendering. I have worked with
                             React in my spare time to build client-side rendered web applications and
                             that is what I used to build most of this site.
                         </Typography>
