@@ -331,6 +331,7 @@ function Album(props) {
 
                 <div className={classNames(classes.layout, classes.cardGrid)}>
 
+
                     {/* Full stack project card --------------------------- */}
 
                     <div className="full-stack" id="stack">
@@ -357,6 +358,7 @@ function Album(props) {
                             ))}
                         </Grid>
                     </div>
+
 
                     {/* Smaller project cards ----------------------------- */}
 
@@ -411,7 +413,7 @@ function Album(props) {
                         <br />
                         <Typography variant="subtitle1" align="left" color="textSecondary" component="p">
                             If you would like to reach out to me then feel free to use the contact page on
-                            this site or email me at adam@adamjwright.
+                            this site or email me at adamjw321@gmail.com.
                         </Typography> 
                     </div>
 
