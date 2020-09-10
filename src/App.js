@@ -283,7 +283,7 @@ function Album(props) {
                             to="full-stack"
                             spy={true}
                             smooth={true}
-                            offset={15}
+                            offset={50}
                             duration={550}
                             delay={200}
                         >
