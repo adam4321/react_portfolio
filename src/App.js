@@ -119,7 +119,8 @@ const LARGE_PROJ_CARDS = [
         project: 'Software Bug Tracker',
         link: 'https://adamjwright.com/bug_tracker',
         about:
-            'A dashboard which allows the user to add new software bugs and to track and update their status as they are discovered.'
+            `A dashboard which allows the user to add new software bugs and to track and update 
+            their status as they are fixed.`
     },
     {
         key: 2,
@@ -128,7 +129,8 @@ const LARGE_PROJ_CARDS = [
         project: 'Amp Information Library',
         link: 'https://adamjwright.com/amp_library',
         about:
-            'A library where the user can sign in and add photos, schematics, settings, and other helpful information about electric guitar amplifiers.'
+            `A dashboard where the user can sign in and add photos, schematics, settings, and other 
+            helpful information about electric guitar amplifiers.`
     }
 ];
 
@@ -143,7 +145,7 @@ const SMALL_PROJ_CARDS = [
         project: 'Random Quote Generator',
         link: 'https://adamjwright.com/quote_generator',
         about:
-            'Displays a new quote when you press the new quote button and will tweet the quote for you.'
+            `Displays a new quote when you press the new quote button and will tweet the quote for you.`
     },
     {
         key: 2,
@@ -152,7 +154,7 @@ const SMALL_PROJ_CARDS = [
         project: 'React Drum Machine',
         link: 'https://adamjwright.com/drum_machine',
         about:
-            'Plays a sound when you press the keyboard key or click the button for the displayed letter.'
+            `Plays a sound when you press the keyboard key or click the button for the displayed letter.`
     },
     {
         key: 3,
@@ -161,7 +163,7 @@ const SMALL_PROJ_CARDS = [
         project: 'React Markdown Previewer',
         link: 'https://adamjwright.com/markdown_previewer',
         about:
-            'Turns the entries into the box on the left into Git Flavored Markdown on the right.'
+            `Turns the entries into the box on the left into Git Flavored Markdown on the right.`
     },
     {
         key: 4,
@@ -170,7 +172,8 @@ const SMALL_PROJ_CARDS = [
         project: 'React Calculator App',
         link: 'https://adamjwright.com/react_calculator',
         about:
-            'Modern style calculator application that is fully mobile responsive and supports all the basic operations.'
+            `Modern style calculator application that is fully mobile responsive and supports all the 
+            basic operations.`
     }
 ];
 
