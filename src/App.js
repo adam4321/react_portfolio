@@ -45,7 +45,6 @@ import git from './images/git.png';
 import react from './images/react-1.png';
 import mui from './images/mui.png';
 import npm from './images/npm.jpg';
-import wordpress from './images/wordpress-smaller.jpg';
 import github from './images/github-icon.png';
 import linkedin from './images/linkedin-icon.png';
 import cpp from './images/c++_icon.png';
