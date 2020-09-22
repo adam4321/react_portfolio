@@ -191,6 +191,7 @@ a:hover {
 }
 
 #html-icon {
+    margin-top: -1.5vw;
     width: 15.5%;
     margin-left: 4.5vw;
 }
@@ -223,9 +224,10 @@ a:hover {
     margin-left: 3.5vw;
 }
 
-#wordpress-icon {
-    width: 13.5%;
-    margin-left: 3.5vw;
+#cpp-icon {
+    width: 16%;
+    margin-left: 2.5vw;
+    margin-bottom: 32px;
 }
 
 

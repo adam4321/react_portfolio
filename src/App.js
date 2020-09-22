@@ -48,6 +48,7 @@ import npm from './images/npm.jpg';
 import wordpress from './images/wordpress-smaller.jpg';
 import github from './images/github-icon.png';
 import linkedin from './images/linkedin-icon.png';
+import cpp from './images/c++_icon.png';
 
 
 /* Material UI styles object ------------------------------------------------*/
@@ -231,11 +232,11 @@ const TECH_ICONS_DATA = [
         src: npm,
     },
     {
-        href: 'https://en.wikipedia.org/wiki/WordPress',
+        href: 'https://en.wikipedia.org/wiki/C%2B%2B',
         className: 'tech-icon',
-        id: 'wordpress-icon',
-        alt: 'wordpress',
-        src: wordpress,
+        id: 'cpp-icon',
+        alt: 'C++',
+        src: cpp,
     },
 ];
 
