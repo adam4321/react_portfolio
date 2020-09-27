@@ -138,6 +138,12 @@
 /* Media query below 300 px ------------------------------------------------ */
 
 @media only screen and (max-width: 320px) {
+    .logogo {
+        height: 100px;
+        width: 170px;
+        margin-top: 20px;
+    }
+    
     .tech-icon {
         margin: 2.8vw;
     }
@@ -262,7 +268,7 @@
     }
 
     #icon-container {
-        margin-top: 1vw;
+        margin-top: 2.5vw;
         margin-bottom: 10vw;
         height: 30vw;
         width: 90vw;

@@ -68,6 +68,7 @@ a:hover {
 }
 
 .button-styled-link {
+    background-color: rgba(255, 255, 255, 0);
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
     -o-transition: 0.4s;
@@ -111,6 +112,10 @@ a:hover {
 
 
 /* Mobile drawer links ----------------------------------------------------- */
+
+#menu-container {
+    
+}
 
 #x-icon {
     width: 16px;
@@ -184,16 +189,15 @@ a:hover {
 }
 
 #icon-container {
-    /* margin-top: -1.1vw; */
     margin-bottom: 5vw;
     height: 45vw;
     width: 90vw;
 }
 
 #html-icon {
-    margin-top: 2vw;
+    margin-top: 2.5vw;
     width: 15.5%;
-    margin-left: 3.3vw;
+    margin-left: 4.2vw;
 }
 
 #css-icon {
@@ -219,7 +223,7 @@ a:hover {
 
 #git-icon {
     width: 12.5%;
-    margin-left: 4vw;
+    margin-left: 5vw;
 }
 
 #mysql-icon {
@@ -229,8 +233,8 @@ a:hover {
 }
 
 #cpp-icon {
-    width: 15.5%;
-    margin-left: 2.8vw;
+    width: 15.3%;
+    margin-left: 2.6vw;
     margin-bottom: 1.8vw;
 }
 
