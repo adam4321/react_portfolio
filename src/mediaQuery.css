@@ -98,9 +98,9 @@
     }
 
     #icon-container {
-        margin-top: -20vw;
+        margin-top: 1vw;
         margin-bottom: 5vw;
-        height: 20vw;
+        height: 35vw;
         width: 90vw;
     }
 
@@ -142,12 +142,12 @@
         margin: 2.8vw;
     }
 
-    #icon-container {
+    /* #icon-container {
         margin-top: -20vw;
         margin-bottom: 5vw;
         height: 20vw;
         width: 90vw;
-    }
+    } */
 
     .bottom-container {
         height: 700px;

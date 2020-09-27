@@ -184,44 +184,47 @@ a:hover {
 }
 
 #icon-container {
-    margin-top: -1.5vw;
+    /* margin-top: -1.1vw; */
     margin-bottom: 5vw;
     height: 45vw;
     width: 90vw;
 }
 
 #html-icon {
-    margin-top: -1.5vw;
+    margin-top: 2vw;
     width: 15.5%;
-    margin-left: 4.5vw;
+    margin-left: 3.3vw;
 }
 
 #css-icon {
     width: 15%;
+    margin-left: 2.2vw;
 }
 
 #js-icon {
     width: 14.5%;
-    margin-left: 2.5vw;
+    margin-left: 3.5vw;
 }
 
 #react-icon {
     width: 15%;
+    margin-left: 2.7vw;
 }
 
-#mui-icon {
+#node-icon {
     width: 18%;
-    margin-left: 3.6vw;
+    margin-left: 1.6vw;
+    margin-bottom: 1.15vw;
 }
 
 #git-icon {
-    width: 13%;
-    margin-left: 2vw;
+    width: 12.5%;
+    margin-left: 4vw;
 }
 
-#npm-icon {
-    width: 13%;
-    margin-left: 3.5vw;
+#mysql-icon {
+    width: 15.2%;
+    margin-left: 2.5vw;
 }
 
 #cpp-icon {
@@ -256,25 +259,25 @@ a:hover {
 }
 
 #github-img {
-    margin-left: -95px;
-    margin-top: 3px;
+    margin-left: -93px;
+    margin-top: 5px;
 }
 
 #github {
     position: absolute;
     margin-top: -48px;
-    margin-left: 100px;
+    margin-left: 95px;
 }
 
 #linkedin-img {
-    margin-left: -92px;
+    margin-left: -90px;
     margin-top: 10px;
 }
 
 #linkedin {
     position: absolute;
-    margin-top: -48px;
-    margin-left: 100px;
+    margin-top: -50px;
+    margin-left: 95px;
 }
 
 

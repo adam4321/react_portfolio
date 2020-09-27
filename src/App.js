@@ -43,9 +43,10 @@ import css from './images/css.png';
 import js from './images/js.png';
 import git from './images/git.png';
 import react from './images/react-1.png';
-import mui from './images/mui.png';
+import node from './images/node-js-icon.png';
 import npm from './images/npm.jpg';
 import github from './images/github-icon.png';
+import mysql from './images/mysql-icon.png';
 import linkedin from './images/linkedin-icon.png';
 import cpp from './images/c++_icon.png';
 
@@ -67,7 +68,7 @@ const styles = theme => ({
     heroContent: {
         maxWidth: 1100,
         margin: '0 auto',
-        padding: `${theme.spacing.unit * 8}px 0 ${theme.spacing.unit * 6}px`
+        padding: `${theme.spacing.unit * 4}px ${theme.spacing.unit * 2}px`
     },
     heroButtons: {
         marginTop: theme.spacing.unit * 4
@@ -210,13 +211,6 @@ const TECH_ICONS_DATA = [
         src: react,
     },
     {
-        href: 'https://material-ui.com/getting-started/installation/',
-        className: 'tech-icon',
-        id: 'mui-icon',
-        alt: 'mui',
-        src: mui,
-    },
-    {
         href: 'https://en.wikipedia.org/wiki/Git',
         className: 'tech-icon',
         id: 'git-icon',
@@ -224,11 +218,18 @@ const TECH_ICONS_DATA = [
         src: git,
     },
     {
-        href: 'https://en.wikipedia.org/wiki/Npm_(software)',
+        href: 'https://en.wikipedia.org/wiki/Node.js',
         className: 'tech-icon',
-        id: 'npm-icon',
-        alt: 'npm',
-        src: npm,
+        id: 'node-icon',
+        alt: 'node',
+        src: node,
+    },
+    {
+        href: 'https://en.wikipedia.org/wiki/MySQL',
+        className: 'tech-icon',
+        id: 'mysql-icon',
+        alt: 'mysql',
+        src: mysql,
     },
     {
         href: 'https://en.wikipedia.org/wiki/C%2B%2B',
@@ -236,7 +237,7 @@ const TECH_ICONS_DATA = [
         id: 'cpp-icon',
         alt: 'C++',
         src: cpp,
-    },
+    }
 ];
 
 
