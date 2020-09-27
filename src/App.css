@@ -94,6 +94,19 @@ a:hover {
     margin-left: -40px;
 }
 
+.menu-button {
+    background-color: rgba(255, 255, 255, 0);
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    text-decoration: none;
+    border: none;
+    color: white;
+    width: 160px;
+    height: 30px;
+}
+
 
 /* Full size navbar links -------------------------------------------------- */
 
@@ -112,10 +125,6 @@ a:hover {
 
 
 /* Mobile drawer links ----------------------------------------------------- */
-
-#menu-container {
-    
-}
 
 #x-icon {
     width: 16px;

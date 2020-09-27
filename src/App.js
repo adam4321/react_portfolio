@@ -297,7 +297,7 @@ function Album(props) {
                     {/* Responsive menu component ------------------------- */}
 
                     <div id="menu-container">
-                        <button className="button-styled-link">
+                        <button className="menu-button">
                             <TemporaryDrawer />
                         </button>
                     </div>
