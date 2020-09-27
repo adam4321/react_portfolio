@@ -30,7 +30,7 @@ import { Link } from 'react-scroll';
 /* Images for the page -----------------------------------------------------*/
 
 import drum_machine_screenshot from './images/drum-machine-screenshot.jpg';
-import quote_generator_screenshot from './images/quote-generator-screenshot.png';
+import maze_game_screenshot from './images/maze_game_screenshot.png';
 import markdown_screenshot from './images/markdown-screenshot.png';
 import calculator_screenshot from './images/calculator-screenshot.png';
 import bug_tracker_screenshot from './images/bug_tracker_screenshot.png';
@@ -44,7 +44,6 @@ import js from './images/js.png';
 import git from './images/git.png';
 import react from './images/react-1.png';
 import node from './images/node-js-icon.png';
-import npm from './images/npm.jpg';
 import github from './images/github-icon.png';
 import mysql from './images/mysql-icon.png';
 import linkedin from './images/linkedin-icon.png';
@@ -141,21 +140,21 @@ const LARGE_PROJ_CARDS = [
 const SMALL_PROJ_CARDS = [
     {
         key: 1,
-        image: quote_generator_screenshot,
-        title: 'Random Quote Generator',
-        project: 'Random Quote Generator',
-        link: 'https://adamjwright.com/quote_generator',
-        about:
-            `Displays a new quote when you press the new quote button and will tweet the quote for you.`
-    },
-    {
-        key: 2,
         image: drum_machine_screenshot,
         title: 'React Drum Machine',
         project: 'React Drum Machine',
         link: 'https://adamjwright.com/drum_machine',
         about:
             `Plays a sound when you press the keyboard key or click the button for the displayed letter.`
+    },
+    {
+        key: 2,
+        image: maze_game_screenshot,
+        title: 'C++ WASM Maze Game',
+        project: 'C++ WASM Maze Game',
+        link: 'https://adamjwright.com/wasm_maze_game',
+        about:
+            `C++ command line maze game which is converted to run in the browser by using emscripten to compile it to Web Assembly.`
     },
     {
         key: 3,
