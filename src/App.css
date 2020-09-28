@@ -68,15 +68,15 @@ a:hover {
 }
 
 .button-styled-link {
+    text-decoration: none;
+    border: none;
+    color: white;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0);
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
-    text-decoration: none;
-    border: none;
-    color: white;
-    width: 100%;
 }
 
 .button-styled-link:hover {
@@ -94,17 +94,18 @@ a:hover {
     margin-left: -40px;
 }
 
-.menu-button {
+#menu-container {
+    margin: 5px 5px 0 auto;
+    float: right;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    color: white;
     background-color: rgba(255, 255, 255, 0);
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
-    text-decoration: none;
-    border: none;
-    color: white;
-    width: 160px;
-    height: 30px;
 }
 
 
@@ -195,56 +196,59 @@ a:hover {
 
 .tech-icon {
     color: white;
+    margin: 2.75vw;
 }
 
 #icon-container {
-    margin-bottom: 5vw;
-    height: 45vw;
+    height: 38vw;
     width: 90vw;
+    margin-top: 5vw;
+    margin-bottom: 1vw;
 }
 
 #html-icon {
-    margin-top: 2.5vw;
     width: 15.5%;
-    margin-left: 4.2vw;
+    /* margin-top: 2.5vw; */
+    margin-left: 2.5.8vw;
 }
 
 #css-icon {
     width: 15%;
-    margin-left: 2.2vw;
+    /* margin-left: 4.2vw; */
 }
 
 #js-icon {
     width: 14.5%;
-    margin-left: 3.5vw;
+    /* margin-left: 5.5vw; */
 }
 
 #react-icon {
     width: 15%;
-    margin-left: 2.7vw;
-}
-
-#node-icon {
-    width: 18%;
-    margin-left: 1.6vw;
-    margin-bottom: 1.15vw;
+    /* margin-left: 4.5vw; */
 }
 
 #git-icon {
     width: 12.5%;
-    margin-left: 5vw;
+    /* margin-top: 8vw; */
+    margin-left: 3.5vw;
+}
+
+#node-icon {
+    width: 18%;
+    /* margin-left: 4.6vw; */
+    margin-bottom: 1.5vw;
 }
 
 #mysql-icon {
     width: 15.2%;
-    margin-left: 2.5vw;
-    margin-bottom: 1.2vw;
+    margin-left: 1.6vw;
+    /* margin-bottom: .2vw; */
 }
 
 #cpp-icon {
     width: 15.3%;
-    margin-left: 2.6vw;
-    margin-bottom: 1.8vw;
+    /* margin-left: 4.7vw; */
+    /* margin-bottom: .7vw; */
 }
 
 

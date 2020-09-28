@@ -7,7 +7,7 @@
 
 // @ts-check
 
-/* Imported libraries ------------------------------------------------------*/
+// Imported libraries ---------------------------------------------------------
 
 import React from 'react';
 import './App.css';
@@ -27,7 +27,7 @@ import TemporaryDrawer from './temporaryDrawer.js';
 import { Link } from 'react-scroll';
 
 
-/* Images for the page -----------------------------------------------------*/
+// Images for the page --------------------------------------------------------
 
 import drum_machine_screenshot from './images/drum-machine-screenshot.jpg';
 import maze_game_screenshot from './images/maze_game_screenshot.png';
@@ -50,7 +50,7 @@ import linkedin from './images/linkedin-icon.png';
 import cpp from './images/c++_icon.png';
 
 
-/* Material UI styles object ------------------------------------------------*/
+// Material UI styles object --------------------------------------------------
 
 const styles = theme => ({
     appBar: {
@@ -67,7 +67,7 @@ const styles = theme => ({
     heroContent: {
         maxWidth: 1100,
         margin: '0 auto',
-        padding: `${theme.spacing.unit * 4}px ${theme.spacing.unit * 2}px`
+        padding: `${theme.spacing.unit * 3}px ${theme.spacing.unit * 2}px`
     },
     heroButtons: {
         marginTop: theme.spacing.unit * 4
@@ -109,76 +109,7 @@ const styles = theme => ({
 });
 
 
-/* Object holding the information for the two upper project's cards -------- */
-
-const LARGE_PROJ_CARDS = [
-    {
-        key: 1,
-        image: bug_tracker_screenshot,
-        title: 'Software Bug Tracker',
-        project: 'Software Bug Tracker',
-        link: 'https://adamjwright.com/bug_tracker',
-        about:
-            `A dashboard which allows the user to add new software bugs and to track and update 
-            their status as they are fixed.`
-    },
-    {
-        key: 2,
-        image: amp_library_screenshot,
-        title: 'Amp Information Library',
-        project: 'Amp Information Library',
-        link: 'https://adamjwright.com/amp_library',
-        about:
-            `A dashboard where the user can sign in and add photos, schematics, settings, and other 
-            helpful information about electric guitar amplifiers.`
-    }
-];
-
-
-/* Object holding the information for the four lower project's cards ------ */
-
-const SMALL_PROJ_CARDS = [
-    {
-        key: 1,
-        image: drum_machine_screenshot,
-        title: 'React Drum Machine',
-        project: 'React Drum Machine',
-        link: 'https://adamjwright.com/drum_machine',
-        about:
-            `Plays a sound when you press the keyboard key or click the button for the displayed letter.`
-    },
-    {
-        key: 2,
-        image: maze_game_screenshot,
-        title: 'C++ WASM Maze Game',
-        project: 'C++ WASM Maze Game',
-        link: 'https://adamjwright.com/wasm_maze_game',
-        about:
-            `C++ command line maze game which is converted to run in the browser by using emscripten to compile it to Web Assembly.`
-    },
-    {
-        key: 3,
-        image: markdown_screenshot,
-        title: 'React Markup Previewer',
-        project: 'React Markdown Previewer',
-        link: 'https://adamjwright.com/markdown_previewer',
-        about:
-            `Turns the entries into the box on the left into Git Flavored Markdown on the right.`
-    },
-    {
-        key: 4,
-        image: calculator_screenshot,
-        title: 'React Calculator',
-        project: 'React Calculator App',
-        link: 'https://adamjwright.com/react_calculator',
-        about:
-            `Modern style calculator application that is fully mobile responsive and supports all the 
-            basic operations.`
-    }
-];
-
-
-/* Object holding the data for grid of tech skills icons below-------------- */
+// Array of objects holding the data for grid of tech skills icons below ------
 
 const TECH_ICONS_DATA = [
     {
@@ -240,7 +171,76 @@ const TECH_ICONS_DATA = [
 ];
 
 
-/* Page layout ------------------------------------------------------------- */
+// Object holding the information for the two upper project's cards -----------
+
+const LARGE_PROJ_CARDS = [
+    {
+        key: 1,
+        image: bug_tracker_screenshot,
+        title: 'Software Bug Tracker',
+        project: 'Software Bug Tracker',
+        link: 'https://adamjwright.com/bug_tracker',
+        about:
+            `A dashboard which allows the user to add new software bugs and to track and update 
+            their status as they are fixed.`
+    },
+    {
+        key: 2,
+        image: amp_library_screenshot,
+        title: 'Amp Information Library',
+        project: 'Amp Information Library',
+        link: 'https://adamjwright.com/amp_library',
+        about:
+            `A dashboard where the user can sign in and add photos, schematics, settings, and other 
+            helpful information about electric guitar amplifiers.`
+    }
+];
+
+
+// Object holding the information for the four lower project's cards ----------
+
+const SMALL_PROJ_CARDS = [
+    {
+        key: 1,
+        image: drum_machine_screenshot,
+        title: 'React Drum Machine',
+        project: 'React Drum Machine',
+        link: 'https://adamjwright.com/drum_machine',
+        about:
+            `Plays a sound when you press the keyboard key or click the button for the displayed letter.`
+    },
+    {
+        key: 2,
+        image: maze_game_screenshot,
+        title: 'C++ WASM Maze Game',
+        project: 'C++ WASM Maze Game',
+        link: 'https://adamjwright.com/wasm_maze_game',
+        about:
+            `C++ command line maze game which is converted to run in the browser by using emscripten to compile it to Web Assembly.`
+    },
+    {
+        key: 3,
+        image: markdown_screenshot,
+        title: 'React Markup Previewer',
+        project: 'React Markdown Previewer',
+        link: 'https://adamjwright.com/markdown_previewer',
+        about:
+            `Turns the entries into the box on the left into Git Flavored Markdown on the right.`
+    },
+    {
+        key: 4,
+        image: calculator_screenshot,
+        title: 'React Calculator',
+        project: 'React Calculator App',
+        link: 'https://adamjwright.com/react_calculator',
+        about:
+            `Modern style calculator application that is fully mobile responsive and supports all the 
+            basic operations.`
+    }
+];
+
+
+// Page layout ----------------------------------------------------------------
 
 function Album(props) {
     const { classes } = props;
@@ -286,7 +286,7 @@ function Album(props) {
                             to="full-stack"
                             spy={true}
                             smooth={true}
-                            offset={50}
+                            offset={-30}
                             duration={550}
                             delay={200}
                         >
@@ -297,9 +297,7 @@ function Album(props) {
                     {/* Responsive menu component ------------------------- */}
 
                     <div id="menu-container">
-                        <button className="menu-button">
-                            <TemporaryDrawer />
-                        </button>
+                        <TemporaryDrawer />
                     </div>
                 </Toolbar>
             </AppBar>
@@ -309,26 +307,24 @@ function Album(props) {
             <main>
                 <div className={classes.heroUnit}>
                     <div className={classes.heroContent}>
-                        <div className={classes.heroButtons}>
-                            <Grid container justify="center">
-                                <Grid id="icon-container" item xs={9} sm={9} md={9} lg={12}>
+                        <Grid container justify="center">
+                            <Grid id="icon-container" item xs={9} sm={9} md={9} lg={12}>
 
-                                    {/* Grid of tech skills icons */}
+                                {/* Grid of tech skills icons */}
 
-                                    {TECH_ICONS_DATA.map(data => (
-                                        <a href={data.href}>
-                                            <img
-                                                className={data.className}
-                                                id={data.id}
-                                                alt={data.alt}
-                                                src={data.src}
-                                            />
-                                        </a>
-                                    ))}
+                                {TECH_ICONS_DATA.map(data => (
+                                    <a href={data.href}>
+                                        <img
+                                            className={data.className}
+                                            id={data.id}
+                                            alt={data.alt}
+                                            src={data.src}
+                                        />
+                                    </a>
+                                ))}
 
-                                </Grid>
                             </Grid>
-                        </div>
+                        </Grid>
                     </div>
                 </div>
 

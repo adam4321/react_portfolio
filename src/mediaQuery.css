@@ -3,22 +3,32 @@
 ******************************************************************************/
 
 
-/* Media query below 1200 px ----------------------------------------------- */
+/* Media query below 1600 px ----------------------------------------------- */
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1660px) {
     .tech-icon {
         margin: 2.8vw;
     }
 
     #icon-container {
-        margin-top: 1vw;
-        margin-bottom: 9vw;
-        height: 30vw;
-        width: 90vw;
+        margin-top: 5.5vw;
+        margin-bottom: 8vw;
+        height: 35vw;
     }
 
-    #git-icon {
+    /* #git-icon {
         margin-right: 3.8vw;
+    } */
+}
+
+
+/* Media query below 1200 px ----------------------------------------------- */
+
+@media only screen and (max-width: 1200px) {
+    #icon-container {
+        margin-top: 12vw;
+        margin-bottom: 8vw;
+        height: 40vw;
     }
 }
 
@@ -26,21 +36,17 @@
 /* Media query below 960 px ------------------------------------------------ */
 
 @media only screen and (max-width: 960px) {
-    #menu-container {
-        position: relative;
-        float: right;
-        width: 90px;
-        height: 20px;
-        margin-top: 10px;
-        margin-left: 50%;
-        margin-right: 1%;
-        margin-bottom: 20px;
-        cursor: pointer;
-    }
-
     .menu {
         width: 16px;
         text-decoration: none;
+    }
+
+    
+
+    #icon-container {
+        margin-top: 16vw;
+        margin-bottom: 8vw;
+        height: 40vw;
     }
 
     #menu-text {
@@ -63,6 +69,11 @@
 /*  Media query below 600 px ----------------------------------------------- */
 
 @media only screen and (max-width: 600px) {
+    #icon-container {
+        margin-top: 18vw;
+        height: 40vw;
+    }
+
     .bottom-container {
         margin-top: 50px;
     }
@@ -95,17 +106,6 @@
 /* Media query below 400 px ------------------------------------------------ */
 
 @media only screen and (max-width: 400px) {
-    .tech-icon {
-        margin: 2.8vw;
-    }
-
-    #icon-container {
-        margin-top: 1vw;
-        margin-bottom: 5vw;
-        height: 35vw;
-        width: 90vw;
-    }
-
     .bottom-container {
         height: 700px;
         margin-top: 15vw;
@@ -139,22 +139,20 @@
 
 /* Media query below 300 px ------------------------------------------------ */
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 340px) {
     .logogo {
         height: 100px;
         width: 170px;
         margin-top: 20px;
     }
-    
-    .tech-icon {
-        margin: 2.8vw;
+
+    #menu-container {
+        margin-right: 0px;
     }
 
     #icon-container {
-        margin-top: 1vw;
-        margin-bottom: 5vw;
-        height: 35vw;
-        width: 100%;
+        margin-top: 18vw;
+        height: 40vw;
     }
 
     .bottom-container {
@@ -185,15 +183,6 @@
         width: 10%;
         top: 1100px;
     }
-}
-
-
-/* Media query above 588 px ------------------------------------------------ */
-
-@media only screen and (min-width: 588px) {
-    /* #menu-container {
-        margin-left: 65%;
-    } */
 }
 
 
@@ -265,39 +254,37 @@
 /* Media query above 1200 px ----------------------------------------------- */
 
 @media only screen and (min-width: 1200px) {
-    .tech-icon {
-        margin: 2.8vw;
-    }
+    
 
-    #icon-container {
-        margin-top: 2.5vw;
-        margin-bottom: 10vw;
+    /* #icon-container {
+        margin-top: 6.5vw;
+        margin-bottom: 15vw;
         height: 30vw;
         width: 90vw;
-    }
-
+    } */
+/* 
     #git-icon {
         margin-right: 3.8vw;
-    }
+    } */
 }
 
 
 /* Media query above 1660 px ----------------------------------------------- */
 
 @media only screen and (min-width: 1660px) {
-    .tech-icon {
+    /* .tech-icon {
         margin: 2.3vw;
     }
 
-    #icon-container {
+    /* #icon-container {
         margin-top: 3.2vw;
         height: 28vw;
         width: 90vw;
-    }
+    } */ */
 
-    #git-icon {
+    /* #git-icon {
         margin-right: 3vw;
-    }
+    } */
 
     #stack {
         padding-top: 5vw;
