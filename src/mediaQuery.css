@@ -15,10 +15,6 @@
         margin-bottom: 8vw;
         height: 35vw;
     }
-
-    /* #git-icon {
-        margin-right: 3.8vw;
-    } */
 }
 
 
@@ -40,8 +36,6 @@
         width: 16px;
         text-decoration: none;
     }
-
-    
 
     #icon-container {
         margin-top: 16vw;
@@ -251,41 +245,9 @@
 }
 
 
-/* Media query above 1200 px ----------------------------------------------- */
-
-@media only screen and (min-width: 1200px) {
-    
-
-    /* #icon-container {
-        margin-top: 6.5vw;
-        margin-bottom: 15vw;
-        height: 30vw;
-        width: 90vw;
-    } */
-/* 
-    #git-icon {
-        margin-right: 3.8vw;
-    } */
-}
-
-
 /* Media query above 1660 px ----------------------------------------------- */
 
 @media only screen and (min-width: 1660px) {
-    /* .tech-icon {
-        margin: 2.3vw;
-    }
-
-    /* #icon-container {
-        margin-top: 3.2vw;
-        height: 28vw;
-        width: 90vw;
-    } */ */
-
-    /* #git-icon {
-        margin-right: 3vw;
-    } */
-
     #stack {
         padding-top: 5vw;
     }
