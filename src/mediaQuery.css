@@ -5,25 +5,26 @@
 
 /* Media query below 1600 px ----------------------------------------------- */
 
-@media only screen and (max-width: 1660px) {
+@media only screen and (max-width: 1600px) {
     .tech-icon {
         margin: 2.8vw;
     }
 
     #icon-container {
-        margin-top: 5.5vw;
-        margin-bottom: 8vw;
-        height: 35vw;
+        margin-top: 8vw;
+        margin-bottom: 5vw;
+        margin-left: 5vw;
+        height: 40vw;
     }
 }
 
 
 /* Media query below 1200 px ----------------------------------------------- */
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1280px) {
     #icon-container {
-        margin-top: 12vw;
-        margin-bottom: 8vw;
+        margin-top: 10vw;
+        margin-bottom: 5vw;
         height: 40vw;
     }
 }
@@ -38,8 +39,8 @@
     }
 
     #icon-container {
-        margin-top: 16vw;
-        margin-bottom: 8vw;
+        margin-top: 12vw;
+        margin-bottom: 7vw;
         height: 40vw;
     }
 
@@ -64,7 +65,8 @@
 
 @media only screen and (max-width: 600px) {
     #icon-container {
-        margin-top: 18vw;
+        margin-top: 14vw;
+        margin-bottom: 7vw;
         height: 40vw;
     }
 
