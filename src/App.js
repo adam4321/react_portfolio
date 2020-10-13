@@ -29,12 +29,12 @@ import { Link } from 'react-scroll';
 
 // Images for the page --------------------------------------------------------
 
+import amp_library_screenshot from './images/amp-library-screenshot.jpg';
+import bug_tracker_screenshot from './images/bug_tracker_screenshot.png';
 import drum_machine_screenshot from './images/drum-machine-screenshot.jpg';
 import maze_game_screenshot from './images/maze_game_screenshot.png';
-import markdown_screenshot from './images/markdown-screenshot.png';
+import weather_screenshot from './images/weather_app.png';
 import calculator_screenshot from './images/calculator-screenshot.png';
-import bug_tracker_screenshot from './images/bug_tracker_screenshot.png';
-import amp_library_screenshot from './images/amp-library-screenshot.jpg';
 import logo from './images/Adam_logo.png';
 import skyline from './images/skyline.jpg';
 import pin from './images/maps-pin-smaller.png';
@@ -176,23 +176,23 @@ const TECH_ICONS_DATA = [
 const LARGE_PROJ_CARDS = [
     {
         key: 1,
-        image: bug_tracker_screenshot,
-        title: 'Software Bug Tracker',
-        project: 'Software Bug Tracker',
-        link: 'https://adamjwright.com/bug_tracker',
-        about:
-            `A dashboard which allows the user to add new software bugs and to track and update 
-            their status as they are fixed.`
-    },
-    {
-        key: 2,
         image: amp_library_screenshot,
         title: 'Amp Information Library',
         project: 'Amp Information Library',
         link: 'https://adamjwright.com/amp_library',
         about:
-            `A dashboard where the user can sign in and add photos, schematics, settings, and other 
-            helpful information about electric guitar amplifiers.`
+            `A dashboard built using React where the user can sign in and add photos, schematics, 
+            settings, and other helpful information about electric guitar amplifiers.`
+    },
+    {
+        key: 2,
+        image: bug_tracker_screenshot,
+        title: 'Software Bug Tracker',
+        project: 'Software Bug Tracker',
+        link: 'https://adamjwright.com/bug_tracker',
+        about:
+            `A dashboard built using Node.js and Handlebars which allows the user to add new 
+            software bugs and to track and update their status as they are fixed.`
     }
 ];
 
@@ -216,16 +216,18 @@ const SMALL_PROJ_CARDS = [
         project: 'C++ WASM Maze Game',
         link: 'https://adamjwright.com/wasm_maze_game',
         about:
-            `C++ command line maze game which is converted to run in the browser by using emscripten to compile it to Web Assembly.`
+            `C++ command line maze game which is converted to run in the browser by using
+            emscripten to compile it to Web Assembly.`
     },
     {
         key: 3,
-        image: markdown_screenshot,
-        title: 'React Markup Previewer',
-        project: 'React Markdown Previewer',
-        link: 'https://adamjwright.com/markdown_previewer',
+        image: weather_screenshot,
+        title: 'JavaScript Weather Widget',
+        project: 'JavaScript Weather Widget',
+        link: 'https://adamjwright.com/weather_widget',
         about:
-            `Turns the entries into the box on the left into Git Flavored Markdown on the right.`
+            `Weather widget built in vanilla JavaScript which shows the local weather and
+            allows the user to manually change locations.`
     },
     {
         key: 4,
