@@ -33,7 +33,7 @@ import amp_library_screenshot from './images/amp-library-screenshot.jpg';
 import bug_tracker_screenshot from './images/bug_tracker_screenshot.png';
 import drum_machine_screenshot from './images/drum-machine-screenshot.jpg';
 import maze_game_screenshot from './images/maze_game_screenshot.png';
-import weather_screenshot from './images/weather_app.png';
+import markdown_screenshot from './images/markdown-screenshot.jpg';
 import calculator_screenshot from './images/calculator-screenshot.png';
 import logo from './images/Adam_logo.png';
 import skyline from './images/skyline.jpg';
@@ -221,16 +221,6 @@ const SMALL_PROJ_CARDS = [
     },
     {
         key: 3,
-        image: weather_screenshot,
-        title: 'JavaScript Weather Widget',
-        project: 'JavaScript Weather Widget',
-        link: 'https://adamjwright.com/weather_widget',
-        about:
-            `Weather widget built in vanilla JavaScript which shows the local weather and
-            allows the user to manually change locations.`
-    },
-    {
-        key: 4,
         image: calculator_screenshot,
         title: 'React Calculator',
         project: 'React Calculator App',
@@ -238,6 +228,16 @@ const SMALL_PROJ_CARDS = [
         about:
             `Modern style calculator application that is fully mobile responsive and supports all the 
             basic operations.`
+    },
+    {
+        key: 4,
+        image: markdown_screenshot,
+        title: 'React Markup Previewer',
+        project: 'React Markup Previewer',
+        link: 'https://adamjwright.com/markdown_previewer',
+        about:
+            `Weather widget built in vanilla JavaScript which shows the local weather and
+            allows the user to manually change locations.`
     }
 ];
 
