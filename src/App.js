@@ -334,7 +334,7 @@ function Album(props) {
                     {/* Full stack project card --------------------------- */}
 
                     <div className="full-stack" id="stack">
-                        <Grid container spacing={40} justify="center">
+                        <Grid container spacing={5} justify="center">
 
                             {/* This section maps the LARGE_PROJ_CARDS object into 2 card components */}
 
@@ -362,7 +362,7 @@ function Album(props) {
                     {/* Smaller project cards ----------------------------- */}
 
                     <div className="smaller-apps">
-                        <Grid container spacing={40}>
+                        <Grid container spacing={5}>
 
                             {/* This section maps the SMALL_PROJ_CARDS object into 4 card components */}
 

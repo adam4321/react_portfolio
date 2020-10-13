@@ -36,6 +36,7 @@ body {
 }
 
 .header-link {
+    font-family: 'Open Sans', sans-serif;
     color: #fff;
     text-decoration: none;
     float: right;
@@ -248,6 +249,10 @@ a:hover {
 
 #stack {
     padding-bottom: 40px;
+}
+
+p.MuiTypography-root.MuiTypography-body1 {
+    font-size: .98em;
 }
 
 
