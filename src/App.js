@@ -207,7 +207,8 @@ const SMALL_PROJ_CARDS = [
         project: 'React Drum Machine',
         link: 'https://adamjwright.com/drum_machine',
         about:
-            `Plays a sound when you press the keyboard key or click the button for the displayed letter.`
+            `Drum machine that can be played by either clicking its buttons or pressing 
+            the keyboard keys shown.`
     },
     {
         key: 2,
@@ -226,8 +227,8 @@ const SMALL_PROJ_CARDS = [
         project: 'React Calculator App',
         link: 'https://adamjwright.com/react_calculator',
         about:
-            `Modern style calculator application that is fully mobile responsive and supports all the 
-            basic operations.`
+            `Modern style calculator application that is fully mobile responsive and supports
+            all the basic operations.`
     },
     {
         key: 4,
