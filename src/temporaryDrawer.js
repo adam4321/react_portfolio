@@ -34,6 +34,7 @@ class TemporaryDrawer extends React.Component {
     render() {
         const sideList = (
             <div className="drawer">
+                
                 <List id="menu-list">
                     <button className="button-styled-link" onClick={this.toggleDrawer('left', false)}>
                         <ListItem id="close">
@@ -44,9 +45,10 @@ class TemporaryDrawer extends React.Component {
                         </ListItem>
                     </button>
                     <Divider className="divider"/>
+
                     <Link
                         activeClass="active"
-                        to="Album-layout-6"
+                        to="jss6"
                         spy={true}
                         smooth={true}
                         offset={30}
@@ -58,6 +60,7 @@ class TemporaryDrawer extends React.Component {
                         </ListItem>
                     </Link>
                     <Divider className="divider"/>
+
                     <Link
                         activeClass="active"
                         to="bottom-container"
@@ -72,6 +75,7 @@ class TemporaryDrawer extends React.Component {
                         </ListItem>
                     </Link>
                     <Divider className="divider"/>
+
                     <a href="https://adamjwright.com/blog">
                         <ListItem id="blog-link">
                             <p id="blog-link">Blog</p>
@@ -84,6 +88,7 @@ class TemporaryDrawer extends React.Component {
                         </ListItem>
                     </a>
                     <Divider className="divider"/>
+
                 </List>
             </div>
         );
