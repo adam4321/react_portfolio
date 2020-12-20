@@ -29,12 +29,12 @@ import { Link } from 'react-scroll';
 
 // Images for the page --------------------------------------------------------
 
+import quiz_screenshot from './images/quiz_screenshot.png';
 import amp_library_screenshot from './images/amp-library-screenshot.jpg';
 import bug_tracker_screenshot from './images/bug_tracker_screenshot.png';
 import drum_machine_screenshot from './images/drum-machine-screenshot.jpg';
 import maze_game_screenshot from './images/maze_game_screenshot.png';
 import weather_screenshot from './images/weather_app.png';
-import calculator_screenshot from './images/calculator-screenshot.png';
 import logo from './images/Adam_logo.png';
 import skyline from './images/skyline.jpg';
 import pin from './images/maps-pin-smaller.png';
@@ -176,6 +176,16 @@ const TECH_ICONS_DATA = [
 const LARGE_PROJ_CARDS = [
     {
         key: 1,
+        image: quiz_screenshot,
+        title: 'QuizSoft Quiz Builder',
+        project: 'QuizSoft Quiz Builder',
+        link: 'https://adamjwright.com/quiz_soft/login',
+        about:
+            `A quiz builder built using Node.js and Handlebars where the user can create a set of
+            quizzes and then email them to job applicants and see the results automatically ranked.`
+    },
+    {
+        key: 2,
         image: amp_library_screenshot,
         title: 'Amp Information Library',
         project: 'Amp Information Library',
@@ -183,16 +193,6 @@ const LARGE_PROJ_CARDS = [
         about:
             `A dashboard built using React where the user can sign in and add photos, schematics, 
             settings, and other helpful information about electric guitar amplifiers.`
-    },
-    {
-        key: 2,
-        image: bug_tracker_screenshot,
-        title: 'Software Bug Tracker',
-        project: 'Software Bug Tracker',
-        link: 'https://adamjwright.com/bug_tracker',
-        about:
-            `A dashboard built using Node.js and Handlebars which allows the user to add new 
-            software bugs and to track and update their status as they are fixed.`
     }
 ];
 
@@ -202,13 +202,13 @@ const LARGE_PROJ_CARDS = [
 const SMALL_PROJ_CARDS = [
     {
         key: 1,
-        image: drum_machine_screenshot,
-        title: 'React Drum Machine',
-        project: 'React Drum Machine',
-        link: 'https://adamjwright.com/drum_machine',
+        image: bug_tracker_screenshot,
+        title: 'Software Bug Tracker',
+        project: 'Software Bug Tracker',
+        link: 'https://adamjwright.com/bug_tracker',
         about:
-            `Drum machine that can be played by either clicking its buttons or pressing 
-            the keyboard keys shown.`
+            `A dashboard built using Node.js and Handlebars which allows the user to add new 
+            software bugs and to track and update their status as they are fixed.`
     },
     {
         key: 2,
@@ -222,13 +222,13 @@ const SMALL_PROJ_CARDS = [
     },
     {
         key: 3,
-        image: calculator_screenshot,
-        title: 'React Calculator',
-        project: 'React Calculator App',
-        link: 'https://adamjwright.com/react_calculator',
+        image: drum_machine_screenshot,
+        title: 'React Drum Machine',
+        project: 'React Drum Machine',
+        link: 'https://adamjwright.com/drum_machine',
         about:
-            `Modern style calculator application that is fully mobile responsive and supports
-            all the basic operations.`
+            `Drum machine that can be played by either clicking its buttons or pressing 
+            the keyboard keys shown.`
     },
     {
         key: 4,
@@ -289,7 +289,7 @@ function Album(props) {
                             to="full-stack"
                             spy={true}
                             smooth={true}
-                            offset={50}
+                            offset={65}
                             duration={550}
                             delay={200}
                         >
@@ -404,11 +404,11 @@ function Album(props) {
                     <div id="about-text">
                         <Typography variant="h5" align="center" id="me" gutterBottom> About Me </Typography>
                         <Typography variant="subtitle1" align="left" color="textSecondary" component="p">
-                            I am Computer Science student in Seattle who is looking
-                            for my first position after graduation. I have worked in
-                            a variety of technologies while completing my B.S. Those technologies 
-                            range from C/C++ and Python command line applications on Linux to full stack web 
-                            applications using node.js and Handlebars for server-side rendering. I have worked with
+                            I'm in Seattle and I am a new grad looking for my first software development 
+                            after graduation. I have worked in a variety of technologies while completing my
+                            B.S. at Oregon State University. Those technologies range from C/C++ and Python 
+                            command line applications on Linux to full stack web applications using node.js 
+                            and Handlebars for server-side rendering. I have worked with
                             React in my spare time to build client-side rendered web applications and
                             that is what I used to build most of this site.
                         </Typography>
