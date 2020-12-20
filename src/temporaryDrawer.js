@@ -15,6 +15,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import menu from './images/menu.png';
 import icon from './images/x-icon.png';
+import { Link } from 'react-scroll';
 
 
 /* Mobile Drawer Component ------------------------------------------------- */
@@ -43,17 +44,33 @@ class TemporaryDrawer extends React.Component {
                         </ListItem>
                     </button>
                     <Divider className="divider"/>
-                    <a href="https://adamjwright.com/#stack">
-                        <ListItem id="projects-link">
+                    <Link
+                        activeClass="active"
+                        to="Album-layout-6"
+                        spy={true}
+                        smooth={true}
+                        offset={30}
+                        duration={550}
+                        delay={200}
+                    >
+                        <ListItem id="projects-link" onClick={this.toggleDrawer('left', false)}>
                             <p id="projects-link">Projects</p>
                         </ListItem>
-                    </a>
+                    </Link>
                     <Divider className="divider"/>
-                    <a href="https://adamjwright.com/#footer">
-                        <ListItem id="about-link">
+                    <Link
+                        activeClass="active"
+                        to="bottom-container"
+                        spy={true}
+                        smooth={true}
+                        offset={20}
+                        duration={550}
+                        delay={200}
+                    >
+                        <ListItem id="about-link" onClick={this.toggleDrawer('left', false)}>
                             <p id="about-link">About</p>
                         </ListItem>
-                    </a>
+                    </Link>
                     <Divider className="divider"/>
                     <a href="https://adamjwright.com/blog">
                         <ListItem id="blog-link">
