@@ -286,14 +286,14 @@ function Album(props) {
                         </Link>
                         <Link
                             activeClass="active"
-                            to="Album-layout-6"
+                            to="jss6"
                             spy={true}
                             smooth={true}
                             offset={30}
                             duration={550}
                             delay={200}
                         >
-                            <a href="Album-layout-6" id="projects" className="header-link"> Projects </a>
+                            <a href="jss6" id="projects" className="header-link"> Projects </a>
                         </Link>
                     </div>
 
