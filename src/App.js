@@ -403,19 +403,18 @@ function Album(props) {
 
                     <div id="about-text">
                         <Typography variant="h5" align="center" id="me" gutterBottom> About Me </Typography>
-                        <Typography variant="subtitle1" align="left" color="textSecondary" component="p">
-                            I'm in Seattle and I am a new grad looking for my first software development 
-                            after graduation. I have worked in a variety of technologies while completing my
-                            B.S. at Oregon State University. Those technologies range from C/C++ and Python 
-                            command line applications on Linux to full stack web applications using node.js 
-                            and Handlebars for server-side rendering. I have worked with
-                            React in my spare time to build client-side rendered web applications and
-                            that is what I used to build most of this site.
+                        <Typography variant="subtitle1" align="justify" color="textSecondary" component="p">
+                            I'm Adam and I'm a new grad with a B.S. in Computer Science from Oregon State 
+                            University. I'm in Seattle and am looking for my first software development position
+                            after graduation. I have worked with a variety of technologies while completing my
+                            degree, ranging from C/C++ and Python command line applications on Linux to full 
+                            stack web applications using node.js and Handlebars for server-side rendering. 
+                            In my spare time I've used React to build client-side rendered projects and I've
+                            experimented with WASM.
                         </Typography>
                         <br />
-                        <Typography variant="subtitle1" align="left" color="textSecondary" component="p">
-                            If you would like to reach out to me then feel free to use the contact page on
-                            this site or email me at adamjw321@gmail.com.
+                        <Typography variant="subtitle1" align="justify" color="textSecondary" component="p">
+                            You can reach out to me here on the contact page or email me at adamjw321@gmail.com.
                         </Typography> 
                     </div>
 
