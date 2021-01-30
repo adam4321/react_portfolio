@@ -43,12 +43,16 @@ body {
     font-weight: 500;
     font-size: 16.46px;
     letter-spacing: 0.8px;
+    cursor: pointer;
 }
 
-.header-link:link {
-    text-decoration: none;
-    color: #fff;
-    position: relative;
+.header-link:hover {
+    color: rgb(154, 182, 196);
+    opacity: 0.9;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
 }
 
 a {
