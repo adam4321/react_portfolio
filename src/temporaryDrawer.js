@@ -48,10 +48,10 @@ class TemporaryDrawer extends React.Component {
 
                     <Link
                         activeClass="active"
-                        to="jss6"
+                        to="stack"
                         spy={true}
                         smooth={true}
-                        offset={30}
+                        offset={0}
                         duration={550}
                         delay={200}
                     >

@@ -59,7 +59,7 @@ const styles = theme => ({
         height: 128
     },
     icon: {
-        marginRight: theme.spacing.unit * 2
+        marginRight: theme.spacing(2)
     },
     heroUnit: {
         backgroundColor: theme.palette.background.paper
@@ -67,23 +67,23 @@ const styles = theme => ({
     heroContent: {
         maxWidth: 1100,
         margin: '0 auto',
-        padding: `${theme.spacing.unit * 3}px ${theme.spacing.unit * 2}px`
+        padding: `${theme.spacing(3)}px ${theme.spacing(2)}px`
     },
     heroButtons: {
-        marginTop: theme.spacing.unit * 4
+        marginTop: theme.spacing(4)
     },
     layout: {
         width: 'auto',
-        marginLeft: theme.spacing.unit * 3,
-        marginRight: theme.spacing.unit * 3,
-        [theme.breakpoints.up(1500 + theme.spacing.unit * 3 * 2)]: {
+        marginLeft: theme.spacing(3),
+        marginRight: theme.spacing(3),
+        [theme.breakpoints.up(1500 + theme.spacing(3 * 2))]: {
             width: 1500,
             marginLeft: 'auto',
             marginRight: 'auto'
         }
     },
     cardGrid: {
-        padding: `${theme.spacing.unit * 8}px 0`
+        padding: `${theme.spacing(8)}px 0`
     },
     card: {
         height: '100%',
@@ -98,7 +98,7 @@ const styles = theme => ({
     },
     footer: {
         backgroundColor: theme.palette.background.paper,
-        padding: theme.spacing.unit * 6
+        padding: theme.spacing(6)
     },
     list: {
         width: 300
@@ -243,17 +243,16 @@ const SMALL_PROJ_CARDS = [
 ];
 
 
-// Page layout ----------------------------------------------------------------
+/* Page layout ------------------------------------------------------------- */
 
 function Album(props) {
     const { classes } = props;
 
     return (
-        <React.Fragment>
+        <>
             <CssBaseline />
 
             {/* Header nav bar -------------------------------------------- */}
-
             <AppBar position="static" className={classes.appBar}>
                 <Toolbar className={'barbar'}>
                     <a 
@@ -262,6 +261,8 @@ function Album(props) {
                     > 
                         <img src={logo} alt="logo" className={'logogo'}/>
                     </a>
+
+                    {/* Header links */}
                     <div id="scroll-links">
                         <a 
                             href="https://adamjwright.com/blog/contact_me"
@@ -286,27 +287,26 @@ function Album(props) {
                         </Link>
                         <Link
                             activeClass="active"
-                            to="jss6"
+                            to="stack"
                             spy={true}
                             smooth={true}
-                            offset={30}
+                            offset={-10}
                             duration={550}
                             delay={200}
                         >
-                            <a href="jss6" id="projects" className="header-link"> Projects </a>
+                            <a href="stack" id="projects" className="header-link"> Projects </a>
                         </Link>
                     </div>
 
                     {/* Responsive menu component ------------------------- */}
-
                     <div id="menu-container">
                         <TemporaryDrawer />
                     </div>
+
                 </Toolbar>
             </AppBar>
 
             {/* Skills section -------------------------------------------- */}
-
             <main>
                 <div className={classes.heroUnit}>
                     <div className={classes.heroContent}>
@@ -316,7 +316,7 @@ function Album(props) {
                                 {/* Grid of tech skills icons */}
 
                                 {TECH_ICONS_DATA.map(data => (
-                                    <a href={data.href}>
+                                    <a key={data.id} href={data.href}>
                                         <img
                                             className={data.className}
                                             id={data.id}
@@ -333,14 +333,11 @@ function Album(props) {
 
                 <div className={classNames(classes.layout, classes.cardGrid)}>
 
-
-                    {/* Full stack project card --------------------------- */}
-
+                    {/* Full stack project cards --------------------------- */}
                     <div className="full-stack" id="stack">
                         <Grid container spacing={5} justify="center">
 
                             {/* This section maps the LARGE_PROJ_CARDS object into 2 card components */}
-
                             {LARGE_PROJ_CARDS.map(card => (
                                 <Grid item key={card.key} sm={6} md={5} lg={5}>
                                     <Card className={classes.card}>
@@ -361,14 +358,11 @@ function Album(props) {
                         </Grid>
                     </div>
 
-
                     {/* Smaller project cards ----------------------------- */}
-
                     <div className="smaller-apps">
                         <Grid container spacing={5}>
 
                             {/* This section maps the SMALL_PROJ_CARDS object into 4 card components */}
-
                             {SMALL_PROJ_CARDS.map(card => (
                                 <Grid item key={card.key} sm={6} md={3} lg={3}>
                                     <Card className={classes.card}>
@@ -394,13 +388,11 @@ function Album(props) {
             </main>
 
             {/* Footer, which is the bottom 1/3 of the page --------------- */}
-
             <footer id="footer" className={classes.footer}>
                 <div className="bottom-container">
 
 
                     {/* About me box -------------------------------------- */}
-
                     <div id="about-text">
                         <Typography variant="h5" align="center" id="me" gutterBottom> About Me </Typography>
                         <Typography variant="subtitle1" align="justify" color="textSecondary" component="p">
@@ -420,7 +412,6 @@ function Album(props) {
 
 
                     {/* Social Links -------------------------------------- */}
-
                     <div id="social">
                         <Typography variant="h5" align="center" id="social-title" gutterBottom> Social Links </Typography>
                         <a href="https://github.com/adam4321">
@@ -440,7 +431,6 @@ function Album(props) {
 
 
                     {/* The skyline background and location pin ----------- */}
-
                     <img src={skyline} alt="seatle skyline" className="skyline-img"/>
                     <div className="overlay">
                         <a
@@ -453,7 +443,7 @@ function Album(props) {
 
                 </div>
             </footer>
-        </React.Fragment>
+        </>
     );
 }
 
