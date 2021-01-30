@@ -283,7 +283,7 @@ function Album(props) {
                             duration={550}
                             delay={200}
                         >
-                            <div href="#footer" id="about" className="header-link"> About </div>
+                            <div id="about" className="header-link"> About </div>
                         </Link>
                         <Link
                             activeClass="active"
@@ -294,7 +294,7 @@ function Album(props) {
                             duration={550}
                             delay={200}
                         >
-                            <div href="stack" id="projects" className="header-link"> Projects </div>
+                            <div id="projects" className="header-link"> Projects </div>
                         </Link>
                     </div>
 
