@@ -207,13 +207,13 @@ a:hover {
 #icon-container {
     height: 38vw;
     width: 90vw;
-    margin-top: 4vw;
+    margin-top: 3.7vw;
     margin-bottom: 1vw;
 }
 
 #html-icon {
     width: 15.5%;
-    margin-left: 2.65vw;
+    margin-left: 2.9vw;
 }
 
 #css-icon {
@@ -228,24 +228,27 @@ a:hover {
     width: 15.1%;
 }
 
-#git-icon {
-    width: 12.3%;
+#java-icon {
+    width: 15.3%;
     margin-top: 5.5vw;
-    margin-left: 3.7vw;
+    margin-left: 3.0vw;
 }
 
 #node-icon {
     width: 18%;
-    margin-bottom: 1.5vw;
+    margin-bottom: 2.0vw;
+    margin-left: 2.0vw;
 }
 
 #mysql-icon {
     width: 15.2%;
-    margin-left: 1.6vw;
+    margin-left: 1.7vw;
 }
 
-#cpp-icon {
-    width: 15.3%;
+#git-icon {
+    width: 12.3%;
+    margin-left: 3.4vw;
+    margin-bottom: 3.6vw;
 }
 
 

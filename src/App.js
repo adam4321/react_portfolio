@@ -47,7 +47,7 @@ import node from './images/node-js-icon.png';
 import github from './images/github-icon.png';
 import mysql from './images/mysql-icon.png';
 import linkedin from './images/linkedin-icon.png';
-import cpp from './images/c++_icon.png';
+import java from './images/java_icon.png';
 
 
 // Material UI styles object --------------------------------------------------
@@ -141,11 +141,11 @@ const TECH_ICONS_DATA = [
         src: react,
     },
     {
-        href: 'https://en.wikipedia.org/wiki/Git',
+        href: 'https://en.wikipedia.org/wiki/Java_(programming_language)',
         className: 'tech-icon',
-        id: 'git-icon',
-        alt: 'git',
-        src: git,
+        id: 'java-icon',
+        alt: 'Java',
+        src: java,
     },
     {
         href: 'https://en.wikipedia.org/wiki/Node.js',
@@ -162,11 +162,11 @@ const TECH_ICONS_DATA = [
         src: mysql,
     },
     {
-        href: 'https://en.wikipedia.org/wiki/C%2B%2B',
+        href: 'https://en.wikipedia.org/wiki/Git',
         className: 'tech-icon',
-        id: 'cpp-icon',
-        alt: 'C++',
-        src: cpp,
+        id: 'git-icon',
+        alt: 'git',
+        src: git,
     }
 ];
 
@@ -181,18 +181,19 @@ const LARGE_PROJ_CARDS = [
         project: 'QuizSoft Quiz Builder',
         link: 'https://adamjwright.com/quiz_soft',
         about:
-            `A quiz builder built using Node.js and Handlebars where the user can create a set of
-            quizzes and then email them to job applicants and see the results automatically ranked.`
+            `Node.js / MongoDB / Handlebars - Quiz builder where the user can create a set of
+            quizzes and then email a one time link and see the results graded and ranked automatically.`
     },
     {
         key: 2,
-        image: amp_library_screenshot,
-        title: 'Amp Information Library',
-        project: 'Amp Information Library',
-        link: 'https://adamjwright.com/amp_library',
+        image: bug_tracker_screenshot,
+        title: 'Software Bug Tracker',
+        project: 'Software Bug Tracker',
+        link: 'https://adamjwright.com/bug_tracker/login',
         about:
-            `A dashboard built using React where the user can sign in and add photos, schematics, 
-            settings, and other helpful information about electric guitar amplifiers.`
+            `Java / Spring Boot / MySQL / Maven - An application which allows the user to add new 
+            software bugs and to track and update their status as they are fixed.`
+        
     }
 ];
 
@@ -202,13 +203,13 @@ const LARGE_PROJ_CARDS = [
 const SMALL_PROJ_CARDS = [
     {
         key: 1,
-        image: bug_tracker_screenshot,
-        title: 'Software Bug Tracker',
-        project: 'Software Bug Tracker',
-        link: 'https://adamjwright.com/bug_tracker',
+        image: amp_library_screenshot,
+        title: 'Amp Information Library',
+        project: 'Amp Information Library',
+        link: 'https://adamjwright.com/amp_library',
         about:
-            `A dashboard built using Node.js and Handlebars which allows the user to add new 
-            software bugs and to track and update their status as they are fixed.`
+            `React.js / Firebase Realtime DB - App where a user can add photos, schematics, 
+            settings, and details about electric guitar amplifier circuits.`
     },
     {
         key: 2,
@@ -217,8 +218,8 @@ const SMALL_PROJ_CARDS = [
         project: 'C++ WASM Maze Game',
         link: 'https://adamjwright.com/wasm_maze_game',
         about:
-            `C++ command line maze game which is converted to run in the browser by using
-            emscripten to compile it to Web Assembly.`
+            `C++ / Web Assembly / JavaScript - Command line maze game converted to run in the browser using
+            emscripten and an HTML and CSS CLI.`
     },
     {
         key: 3,
@@ -227,7 +228,7 @@ const SMALL_PROJ_CARDS = [
         project: 'React Drum Machine',
         link: 'https://adamjwright.com/drum_machine',
         about:
-            `Drum machine that can be played by either clicking its buttons or pressing 
+            `React.js - Drum machine that can be played by either clicking its buttons or pressing 
             the keyboard keys shown.`
     },
     {
@@ -237,7 +238,7 @@ const SMALL_PROJ_CARDS = [
         project: 'Weather Widget',
         link: 'https://adamjwright.com/weather_widget',
         about:
-            `Weather widget built in vanilla JavaScript which shows the local weather and
+            `JavaScript - Weather widget which finds the user's location and shows the local weather and
             allows the user to manually change locations.`
     }
 ];
