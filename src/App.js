@@ -8,8 +8,7 @@
 // @ts-check
 
 // Imported libraries ---------------------------------------------------------
-
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import './App.css';
 import './mediaQuery.css';
 import PropTypes from 'prop-types';
@@ -23,12 +22,10 @@ import Grid from '@material-ui/core/Grid';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
-import TemporaryDrawer from './temporaryDrawer.js';
 import { Link } from 'react-scroll';
 
 
 // Images for the page --------------------------------------------------------
-
 import quiz_screenshot from './images/quiz_screenshot.png';
 import amp_library_screenshot from './images/amp-library-screenshot.jpg';
 import bug_tracker_screenshot from './images/bug_tracker_screenshot.png';
@@ -38,20 +35,22 @@ import weather_screenshot from './images/weather_app.png';
 import logo from './images/Adam_logo.png';
 import skyline from './images/skyline.jpg';
 import pin from './images/maps-pin-smaller.png';
-import html from './images/html.png';
-import css from './images/css.png';
-import js from './images/js.png';
-import git from './images/git.png';
-import react from './images/react-1.png';
-import node from './images/node-js-icon.png';
-import github from './images/github-icon.png';
-import mysql from './images/mysql-icon.png';
-import linkedin from './images/linkedin-icon.png';
-import java from './images/java_icon.png';
+import /* webpackPrefetch: true */ html from './images/html.png';
+import /* webpackPrefetch: true */ css from './images/css.png';
+import /* webpackPrefetch: true */ js from './images/js.png';
+import /* webpackPrefetch: true */ git from './images/git.png';
+import /* webpackPrefetch: true */ react from './images/react-1.png';
+import /* webpackPrefetch: true */ node from './images/node-js-icon.png';
+import /* webpackPrefetch: true */ github from './images/github-icon.png';
+import /* webpackPrefetch: true */ mysql from './images/mysql-icon.png';
+import /* webpackPrefetch: true */ linkedin from './images/linkedin-icon.png';
+import /* webpackPrefetch: true */ java from './images/java_icon.png';
 
+// Lazy Imports
+const TemporaryDrawer = lazy(() => import('./temporaryDrawer.js'));
+const renderLoader = () => <p>Loading</p>;
 
 // Material UI styles object --------------------------------------------------
-
 const styles = theme => ({
     appBar: {
         position: 'relative',
@@ -110,7 +109,6 @@ const styles = theme => ({
 
 
 // Array of objects holding the data for grid of tech skills icons below ------
-
 const TECH_ICONS_DATA = [
     {
         href: 'https://en.wikipedia.org/wiki/HTML',
@@ -118,6 +116,8 @@ const TECH_ICONS_DATA = [
         id: 'html-icon',
         alt: 'html',
         src: html,
+        width: "166",
+        height: "166"
     },
     {
         href: 'https://en.wikipedia.org/wiki/Cascading_Style_Sheets',
@@ -125,6 +125,8 @@ const TECH_ICONS_DATA = [
         id: 'css-icon',
         alt: 'css',
         src: css,
+        width: "160",
+        height: "160"
     },
     {
         href: 'https://en.wikipedia.org/wiki/JavaScript',
@@ -132,6 +134,8 @@ const TECH_ICONS_DATA = [
         id: 'js-icon',
         alt: 'js',
         src: js,
+        width: "155",
+        height: "155"
     },
     {
         href: 'https://en.wikipedia.org/wiki/React_(JavaScript_library)',
@@ -139,6 +143,8 @@ const TECH_ICONS_DATA = [
         id: 'react-icon',
         alt: 'react',
         src: react,
+        width: "161",
+        height: "161"
     },
     {
         href: 'https://en.wikipedia.org/wiki/Java_(programming_language)',
@@ -146,6 +152,8 @@ const TECH_ICONS_DATA = [
         id: 'java-icon',
         alt: 'Java',
         src: java,
+        width: "162",
+        height: "163"
     },
     {
         href: 'https://en.wikipedia.org/wiki/Node.js',
@@ -153,6 +161,8 @@ const TECH_ICONS_DATA = [
         id: 'node-icon',
         alt: 'node',
         src: node,
+        width: "192",
+        height: "192"
     },
     {
         href: 'https://en.wikipedia.org/wiki/MySQL',
@@ -160,6 +170,8 @@ const TECH_ICONS_DATA = [
         id: 'mysql-icon',
         alt: 'mysql',
         src: mysql,
+        width: "162",
+        height: "162"
     },
     {
         href: 'https://en.wikipedia.org/wiki/Git',
@@ -167,12 +179,13 @@ const TECH_ICONS_DATA = [
         id: 'git-icon',
         alt: 'git',
         src: git,
+        width: "131",
+        height: "131"
     }
 ];
 
 
 // Object holding the information for the two upper project's cards -----------
-
 const LARGE_PROJ_CARDS = [
     {
         key: 1,
@@ -199,7 +212,6 @@ const LARGE_PROJ_CARDS = [
 
 
 // Object holding the information for the four lower project's cards ----------
-
 const SMALL_PROJ_CARDS = [
     {
         key: 1,
@@ -243,9 +255,20 @@ const SMALL_PROJ_CARDS = [
     }
 ];
 
+// Page text ------------------------------------------------------------------
+const text = {
+    about: `My name is Adam Wright and I'm a software engineer for Open Sky Software.
+    I live in Seattle and I'm an Oregon State University alumni with a B.S. in 
+    Computer Science. I work within a stack based around Java Spring MVC at Open Sky.
+    At OSU the primary focus was on C/C++ and Python command line applications on Linux. 
+    My personal projects use a mix of React.js, JavaScript and node.js, Java and Spring
+    Boot, and C++ compiled for the web using Web Assembly.`,
+    email: `You can reach out to me here on the contact page or email me at 
+    adamjw321@gmail.com.`
+}
 
-/* Page layout ------------------------------------------------------------- */
 
+// Page layout ----------------------------------------------------------------
 function Album(props) {
     const { classes } = props;
 
@@ -301,7 +324,9 @@ function Album(props) {
 
                     {/* Responsive menu component ------------------------- */}
                     <div id="menu-container">
-                        <TemporaryDrawer />
+                        <Suspense fallback={renderLoader()}>
+                            <TemporaryDrawer />
+                        </Suspense>
                     </div>
 
                 </Toolbar>
@@ -323,6 +348,8 @@ function Album(props) {
                                             id={data.id}
                                             alt={data.alt}
                                             src={data.src}
+                                            width={data.width}
+                                            height={data.height}
                                         />
                                     </a>
                                 ))}
@@ -397,17 +424,11 @@ function Album(props) {
                     <div id="about-text">
                         <Typography variant="h5" align="center" id="me" gutterBottom> About Me </Typography>
                         <Typography variant="subtitle1" align="justify" color="textSecondary" component="p">
-                            I'm Adam and I'm a new grad with a B.S. in Computer Science from Oregon State 
-                            University. I'm in Seattle and am looking for my first software development position
-                            after graduation. I have worked with a variety of technologies while completing my
-                            degree, ranging from C/C++ and Python command line applications on Linux to full 
-                            stack web applications using node.js and Handlebars for server-side rendering. 
-                            In my spare time I've used React to build client-side rendered projects and I've
-                            experimented with WASM.
+                            {text.about}
                         </Typography>
                         <br />
                         <Typography variant="subtitle1" align="justify" color="textSecondary" component="p">
-                            You can reach out to me here on the contact page or email me at adamjw321@gmail.com.
+                            {text.email}
                         </Typography> 
                     </div>
 
@@ -416,14 +437,26 @@ function Album(props) {
                     <div id="social">
                         <Typography variant="h5" align="center" id="social-title" gutterBottom> Social Links </Typography>
                         <a href="https://github.com/adam4321">
-                            <img id="github-img" src={github} alt="github icon"/>  
+                            <img 
+                                id="github-img" 
+                                src={github} 
+                                alt="github icon"
+                                width="59"
+                                height="60"
+                            />  
                             <Typography id="github" variant="subtitle1" color="textSecondary" component="p">
                                 GitHub
                             </Typography>
                         </a>
                         <br />
-                        <a href="https://www.linkedin.com/in/adamjw321/">
-                            <img id="linkedin-img" src={linkedin} alt="linkedin icon"/>
+                        <a href="https://www.linkedin.com/in/adamjw321">
+                            <img 
+                                id="linkedin-img" 
+                                src={linkedin} 
+                                alt="linkedin icon"
+                                width="56"
+                                height="58"
+                            />
                             <Typography id="linkedin" variant="subtitle1" color="textSecondary" component="p">
                                 LinkedIn 
                             </Typography>
@@ -432,13 +465,25 @@ function Album(props) {
 
 
                     {/* The skyline background and location pin ----------- */}
-                    <img src={skyline} alt="seatle skyline" className="skyline-img"/>
+                    <img 
+                        src={skyline} 
+                        alt="seatle skyline" 
+                        className="skyline-img" 
+                        width="1903"
+                        height="859"
+                    />
                     <div className="overlay">
                         <a
                             href="https://www.google.com/maps/place/1215+N+45th+St,+Seattle,+WA+98103/@47.6570521,-122.3612009,13.25z/data=!4m5!3m4!1s0x5490145167fe978d:0x64d3c93762b6dee3!8m2!3d47.6612275!4d-122.3430452"
                             className="icon"
                         >
-                            <img src={pin} alt="red location icon" id="red-pin"/>
+                            <img 
+                                src={pin} 
+                                alt="red location icon" 
+                                id="red-pin"
+                                width="190"
+                                height="190"
+                            />
                         </a>
                     </div>
 

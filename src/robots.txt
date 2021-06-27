@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-Agent: *
+Allow: /
+
+Sitemap: http://adamjwright.com/sitemap.xml

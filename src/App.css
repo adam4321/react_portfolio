@@ -213,40 +213,48 @@ a:hover {
 
 #html-icon {
     width: 15.5%;
+    height: unset;
     margin-left: 2.9vw;
 }
 
 #css-icon {
     width: 15%;
+    height: unset;
 }
 
 #js-icon {
     width: 14.5%;
+    height: unset;
 }
 
 #react-icon {
     width: 15.1%;
+    height: unset;
 }
 
 #java-icon {
     width: 15.3%;
+    height: unset;
     margin-top: 5.5vw;
     margin-left: 3.0vw;
 }
 
 #node-icon {
     width: 18%;
+    height: unset;
     margin-bottom: 2.0vw;
     margin-left: 2.0vw;
 }
 
 #mysql-icon {
     width: 15.2%;
+    height: unset;
     margin-left: 1.7vw;
 }
 
 #git-icon {
     width: 12.3%;
+    height: unset;
     margin-left: 3.4vw;
     margin-bottom: 3.6vw;
 }
@@ -330,6 +338,7 @@ p.MuiTypography-root.MuiTypography-body1 {
 
 .skyline-img {
     max-width: 100%;
+    height: unset;
     margin: 0 !important;
     padding: 0 !important;
     border: 0 !important;
@@ -337,5 +346,6 @@ p.MuiTypography-root.MuiTypography-body1 {
 
 #red-pin {
     left: 44%;
+    height: unset;
     position: absolute;
 }
