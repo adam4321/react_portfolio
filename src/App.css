@@ -77,7 +77,7 @@ a:hover {
     border: none;
     color: white;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: #04536d;
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
     -o-transition: 0.4s;
@@ -136,6 +136,7 @@ a:hover {
     width: 16px;
     height: 16px;
     margin-top: 19px;
+    filter: brightness(0) invert(1);
 }
 
 #menu-list {
@@ -152,14 +153,14 @@ a:hover {
 #close {
     font-size: 16px;
     height: 52px;
-    background-color: rgba(247, 243, 243, 0.685);
+    background-color: #04536d;
     cursor: pointer;
 }
 
 #close-text {
     font-size: 13.3px;
     font-weight: 600;
-    color: black;
+    color: rgb(255, 255, 255);
     height: 50px;
     margin-top: 50px;
 }
