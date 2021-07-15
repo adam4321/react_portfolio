@@ -103,6 +103,7 @@ const text = {
     At OSU the primary focus was on C/C++ and Python command line applications on Linux. 
     My personal projects use a mix of React.js, JavaScript and node.js, Java and Spring
     Boot, and C++ compiled for the web using Web Assembly.`,
+
     email: `You can reach out to me here on the contact page or email me at 
     adamjw321@gmail.com.`
 }
@@ -133,7 +134,7 @@ function Album(props) {
                             className="header-link"
                         > Contact Me </a>
                         <a 
-                            href="https://adamjwright.com/blog"
+                            href="https://adamjwright.com/blog/page/1"
                             id="blog"
                             className="header-link"
                         > Blog </a>

@@ -66,20 +66,20 @@ function TemporaryDrawer() {
                     delay={200}
                 >
                     <ListItem id="about-link" onClick={toggleDrawer('left', false)}>
-                        <p id="about-link">About</p>
+                        <p className="mobile-menu-link">About</p>
                     </ListItem>
                 </Link>
                 <Divider className="divider"/>
 
-                <a href="https://adamjwright.com/blog">
+                <a href="https://adamjwright.com/blog/page/1">
                     <ListItem id="blog-link">
-                        <p id="blog-link">Blog</p>
+                        <p className="mobile-menu-link">Blog</p>
                     </ListItem>
                 </a>
                 <Divider className="divider"/>
                 <a href="https://adamjwright.com/blog/contact_me">
                     <ListItem id="contact-me-link">
-                        <p id="contact-me-link">Contact Me</p>
+                        <p className="mobile-menu-link">Contact Me</p>
                     </ListItem>
                 </a>
                 <Divider className="divider"/>

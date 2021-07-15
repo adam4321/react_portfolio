@@ -20,7 +20,7 @@ const LARGE_PROJ_CARDS = [
         image: quiz_screenshot,
         title: 'QuizSoft Quiz Builder',
         project: 'QuizSoft Quiz Builder',
-        link: 'https://adamjwright.com/quiz_soft',
+        link: 'https://adamjwright.com/quiz_soft/intro',
         about:
             `Node.js / MongoDB / Handlebars - Quiz builder where the user can create a set of
             quizzes and then email a one time link and see the results graded and ranked automatically.`
