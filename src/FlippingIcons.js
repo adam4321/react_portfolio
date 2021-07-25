@@ -119,7 +119,7 @@ const IconCard = (props) => {
     }
 
     return ( 
-        <>
+        <div className="iconFlipContainer">
             <img 
                 onClick={updateFlipState}
                 flipstate={flipState}
@@ -130,7 +130,7 @@ const IconCard = (props) => {
                 id={`back-${props.id}`}
                 onClick={updateFlipState}
                 flipstate={flipState}
-                className={'backOfCard'}
+                className={(props.index < 4 ? 'backCardTopRow' : 'backCardBotRow') + ' backOfCard'}
             >
                 {props.cardtext}
                 <a
@@ -143,7 +143,7 @@ const IconCard = (props) => {
                     {props.linktext}
                 </a>
             </div>
-        </>
+        </div>
     )
 }
 
@@ -154,6 +154,7 @@ const FlippingIcons = () => {
             {TECH_ICONS_DATA.map((data, index) => (
                 <IconCard 
                     key={index}
+                    index={index}
                     className={data.className}
                     linktext={data.linktext}
                     id={data.id}

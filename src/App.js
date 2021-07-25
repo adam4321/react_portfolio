@@ -8,7 +8,7 @@
 // @ts-check
 
 // Imported libraries ---------------------------------------------------------
-import React, { lazy, Suspense } from 'react';
+import React from 'react';
 import './App.css';
 import './mediaQuery.css';
 import PropTypes from 'prop-types';
@@ -22,19 +22,16 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import { Link } from 'react-scroll';
 import FlippingIcons from './FlippingIcons.js';
+import TemporaryDrawer from './TemporaryDrawer.js';
 
 // Images for the page --------------------------------------------------------
 import logo from './images/Adam_logo.png';
 import skyline from './images/skyline.jpg';
 import pin from './images/maps-pin-smaller.png';
-import /* webpackPrefetch: true */ github from './images/github-icon.png';
-import /* webpackPrefetch: true */ linkedin from './images/linkedin-icon.png';
-
-// Lazy Imports ---------------------------------------------------------------
-const TemporaryDrawer = lazy(() => import('./TemporaryDrawer.js'));
-const SmallerProjects = lazy(() => import('./SmallerProjects.js'));
-const LargerProjects = lazy(() => import('./LargerProjects.js'));
-const renderLoader = () => <p>Loading</p>;
+import github from './images/github-icon.png';
+import linkedin from './images/linkedin-icon.png';
+import SmallerProjects from './SmallerProjects.js';
+import LargerProjects from './LargerProjects.js';
 
 
 // Material UI styles object --------------------------------------------------
@@ -164,9 +161,9 @@ function Album(props) {
 
                     {/* Responsive menu component ------------------------- */}
                     <div id="menu-container">
-                        <Suspense fallback={renderLoader()}>
-                            <TemporaryDrawer />
-                        </Suspense>
+
+                        <TemporaryDrawer />
+
                     </div>
 
                 </Toolbar>
@@ -177,7 +174,7 @@ function Album(props) {
                 <div className={classes.heroUnit}>
                     <div className={classes.heroContent}>
                         <Grid container justify="center">
-                            <Grid id="icon-container" item xs={9} sm={9} md={9} lg={12}>
+                            <Grid id="icon-container" item xs={9} sm={9} md={12} lg={12}>
 
                                 {/* Grid of tech skills icons */}
                                 <FlippingIcons />
@@ -193,9 +190,7 @@ function Album(props) {
                     <div className="full-stack" id="stack">
                         <Grid container spacing={5} justify="center">
 
-                            <Suspense fallback={renderLoader()}>
-                                <LargerProjects classes={classes} />
-                            </Suspense>
+                            <LargerProjects classes={classes} />
 
                         </Grid>
                     </div>
@@ -204,9 +199,7 @@ function Album(props) {
                     <div className="smaller-apps">
                         <Grid container spacing={5}>
                             
-                            <Suspense fallback={renderLoader()}>
-                                <SmallerProjects classes={classes} />
-                            </Suspense>
+                            <SmallerProjects classes={classes} />
 
                         </Grid>
                     </div>
@@ -231,7 +224,7 @@ function Album(props) {
                     </div>
 
                     {/* Social Links -------------------------------------- */}
-                    <div id="social">
+                    <div id="social" className="footer-card">
                         <Typography variant="h5" align="center" id="social-title" gutterBottom> Social Links </Typography>
                         <a href="https://github.com/adam4321">
                             <img 

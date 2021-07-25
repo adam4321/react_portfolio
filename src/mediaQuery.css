@@ -16,6 +16,17 @@
         margin-left: 5vw;
         height: 40vw;
     }
+
+    #about-text {
+        top: -90px;
+        left: 13%;
+        width: 550px;
+    }
+
+    #social {
+        left: 65%;
+        top: -120px;
+    }
 }
 
 
@@ -25,203 +36,7 @@
     #icon-container {
         margin-top: 10vw;
         margin-bottom: 5vw;
-        height: 40vw;
-    }
-}
-
-
-/* Media query below 960 px ------------------------------------------------ */
-
-@media only screen and (max-width: 960px) {
-    .menu {
-        width: 16px;
-        text-decoration: none;
-    }
-
-    #icon-container {
-        margin-top: 12vw;
-        margin-bottom: 7vw;
-        height: 40vw;
-    }
-
-    #menu-text {
-        display: inline;
-        margin-left: 10px;
-        font-size: 17px;
-    }
-
-    #scroll-links {
-        display: none;
-    }
-
-    #social {
-        left: 22%;
-        top: 470px;
-    }
-}
-
-
-/*  Media query below 600 px ----------------------------------------------- */
-
-@media only screen and (max-width: 600px) {
-    #icon-container {
-        margin-top: 14vw;
-        margin-bottom: 7vw;
-        height: 40vw;
-    }
-
-    .bottom-container {
-        margin-top: 50px;
-    }
-
-    #about-text {
-        top: -150px;
-        left: 15%;
-        width: 70%;
-        margin-top: 180px;
-    }
-
-    #social {
-        left: 22%;
-        margin-top: 150px;
-    }
-
-    .skyline-img {
-        position: absolute;
-        top: 800px;
-        left: -0%;
-    }
-
-    #red-pin {
-        width: 10%;
-        top: 885px;
-    }
-}
-
-
-/* Media query below 400 px ------------------------------------------------ */
-
-@media only screen and (max-width: 400px) {
-    .bottom-container {
-        height: 700px;
-        margin-top: 15vw;
-    }
-
-    #about-text {
-        left: 10%;
-        width: 80%;
-        top: -10px;
-        margin-top: 50px;
-        margin-bottom: 20px;
-    }
-
-    #social {
-        margin-top: 30px;
-        top: 640px;
-    }
-
-    .skyline-img {
-        position: absolute;
-        top: 900px;
-        left: -0%;
-    }
-
-    #red-pin {
-        width: 10%;
-        top: 950px;
-    }
-}
-
-
-/* Media query below 300 px ------------------------------------------------ */
-
-@media only screen and (max-width: 340px) {
-    .logogo {
-        height: 100px;
-        width: 170px;
-        margin-top: 20px;
-    }
-
-    #menu-container {
-        margin-right: 0px;
-    }
-
-    #icon-container {
-        margin-top: 18vw;
-        height: 40vw;
-    }
-
-    .bottom-container {
-        height: 700px;
-        margin-top: 15vw;
-    }
-
-    #about-text {
-        left: 10%;
-        width: 80%;
-        top: -10px;
-        margin-top: 50px;
-        margin-bottom: 20px;
-    }
-
-    #social {
-        margin-top: 20px;
-        top: 800px;
-    }
-
-    .skyline-img {
-        position: absolute;
-        top: 1050px;
-        left: -0%;
-    }
-
-    #red-pin {
-        width: 10%;
-        top: 1100px;
-    }
-}
-
-
-/* Media query above 600 px ------------------------------------------------ */
-
-@media only screen and (min-width: 600px) {
-    .bottom-container {
-        height: 100%;
-        margin-top: 80vw;
-    }
-
-    #footer {
-        height: auto;
-    }
-
-    #about-text {
-        top: -500px;
-        left: 16%;
-        width: 70%;
-    }
-
-    #social {
-        left: 42%;
-        top: -100px;
-    }
-
-    #red-pin {
-        width: 9%;
-        top: 55%;
-    }
-}
-
-
-/* Media query above 960 px ------------------------------------------------ */
-
-@media only screen and (min-width: 960px) {
-    #menu-container {
-        display: none;
-    }
-
-    #scroll-links {
-        width: 80%;
-        margin-top: 0.5vw;
+        height: 55vw;
     }
 
     .bottom-container {
@@ -239,35 +54,277 @@
         left: 62%;
         top: -260px;
     }
+}
 
-    #red-pin {
-        width: 9%;
-        top: 55%;
+
+/* Media query below 1070 px ----------------------------------------------- */
+
+@media only screen and (max-width: 1070px) {
+    #icon-container {
+        margin: unset;
+        margin-top: 5vw;
+        margin-bottom: 6vw;
+    }
+
+    .Album-heroUnit-3,
+    .jss3 {
+        height: 800px;
     }
 }
 
 
-/* Media query above 1660 px ----------------------------------------------- */
+/* Media query below 960 px ------------------------------------------------ */
 
-@media only screen and (min-width: 1660px) {
+@media only screen and (max-width: 960px) {
+    #icon-container {
+        margin: unset;
+        margin-top: 2vw;
+        margin-bottom: 6vw;
+    }
+
+    .Album-heroUnit-3,
+    .jss3 {
+        height: 1050px;
+    }
+
+    #menu-container {
+        display: inline;
+    }
+
+    .menu {
+        width: 16px;
+        text-decoration: none;
+    }
+
+    #menu-text {
+        display: inline;
+        margin-left: 10px;
+        font-size: 17px;
+    }
+
+    #scroll-links {
+        display: none;
+    }
+
     .bottom-container {
-        height: 100%;
-        margin-top: 150px;
+        margin-top: 50px;
+    }
+
+    #footer {
+        height: 800px;
     }
 
     #about-text {
-        top: 7px;
-        left: 10%;
-        width: 500px;
+        width: 65%;
+        left: 17%;
+        margin-top: 275px;
     }
 
     #social {
-        left: 62%;
-        top: -4%;
+        left: 22%;
+        top: 420px;
+    }
+
+    .skyline-img {
+        position: absolute;
+        top: 560px;
+        left: 0%;
     }
 
     #red-pin {
         width: 10%;
-        top: 47%;
+        top: 730px;
+    }
+}
+
+
+/*  Media query below 700 px ----------------------------------------------- */
+
+@media only screen and (max-width: 700px) {
+    .Album-heroUnit-3,
+    .jss3 {
+        height: 950px;
+    }
+
+    .MuiGrid-grid-xs-2 {
+        flex-grow: 0;
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+    .iconFlipContainer {
+        margin: 10px;
+    }
+
+    #icon-container {
+        justify-content: center;
+        justify-content: space-around;
+        margin: unset;
+        margin-top: 30px;
+    }
+
+    .bottom-container {
+        margin-top: 50px;
+    }
+
+    #footer {
+        height: 880px;
+    }
+
+    #about-text {
+        top: -150px;
+        left: 15%;
+        width: 70%;
+        margin-top: 180px;
+    }
+
+    #social {
+        left: 22%;
+        margin-top: 60px;
+    }
+
+    .skyline-img {
+        top: 620px;
+    }
+
+    #red-pin {
+        width: 50px;
+        top: 790px;
+    }
+}
+
+
+/* Media query below 614 px ------------------------------------------------ */
+
+@media screen and (max-width: 614px) {
+    #icon-container {
+        margin-top: 0px;
+    }
+
+    .Album-heroUnit-3,
+    .jss3 {
+        height: 1750px;
+    }
+
+    #footer {
+        height: 750px;
+    }
+
+    #red-pin {
+        top: 760px;
+    }
+}
+
+
+/* Media query below 520 px ------------------------------------------------ */
+
+@media only screen and (max-width: 520px) {
+    .bottom-container {
+        height: 700px;
+        margin-top: 15vw;
+    }
+
+    #footer {
+        height: 950px;
+    }
+
+    #about-text {
+        left: 10%;
+        width: 80%;
+        top: -10px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    #social {
+        margin-top: 30px;
+        top: 520px;
+    }
+
+    .skyline-img {
+        top: 740px;
+    }
+
+    #red-pin {
+        width: 50px;
+        top: 820px;
+    }
+}
+
+
+/* Media query below 400 px ------------------------------------------------ */
+
+@media only screen and (max-width: 400px) {
+    .bottom-container {
+        height: 670px;
+        margin-top: 15vw;
+    }
+
+    #footer {
+        height: 1000px;
+    }
+
+    #about-text {
+        left: 10%;
+        width: 80%;
+        top: -10px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    #social {
+        left: 18%;
+        margin-top: 20px;
+        top: 620px;
+    }
+
+    .skyline-img {
+        top: 830px;
+    }
+
+    #red-pin {
+        top: 900px;
+    }
+}
+
+
+/* Media query below 340 px ------------------------------------------------ */
+
+@media only screen and (max-width: 340px) {
+    .logogo {
+        height: 100px;
+        width: 170px;
+        margin-top: 20px;
+    }
+
+    #menu-container {
+        margin-right: 0px;
+    }
+
+    .bottom-container {
+        height: 700px;
+        margin-top: 15vw;
+    }
+
+    #about-text {
+        left: 10%;
+        width: 80%;
+        top: -10px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    #social {
+        left: 15%;
+        margin-top: 20px;
+        top: 670px;
+    }
+
+    .skyline-img {
+        top: 900px;
+    }
+
+    #red-pin {
+        top: 950px;
     }
 }
