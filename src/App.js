@@ -94,15 +94,15 @@ const styles = theme => ({
 
 // About Me text --------------------------------------------------------------
 const text = {
-    about: `My name is Adam Wright and I'm a software engineer for Open Sky Software.
-    I live in Seattle and I'm an Oregon State University alumni with a B.S. in 
-    Computer Science. I work within a stack based around Java Spring MVC at Open Sky.
-    At OSU the primary focus was on C/C++ and Python command line applications on Linux. 
-    My personal projects use a mix of React.js, JavaScript and node.js, Java and Spring
+    about: `I'm Adam Wright, a software engineer for Open Sky Software.
+    I live in Seattle and have a B.S. in Computer Science from Oregon State University.
+    Our stack at Open Sky is based around Java, Spring MVC, MySql, and Linux.
+    My personal projects here use a mix of React.js, JavaScript with node.js, Java with Spring
     Boot, and C++ compiled for the web using Web Assembly.`,
 
-    email: `You can reach out to me here on the contact page or email me at 
-    adamjw321@gmail.com.`
+    email1: `You can reach out to me through my `,
+    email2: `contact page`,
+    email3: ` or email me at adam@adamjwright.com`
 }
 
 // Page layout ----------------------------------------------------------------
@@ -161,9 +161,7 @@ function Album(props) {
 
                     {/* Responsive menu component ------------------------- */}
                     <div id="menu-container">
-
                         <TemporaryDrawer />
-
                     </div>
 
                 </Toolbar>
@@ -175,10 +173,8 @@ function Album(props) {
                     <div className={classes.heroContent}>
                         <Grid container justify="center">
                             <Grid id="icon-container" item xs={9} sm={9} md={12} lg={12}>
-
                                 {/* Grid of tech skills icons */}
                                 <FlippingIcons />
-
                             </Grid>
                         </Grid>
                     </div>
@@ -189,18 +185,14 @@ function Album(props) {
                     {/* Full stack project cards --------------------------- */}
                     <div className="full-stack" id="stack">
                         <Grid container spacing={5} justify="center">
-
                             <LargerProjects classes={classes} />
-
                         </Grid>
                     </div>
 
                     {/* 4 Smaller project cards --------------------------- */}
                     <div className="smaller-apps">
                         <Grid container spacing={5}>
-                            
                             <SmallerProjects classes={classes} />
-
                         </Grid>
                     </div>
 
@@ -219,7 +211,9 @@ function Album(props) {
                         </Typography>
                         <br />
                         <Typography variant="subtitle1" align="justify" color="textSecondary" component="p">
-                            {text.email}
+                            {text.email1}
+                            <a id="about-contact-link" href="https://adamjwright.com/blog/contact_me">{text.email2}</a>
+                            {text.email3}
                         </Typography> 
                     </div>
 

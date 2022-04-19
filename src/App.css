@@ -170,6 +170,46 @@ a:hover,
     backface-visibility: hidden;
 }
 
+#html-icon:hover {
+    width: 103%;
+    height: 103%;
+}
+
+#css-icon:hover {
+    width: 101.5%;
+    height: 101.5%;
+}
+
+#js-icon:hover {
+    width: 97.5%;
+    height: 97.5%;
+}
+
+#react-icon:hover {
+    width: 97%;
+    height: 97%;
+}
+
+#java-icon:hover {
+    width: 99%;
+    height: 99%;
+}
+
+#node-icon:hover {
+    width: 118%;
+    height: 118%;
+}
+
+#mysql-icon:hover {
+    width: 101%;
+    height: 101%;
+}
+
+#git-icon:hover {
+    width: 82.5%;
+    height: 82.5%;
+}
+
 .iconFlipContainer {
     position: relative;
     display: flex;
@@ -213,11 +253,11 @@ a:hover,
     -ms-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 3px 8px rgba(0, 0, 0, 0.23);
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 3px 8px rgba(0, 0, 0, 0.23);
-    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 3px 8px rgba(0, 0, 0, 0.23);
-    -ms-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 3px 8px rgba(0, 0, 0, 0.23);
-    -o-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 3px 8px rgba(0, 0, 0, 0.23);
+    box-shadow: 1px 4px 9px 0 rgba(0, 0, 0, .21), 0 4px 32px rgba(50, 0, 0, 0.12);
+    -webkit-box-shadow: 1px 4px 9px 0 rgba(0, 0, 0, .21), 0 4px 32px rgba(50, 0, 0, 0.12);
+    -moz-box-shadow: 1px 4px 9px 0 rgba(0, 0, 0, .21), 0 4px 32px rgba(50, 0, 0, 0.12);
+    -ms-box-shadow: 1px 4px 9px 0 rgba(0, 0, 0, .21), 0 4px 32px rgba(50, 0, 0, 0.12);
+    -o-box-shadow: 1px 4px 9px 0 rgba(0, 0, 0, .21), 0 4px 32px rgba(50, 0, 0, 0.12);
 }
 
 .backOfCard a {
@@ -236,14 +276,14 @@ p.MuiTypography-root.MuiTypography-body1 {
 }
 
 .footer-card {
-    border: 1px solid #2f2f2f3d;
+    border: 1px solid #2f2f2f33;
     border-radius: 10px;
 
-    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
-    -webkit-box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
-    -moz-box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
-    -ms-box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
-    -o-box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+    box-shadow: 4px 5px 12px 3px rgba(0, 0, 0, 0.08), 0px 1px 18px rgba(130, 0, 78, 0.02);
+    -webkit-box-shadow: 4px 5px 12px 3px rgba(0, 0, 0, 0.08), 0px 1px 18px rgba(130, 0, 78, 0.02);
+    -moz-box-shadow: 4px 5px 12px 3px rgba(0, 0, 0, 0.08), 0px 1px 18px rgba(130, 0, 78, 0.02);
+    -ms-box-shadow: 4px 5px 12px 3px rgba(0, 0, 0, 0.08), 0px 1px 18px rgba(130, 0, 78, 0.02);
+    -o-box-shadow: 4px 5px 12px 3px rgba(0, 0, 0, 0.08), 0px 1px 18px rgba(130, 0, 78, 0.02);
 }
 
 
@@ -277,12 +317,18 @@ p.MuiTypography-root.MuiTypography-body1 {
     z-index: 3;
 }
 
+#about-contact-link,
+#about-contact-link:visited {
+    color: #04536d;
+    font-weight: 700;
+}
+
 .skyline-img {
     position: relative;
     max-width: 100%;
     height: unset;
     z-index: 0;
-    top: 4px;
+    top: 5px;
     margin: 0;
     padding: 0;
     border: 0;
@@ -301,10 +347,10 @@ p.MuiTypography-root.MuiTypography-body1 {
 
 #social {
     position: absolute;
-    margin-top: 2.5vw;
+    margin-top: 1.8vw;
     z-index: 2;
     width: 230px;
-    height: 200px;
+    height: 205px;
     padding-top: 10px;
     left: 62%;
     top: -4%;
