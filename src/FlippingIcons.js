@@ -137,7 +137,8 @@ const IconCard = (props) => {
                     href={props.href}
                     onClick={(e) => {
                         e.preventDefault();
-                        window.location.href = props.href;
+                        e.stopPropagation();
+                        window.open(props.href, '_blank').focus();
                     }}
                 >
                     {props.linktext}

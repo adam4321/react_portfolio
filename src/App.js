@@ -220,7 +220,11 @@ function Album(props) {
                     {/* Social Links -------------------------------------- */}
                     <div id="social" className="footer-card">
                         <Typography variant="h5" align="center" id="social-title" gutterBottom> Social Links </Typography>
-                        <a href="https://github.com/adam4321">
+                        <a
+                            href="https://github.com/adam4321"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <img 
                                 id="github-img" 
                                 src={github} 
@@ -233,7 +237,11 @@ function Album(props) {
                             </Typography>
                         </a>
                         <br />
-                        <a href="https://www.linkedin.com/in/adamjw321">
+                        <a
+                            href="https://www.linkedin.com/in/adamjw321"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <img 
                                 id="linkedin-img" 
                                 src={linkedin} 
@@ -259,6 +267,8 @@ function Album(props) {
                         <a
                             href="https://www.google.com/maps/place/1215+N+45th+St,+Seattle,+WA+98103/@47.6570521,-122.3612009,13.25z/data=!4m5!3m4!1s0x5490145167fe978d:0x64d3c93762b6dee3!8m2!3d47.6612275!4d-122.3430452"
                             className="icon"
+                            target="_blank"
+                            rel="noreferrer"
                         >
                             <img 
                                 src={pin} 
