@@ -7,45 +7,34 @@
 
 // @ts-check
 
-// Imported libraries
+// Imported libraries ---------------------------------------------------------
 import React from 'react';
 import './App.css';
 import './mediaQuery.css';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import AppBar from '@material-ui/core/AppBar';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
+
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
-import TemporaryDrawer from './temporaryDrawer.js';
 import { Link } from 'react-scroll';
+import FlippingIcons from './FlippingIcons.js';
+import TemporaryDrawer from './TemporaryDrawer.js';
 
-// Images for the page
-import drum_machine_screenshot from './images/drum-machine-screenshot.jpg';
-import quote_generator_screenshot from './images/quote-generator-screenshot.png';
-import markdown_screenshot from './images/markdown-screenshot.png';
-import calculator_screenshot from './images/calculator-screenshot.png';
-import amp_library_screenshot from './images/amp-library-screenshot.jpg';
+// Images for the page --------------------------------------------------------
 import logo from './images/Adam_logo.png';
 import skyline from './images/skyline.jpg';
 import pin from './images/maps-pin-smaller.png';
-import html from './images/html.png';
-import css from './images/css.png';
-import js from './images/js.png';
-import git from './images/git.png';
-import react from './images/react-1.png';
-import mui from './images/mui.png';
-import npm from './images/npm.jpg';
-import wordpress from './images/wordpress-smaller.jpg';
 import github from './images/github-icon.png';
 import linkedin from './images/linkedin-icon.png';
+import SmallerProjects from './SmallerProjects.js';
+import LargerProjects from './LargerProjects.js';
 
-// Material UI style object
+
+// Material UI styles object --------------------------------------------------
 const styles = theme => ({
     appBar: {
         position: 'relative',
@@ -53,31 +42,31 @@ const styles = theme => ({
         height: 128
     },
     icon: {
-        marginRight: theme.spacing.unit * 2
+        marginRight: theme.spacing(2)
     },
     heroUnit: {
         backgroundColor: theme.palette.background.paper
     },
     heroContent: {
-        maxWidth: 1000,
+        maxWidth: 1100,
         margin: '0 auto',
-        padding: `${theme.spacing.unit * 8}px 0 ${theme.spacing.unit * 6}px`
+        padding: `${theme.spacing(3)}px ${theme.spacing(2)}px`
     },
     heroButtons: {
-        marginTop: theme.spacing.unit * 4
+        marginTop: theme.spacing(4)
     },
     layout: {
         width: 'auto',
-        marginLeft: theme.spacing.unit * 3,
-        marginRight: theme.spacing.unit * 3,
-        [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
-            width: 1100,
+        marginLeft: theme.spacing(3),
+        marginRight: theme.spacing(3),
+        [theme.breakpoints.up(1500 + theme.spacing(3 * 2))]: {
+            width: 1500,
             marginLeft: 'auto',
             marginRight: 'auto'
         }
     },
     cardGrid: {
-        padding: `${theme.spacing.unit * 8}px 0`
+        padding: `${theme.spacing(8)}px 0`
     },
     card: {
         height: '100%',
@@ -92,7 +81,7 @@ const styles = theme => ({
     },
     footer: {
         backgroundColor: theme.palette.background.paper,
-        padding: theme.spacing.unit * 6
+        padding: theme.spacing(6)
     },
     list: {
         width: 300
@@ -102,121 +91,50 @@ const styles = theme => ({
     }
 });
 
-// Object holding the information for the four lower project's cards
-const SMALL_PROJ_CARDS = [
-    {
-        key: 1,
-        image: quote_generator_screenshot,
-        title: 'Random Quote Generator',
-        project: 'Random Quote Generator',
-        link: 'https://adamjwright.com/quote_generator',
-        about:
-            'Displays a new quote when you press the new quote button and will tweet the quote for you.'
-    },
-    {
-        key: 2,
-        image: drum_machine_screenshot,
-        title: 'React Drum Machine',
-        project: 'React Drum Machine',
-        link: 'https://adamjwright.com/drum_machine',
-        about:
-            'Plays a sound when you press the keyboard key or click the button for the displayed letter.'
-    },
-    {
-        key: 3,
-        image: markdown_screenshot,
-        title: 'React Markup Previewer',
-        project: 'React Markdown Previewer',
-        link: 'https://adamjwright.com/markdown_previewer',
-        about:
-            'Turns the entries into the box on the left into Git Flavored Markdown on the right.'
-    },
-    {
-        key: 4,
-        image: calculator_screenshot,
-        title: 'React Calculator',
-        project: 'React Calculator App',
-        link: 'https://adamjwright.com/react_calculator',
-        about:
-            'Modern style calculator application that is fully mobile responsive .'
-    }
-];
 
-// Object holding the data for grid of tech skills icons below
-const TECH_ICONS_DATA = [
-    {
-        href: 'https://en.wikipedia.org/wiki/HTML',
-        className: 'tech-icon',
-        id: 'html-icon',
-        alt: 'html',
-        src: html,
-    },
-    {
-        href: 'https://en.wikipedia.org/wiki/Cascading_Style_Sheets',
-        className: 'tech-icon',
-        id: 'css-icon',
-        alt: 'css',
-        src: css,
-    },
-    {
-        href: 'https://en.wikipedia.org/wiki/JavaScript',
-        className: 'tech-icon',
-        id: 'js-icon',
-        alt: 'js',
-        src: js,
-    },
-    {
-        href: 'https://en.wikipedia.org/wiki/React_(JavaScript_library)',
-        className: 'tech-icon',
-        id: 'react-icon',
-        alt: 'react',
-        src: react,
-    },
-    {
-        href: 'https://material-ui.com/getting-started/installation/',
-        className: 'tech-icon',
-        id: 'mui-icon',
-        alt: 'mui',
-        src: mui,
-    },
-    {
-        href: 'https://en.wikipedia.org/wiki/Git',
-        className: 'tech-icon',
-        id: 'git-icon',
-        alt: 'git',
-        src: git,
-    },
-    {
-        href: 'https://en.wikipedia.org/wiki/Npm_(software)',
-        className: 'tech-icon',
-        id: 'npm-icon',
-        alt: 'npm',
-        src: npm,
-    },
-    {
-        href: 'https://en.wikipedia.org/wiki/WordPress',
-        className: 'tech-icon',
-        id: 'wordpress-icon',
-        alt: 'wordpress',
-        src: wordpress,
-    },
-];
+// About Me text --------------------------------------------------------------
+const text = {
+    about: `I'm Adam Wright, a software engineer for Open Sky Software.
+    I live in Seattle and have a B.S. in Computer Science from Oregon State University.
+    Our stack at Open Sky is based around Java, Spring MVC, MySql, and Linux.
+    My personal projects here use a mix of React.js, JavaScript with node.js, Java with Spring
+    Boot, and C++ compiled for the web using Web Assembly.`,
 
+    email1: `You can reach out to me through my `,
+    email2: `contact page`,
+    email3: ` or email me at adam@adamjwright.com`
+}
 
+// Page layout ----------------------------------------------------------------
 function Album(props) {
     const { classes } = props;
 
     return (
-        <React.Fragment>
+        <>
             <CssBaseline />
 
-            {/* Header nav bar */}
-
+            {/* Header nav bar -------------------------------------------- */}
             <AppBar position="static" className={classes.appBar}>
                 <Toolbar className={'barbar'}>
-                    <a className="darken" href="https://adamjwright.com"> <img src={logo} alt="logo" className={'logogo'}/> </a>
+                    <a 
+                        className="darken" 
+                        href="https://adamjwright.com"
+                    > 
+                        <img src={logo} alt="logo" className={'logogo'}/>
+                    </a>
+
+                    {/* Header links */}
                     <div id="scroll-links">
-                        <a href="https://adamjwright.com/blog" id="blog" className="underline"> Blog </a>
+                        <a 
+                            href="https://adamjwright.com/blog/contact_me"
+                            id="contact-me"
+                            className="header-link"
+                        > Contact Me </a>
+                        <a 
+                            href="https://adamjwright.com/blog/page/1"
+                            id="blog"
+                            className="header-link"
+                        > Blog </a>
                         <Link
                             activeClass="active"
                             to="bottom-container"
@@ -226,190 +144,145 @@ function Album(props) {
                             duration={550}
                             delay={200}
                         >
-                            <a href="#footer" id="about" className="underline"> About </a>
+                            <div id="about" className="header-link"> About </div>
                         </Link>
                         <Link
                             activeClass="active"
-                            to="full-stack"
+                            to="stack"
                             spy={true}
                             smooth={true}
-                            offset={15}
+                            offset={-10}
                             duration={550}
                             delay={200}
                         >
-                            <a href="#stack" id="projects" className="underline"> Projects </a>
+                            <div id="projects" className="header-link"> Projects </div>
                         </Link>
                     </div>
 
-                    {/* Responsive menu component */}
-
+                    {/* Responsive menu component ------------------------- */}
                     <div id="menu-container">
-                        <button className="button-styled-link">
-                            <TemporaryDrawer />
-                        </button>
+                        <TemporaryDrawer />
                     </div>
+
                 </Toolbar>
             </AppBar>
 
-            {/* Skills section */}
-
+            {/* Skills section -------------------------------------------- */}
             <main>
                 <div className={classes.heroUnit}>
                     <div className={classes.heroContent}>
-                        <div className={classes.heroButtons}>
-                            <Grid container justify="center">
-                                <Grid id="icon-container" item xs={9} sm={9} md={9} lg={12}>
-
-                                    {/* Grid of tech skills icons */}
-
-                                    {TECH_ICONS_DATA.map(data => (
-                                        <a href={data.href}>
-                                            <img
-                                                className={data.className}
-                                                id={data.id}
-                                                alt={data.alt}
-                                                src={data.src}
-                                            />
-                                        </a>
-                                    ))}
-
-                                </Grid>
+                        <Grid container justify="center">
+                            <Grid id="icon-container" item xs={9} sm={9} md={12} lg={12}>
+                                {/* Grid of tech skills icons */}
+                                <FlippingIcons />
                             </Grid>
-                        </div>
+                        </Grid>
                     </div>
                 </div>
 
                 <div className={classNames(classes.layout, classes.cardGrid)}>
 
-                    {/* Full stack project card */}
-
+                    {/* Full stack project cards --------------------------- */}
                     <div className="full-stack" id="stack">
-                        <Grid container spacing={40} justify="center">
-                            <Grid item sm={6} md={6} lg={6}>
-                                <Card className={classes.card}>
-                                    <a href="https://adamjwright.com/amp_library">
-                                        <CardMedia
-                                            className={classes.cardMedia}
-                                            image={amp_library_screenshot}
-                                            title="Amp Information Library"
-                                        />
-                                    </a>
-                                    <CardContent className={classes.cardContent}>
-                                        <Typography gutterBottom variant="h5" component="h2"> Amp Information Library </Typography>
-                                        <Typography>
-                                            A library where the user can sign in
-                                            and add photos, schematics,
-                                            settings, and other helpful
-                                            information about electric guitar
-                                            amplifiers.
-                                        </Typography>
-                                    </CardContent>
-                                </Card>
-                            </Grid>
+                        <Grid container spacing={5} justify="center">
+                            <LargerProjects classes={classes} />
                         </Grid>
                     </div>
 
-                    {/* Smaller project cards */}
-
+                    {/* 4 Smaller project cards --------------------------- */}
                     <div className="smaller-apps">
-                        <Grid container spacing={40}>
-
-                            {/* This section maps the SMALL_PROJ_CARDS object into 4 card components */}
-
-                            {SMALL_PROJ_CARDS.map(card => (
-                                <Grid item key={card.key} sm={6} md={3} lg={3}>
-                                    <Card className={classes.card}>
-                                        <a href={card.link}>
-                                            <CardMedia className={classes.cardMedia} image={card.image} title={card.title}/>
-                                        </a>
-                                        <CardContent className={classes.cardContent}>
-                                            <Typography gutterBottom variant="h5" component="h2"> {card.project} </Typography>
-                                            <Typography> {card.about} </Typography>
-                                        </CardContent>
-                                    </Card>
-                                </Grid>
-                            ))}
-
+                        <Grid container spacing={5}>
+                            <SmallerProjects classes={classes} />
                         </Grid>
                     </div>
 
                 </div>
             </main>
 
-            {/* Footer, which is the bottom 1/3 of the page */}
-
+            {/* Footer, which is the bottom 1/3 of the page --------------- */}
             <footer id="footer" className={classes.footer}>
                 <div className="bottom-container">
 
-                    {/* About me box */}
-
+                    {/* About me box -------------------------------------- */}
                     <div id="about-text">
-                        <Typography variant="h6" align="center" id="me" gutterBottom> About Me </Typography>
-                        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-                            I am a Seattle based 3rd year Computer Science
-                            student who is working in C/C++ on Linux in my B.S.,
-                            but all of the code must stay in private repos. I am
-                            focusing on React in my spare time and that is what
-                            I used to build this site. If you would like to
-                            reach out to me then feel free to use the contact
-                            box or email adam@adamjwright.
+                        <Typography variant="h5" align="center" id="me" gutterBottom> About Me </Typography>
+                        <Typography variant="subtitle1" align="justify" color="textSecondary" component="p">
+                            {text.about}
                         </Typography>
-                        <div id="social">
-                            <a href="https://github.com/adam4321">
-                                <img id="github" src={github} alt="github icon"/>
-                            </a>
-                            <a href="https://www.linkedin.com/in/adamjw321/">
-                                <img id="linkedin" src={linkedin} alt="linkedin icon"/>
-                            </a>
-                        </div>
+                        <br />
+                        <Typography variant="subtitle1" align="justify" color="textSecondary" component="p">
+                            {text.email1}
+                            <a id="about-contact-link" href="https://adamjwright.com/blog/contact_me">{text.email2}</a>
+                            {text.email3}
+                        </Typography> 
                     </div>
 
-                    {/* Contact form */}
-
-                    <div className="contact">
-                        <div id="contact-wrapper">
-                            <form
-                                id="contactform"
-                                action="https://formspree.io/adam@adamjwright.com"
-                                method="POST"
-                            >
-                                <label id="name">Name</label>
-                                    <br/>
-                                <input type="text" name="first" id="first-in" />
-                                <input type="text" name="last" id="last-in" />
-                                    <br/>
-                                <label id="first">First</label>
-                                <label id="last">Last</label>
-                                    <br/>
-                                <label id="email">Email</label>
-                                    <br/>
-                                <input type="email" name="_replyto" id="email-in" required/>
-                                    <br/>
-                                <label id="comments">Comment or Message</label>
-                                    <br/>
-                                <textarea name="message" id="comments-in"></textarea>
-                                    <br/>
-                                <input type="submit" value="SUBMIT" id="submit"/>
-                                <input type="hidden" name="_next" value="https://adamjwright.com"/>
-                            </form>
-                        </div>
+                    {/* Social Links -------------------------------------- */}
+                    <div id="social" className="footer-card">
+                        <Typography variant="h5" align="center" id="social-title" gutterBottom> Social Links </Typography>
+                        <a
+                            href="https://github.com/adam4321"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <img 
+                                id="github-img" 
+                                src={github} 
+                                alt="github icon"
+                                width="59"
+                                height="60"
+                            />  
+                            <Typography id="github" variant="subtitle1" color="textSecondary" component="p">
+                                GitHub
+                            </Typography>
+                        </a>
+                        <br />
+                        <a
+                            href="https://www.linkedin.com/in/adamjw321"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <img 
+                                id="linkedin-img" 
+                                src={linkedin} 
+                                alt="linkedin icon"
+                                width="56"
+                                height="58"
+                            />
+                            <Typography id="linkedin" variant="subtitle1" color="textSecondary" component="p">
+                                LinkedIn 
+                            </Typography>
+                        </a>
                     </div>
 
-                    {/* The skyline background and location pin */}
-
-                    <img src={skyline} alt="seatle skyline" className="skyline-img"/>
+                    {/* The skyline background and location pin ----------- */}
+                    <img 
+                        src={skyline} 
+                        alt="seatle skyline" 
+                        className="skyline-img" 
+                        width="1903"
+                        height="859"
+                    />
                     <div className="overlay">
                         <a
                             href="https://www.google.com/maps/place/1215+N+45th+St,+Seattle,+WA+98103/@47.6570521,-122.3612009,13.25z/data=!4m5!3m4!1s0x5490145167fe978d:0x64d3c93762b6dee3!8m2!3d47.6612275!4d-122.3430452"
                             className="icon"
+                            target="_blank"
+                            rel="noreferrer"
                         >
-                            <img src={pin} alt="red location icon" id="red-pin"/>
+                            <img 
+                                src={pin} 
+                                alt="red location icon" 
+                                id="red-pin"
+                                width="190"
+                                height="190"
+                            />
                         </a>
                     </div>
 
                 </div>
             </footer>
-        </React.Fragment>
+        </>
     );
 }
 
