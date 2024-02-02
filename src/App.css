@@ -34,7 +34,7 @@ a:hover,
 
 #scroll-links {
     width: 80%;
-    margin-top: 0.5vw;
+    margin-top: 0.85vw;
 }
 
 #menu-container {
@@ -54,13 +54,12 @@ a:hover,
 }
 
 .header-link {
-    font-family: 'Open Sans', sans-serif;
     color: #fff;
     text-decoration: none;
     float: right;
     font-weight: 500;
-    font-size: 16.46px;
-    letter-spacing: 0.8px;
+    font-size: 16.5px;
+    letter-spacing: .85px;
 }
 
 .header-link:hover {
@@ -84,7 +83,7 @@ a:hover,
 }
 
 .darken {
-    width: 210px;
+    width: 231px;
     height: 115px;
     margin-left: -40px;
 }
@@ -101,15 +100,15 @@ a:hover,
 /* Full size navbar links -------------------------------------------------- */
 
 #about {
-    margin-left: 5vw;
+    margin-left: 5.2vw;
 }
 
 #blog {
-    margin-left: 5vw;
+    margin-left: 5.2vw;
 }
 
 #contact-me {
-    margin-left: 5vw;
+    margin-left: 5.2vw;
     margin-right: -1.5vw;
 }
 
